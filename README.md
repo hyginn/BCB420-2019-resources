@@ -29,6 +29,7 @@ This repository contains course material for the 2019 course in Computational Sy
 * `HGNC.RData`: reference symbols and identifiers for human genes from the Human Gene Nomenclature Committee.
 * `HGNCdata.R`: The script that produced `HGNC.RData` (for reference)
 * `dataModel.md`: Introduction to the systemDB database schema. Type ```toBrowser("dataModel.md")``` to study it.
+* `dataSources.md`: Overview of data sources for the data project. Type ```toBrowser("dataSources.md")``` to access the document.
 * `exampleGeneSet.md`: background to a set of genes associated with the phagosome-lysosome fusion system. This forms our example set for data annotation as a basis to develop data integration workflows.  Type ```toBrowser("exampleGeneSet.md")``` to study it.
 
 &nbsp;
