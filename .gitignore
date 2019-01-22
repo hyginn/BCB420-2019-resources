@@ -18,7 +18,7 @@
 .Rproj.user/
 
 # produced output of .md and .Rmd
-README.html
+*.html
 vignettes/*.html
 vignettes/*.pdf
 
@@ -36,4 +36,3 @@ vignettes/*.pdf
 # Shiny token, see https://shiny.rstudio.com/articles/shinyapps.html
 rsconnect/
 
-.Rproj.user
