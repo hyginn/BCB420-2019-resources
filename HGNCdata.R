@@ -1,11 +1,15 @@
 # HGNCdata.R
 #
-# Purpose: Prepare a reference file of human gene symbols and other data
-#          from the HGNC.
-# Version: 1.0
-# Date:    2019-01-18
-# Author: Boris Steipe (ORCID: 0000-0002-1134-6758)
-# License: (c) Author (2019) + MIT
+# Purpose:  Prepare a reference file of human gene symbols and other data
+#           from the HGNC.
+# Version:  1.1
+# Date:     2019-01-18
+# Author:   Boris Steipe (ORCID: 0000-0002-1134-6758)
+# License:  (c) Author (2019) + MIT
+#
+# Versions:
+#           1.1   Fix column names
+#           1.0   First dataset
 #
 # ToDo:
 #
@@ -132,6 +136,7 @@ tmp$`RefSeq IDs`[head(which(sel))]
 # "NM_024886" : This RefSeq was removed because currently it is thought
 #               that it is annotated with an incorrect coding
 # "NM_001366603" : Homo sapiens DERPC transcript variant 6
+#
 # Conclusion: while some additional family members could be annotated, overall
 # the NCBI data is more current and removes errors. We will use the NCBI
 # RefSeq IDs and keep the HGNC-RefSeq IDs only for legacy mapping.
@@ -194,21 +199,21 @@ tmp <- tmp[tmp$`Locus type` %in% myLocusTypes, ]
 nrow(tmp) # 27087 of previously 41624
 
 # subset columns of interest, re-order, and change tibble to data frame:
-HGNC <- data.frame(sym = tmp$`Approved symbol`,
+HGNC <- data.frame(sym       = tmp$`Approved symbol`,
 #                  tmp$`HGNC ID`,
-                   name = tmp$`Approved name`,
+                   name      = tmp$`Approved name`,
 #                  tmp$`Status`,
-                   UniProtId = tmp$`UniProt ID(supplied by UniProt)`,
-                   RefSeqID = tmp$`RefSeq(supplied by NCBI)`,
-                   EnsID = tmp$`Ensembl ID(supplied by Ensembl)`,
-                   UCSCID = tmp$`UCSC ID(supplied by UCSC)`,
-                   GeneID= tmp$`NCBI Gene ID(supplied by NCBI)`,
-                   OMIMIDc= tmp$`OMIM ID(supplied by OMIM)`,
-                   acc = tmp$`Accession numbers`,
-                   chr = tmp$`Chromosome`,
-                   type = tmp$`Locus type`,
-                   prev = tmp$`Previous symbols`,
-                   synonym = tmp$`Synonyms`,
+                   UniProtID = tmp$`UniProt ID(supplied by UniProt)`,
+                   RefSeqID  = tmp$`RefSeq(supplied by NCBI)`,
+                   EnsID     = tmp$`Ensembl ID(supplied by Ensembl)`,
+                   UCSCID    = tmp$`UCSC ID(supplied by UCSC)`,
+                   GeneID    = tmp$`NCBI Gene ID(supplied by NCBI)`,
+                   OMIMID    = tmp$`OMIM ID(supplied by OMIM)`,
+                   acc       = tmp$`Accession numbers`,
+                   chr       = tmp$`Chromosome`,
+                   type      = tmp$`Locus type`,
+                   prev      = tmp$`Previous symbols`,
+                   synonym   = tmp$`Synonyms`,
                    RefSeqOld = tmp$`RefSeq IDs`,
                    stringsAsFactors = FALSE)
 
