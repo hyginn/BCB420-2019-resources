@@ -55,37 +55,53 @@ A proposed solution has at its core a relational datamodel, which is extended th
 
 ### The model
 
-[![system data model 2.0](http://steipe.biochemistry.utoronto.ca/abc/assets/systemDB-data_model.2.0.svg)](https://docs.google.com/presentation/d/1FOAPMn28WOKWQOGdkGUxuMTea3IMCfARop1RWOX_mqw/edit?usp=sharing)
-(Schema of the systemDB 2.0 system data model. The model is [here](https://docs.google.com/presentation/d/1FOAPMn28WOKWQOGdkGUxuMTea3IMCfARop1RWOX_mqw/edit?usp=sharing) and can be copied and adapted.)
+[![system data model 2.1](http://steipe.biochemistry.utoronto.ca/abc/assets/systemDB-data_model.2.1.svg)](https://docs.google.com/presentation/d/1spOv8NoLtySvnUPv1vne7L5hXkeK5l_CVRCCYD8BQ7A/edit?usp=sharing)
+(Schema of the systemDB 2.1 system data model. The model is [here](https://docs.google.com/presentation/d/1spOv8NoLtySvnUPv1vne7L5hXkeK5l_CVRCCYD8BQ7A/edit?usp=sharing) and can be copied and adapted.)
 
 &nbsp;
 
 ### Details
 
-All `ID`s in the model are realized as [Universally Unique Identifiers (UUID)](https://en.wikipedia.org/wiki/Universally_unique_identifier)
+All `ID`s in the model are realized as [Universally Unique Identifiers (UUID)](https://en.wikipedia.org/wiki/Universally_unique_identifier) and formatted as "QQIDs". A QQID is a UUID in which the first five hexadecimal digits have been mapped to two words from a list of 1,024 four-letter, monosyllabic words. IDs that differ in the two words are necessarily different. IDs that have the same words could be different - one needs to consider the rest of the ID. The advantage of QQIDs is that it is much easier to perform visual consistency checks during manual editing. Code to produce QQIDs is included in the [BCB420-2019-resources repository](https://github.com/hyginn/BCB420-2019-resources). Example:
+
+```text
+UUID:                                  QQID:
+6c10088e-4a13-a1d2-79ee-ec0567354223   gram.love-88e-4a13-a1d2-79ee-ec0567354223
+e2062b08-9f14-9032-0baa-5f796fa2a71b   skip.torn-b08-9f14-9032-0baa-5f796fa2a71b
+51513df7-652d-1982-0a5c-2c1a88284ee8   wave.loaf-df7-652d-1982-0a5c-2c1a88284ee8
+28c24f9e-d798-3d22-6894-643b13ed8740   time.pike-f9e-d798-3d22-6894-643b13ed8740
+965ec6e3-4461-3002-99be-eb263a3a14d2   flee.teak-6e3-4461-3002-99be-eb263a3a14d2
+
+```
+
 
 &nbsp;
 
 ##### Entity Tables
 
-* `system`: a system has a name. Beyond that, it may have features, and it has components.
-* `component`: types can be either atomic, or composed. If atomic, the component must be present in the `molecule` table. If composed, the component must be present in the `system` table, it is a "subsystem". The component role is taken from the systems role ontology.
-* `feature`: the main table to hold annotation data. Linked via join tables to system, component, relation, gene, and molecule - where appropriate, with ranges of validity.
-* `gene`: identified by its HGNC symbol, name and type. Further information can be stored as a `note` or database `xRef`.
-* `molecule`: can be RNA / DNA, protein, metabolite, molecule, or just a concept - generically any atomic entity in our domain. The structure attribute is linked to the type: nucleotide alphabet string, amino acid alphabet string, SMILES string, or text.
+* `system`: a system has an **ID**, a **name**, a short **code** of five capital letters, a short **definition**, and a more explicit **description** of its purpose and context.
+* `component`: a component has an **ID**, a **name** and a **type**. Types can be either atomic, or composed. If atomic, the component must be present in the `molecule` table. If composed, the component must be present in the `system` table, linked via the `componentSystem` join table. Such a composed component is a "subsystem".
+* `molecule`: a molecule has an **ID**, a **name**, and a **type** which can be RNA / DNA, protein, metabolite, molecule, or just a concept - generically any atomic entity in our domain. In addition it has a **structure** attribute, the semantics of which which depends on the type: nucleotide alphabet string, amino acid alphabet string, SMILES string, or text. In a typical usage a protein molecule, would have cross-references in the `xRef` table to UniProt and ENSP identifiers. 
+* `gene`: a gene has an **ID**, a (HGNC) **symbol**, a **name**, and a **type**. Types are protein coding, rRNA, tRNA etc. Further information can be stored as a `note` or database `xRef`. Typically we expect presence of an ENSG cross-reference.
+* `feature`: the main table to hold annotation data. Features are linked via join tables to system, component, relation, gene, and molecule - where appropriate, with ranges of annotation over the annotated object. For example a domain annotation would be stored as a feature, with start and end coordinates corresponding to the FASTA sequence in the `structure` attribute of the `moleulae`table 
 * `componentRelation`: this looks like a join table, but is in fact a table that holds edges for graphs. However, since components can be atomic (`molecule`), or composed (`system`), this table may describe a [hypergraph](https://en.wikipedia.org/wiki/Hypergraph).
+
+&nbsp;
+
+#### Auxiliary Tables
+
 * `parameter`: Information about the datamodel: schema version, species name, tax ID ...
 * `type`: a data dictionary. Other tables store (typeID, value) tuples, The dictionary contains an attribute `validation`. This could be an index into an R list of validation functions, which implement regex, type/mode/class and range limitations, a regex, or other mechanisms.
-* `xRef`: database cross-references
-* `note`: metadata such as see.also, curator name, evidence codes, date, version, and history of record.
+* `xRef`: database cross-references such as UniProt, RefSeq, ENSP or PDB IDs.
+* `note`: metadata such as "see.also" references, curator name, evidence codes, date, version, and history of record.
 
 &nbsp;
 
 ##### Join Tables
 
-* `systemComponent`: a component that is part of a system
-* `componentSystem`: system that is a composed component - itself a (sub-)system 
-* `componentMolecule`: molecule that is an atomic component
+* `systemComponent`: a component that is part of a system. Identified by the join of `system` and `component`, and the `role` that the component has in that system. One component can have more than one distinct role for a system; as well, one component can have roles in different systems. The role is a term from `SyRO` - the Systems Role Ontology. A description further clarifies the role.
+* `componentSystem`: system that is a composed component - itself a (sub-)system. For example a protein complex could be described as a subsystem, and identified in this join table.
+* `componentMolecule`: this join table identifies atomic components.
 * `geneProduct`: gene associated with a molecule. One gene can be associated with more than one molecule; (rarely) one molecule my be produed by more than one gene.
 
 &nbsp;
@@ -112,6 +128,8 @@ TBC ...
 * record isoforms that can substitute for each other
 * record transcriptional variants that can substitute for each other
 * record a mutation with a phenotype
+* annotate a boundary component
+* annotate a complement
 
 &nbsp;
 
