@@ -282,7 +282,7 @@ initSysXl <- function(FN = "BCB420-2019-System-XXXXX-0.0.xlsx") {
                                structure = NA_character_,
                                stringsAsFactors = FALSE)
 
-  sysXl$geneStructure <- data.frame(ID = fetchQQ(N),
+  sysXl$geneProduct <- data.frame(ID = fetchQQ(N),
                                     geneID = NA_character_,
                                     moleculeID = NA_character_,
                                     stringsAsFactors = FALSE)
