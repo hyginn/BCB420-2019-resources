@@ -22,7 +22,7 @@ This repository contains course material for the 2019 course in Computational Sy
 
 &nbsp;
 
-### Data resources
+### Data resources, templates and scripts
 
 &nbsp;
 
@@ -34,6 +34,10 @@ This repository contains course material for the 2019 course in Computational Sy
 
 &nbsp;
 
+* `PHALY_facts.txt`: a sample file of facts from the PHALY system, in a structured text format.
+* `text2tsv.R`: an R script to parse a file of structured-text system facts and write tsv text to console that is suitable to be copy/pasted into an Excel spreadsheet for preparation of the systems database.
+* `BCB420-2019-System-XXXXX-0.0.xlsx`: an Excel spreadsheet template with a sheets to hold a system table, a system components table, and a components table.
+* `BCB420-2019-System-PHALY-0.1.xlsx`: an Excel spreadsheet example, filled with data from the PHALY system.
 
 
 <!-- END -->
