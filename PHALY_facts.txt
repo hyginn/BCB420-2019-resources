@@ -1,0 +1,112 @@
+{{Vspace}}
+
+====Preparing  the phagosome====
+{{Smallvspace}}
+*'''LC3-II'''  is a component of the ''PHALY'' system. LC3-II is LC3, lipidated by PE, whereupon it locates to the phagosome membrane. {{#pmid: 30115558|Corona2018}}
+*'''LC3''' [MAP1LC3A] (microtubule associated protein 1 light chain 3 alpha) is a component of ''LC3-II''. LC3 is a cytosolic protein that is lipidated by conjugation with PE in a stress response.{{#pmid: 30115558|Corona2018}} This involves a ubiquitin-like conjugation system. {{#pmid: 27146966|Kruppa2016}}
+*'''PE''' (phosphatidylethanolamine) is a component of ''LC3-II''. PE is the lipid anchor of LC3 in the phagosome membrane. {{#pmid: 30115558|Corona2018}}
+*The '''SNAP29-STX17 Qabc-SNARE''' is a component of the ''SNAP29-STX17-VAMP8 SNARE-pin''. The SNAP29-STX17 Qabc-SNARE forms through the interaction of SNAP29 and STX17 in the phagosome membrane.{{#pmid: 30115558|Corona2018}}
+*'''SNAP29''' [SNAP29] (synaptosome associated protein 29) is a component of the ''SNAP29-STX17 Qabc-SNARE''. SNAP29 is a Qa-SNARE (a t-SNARE) that localizes to the membrane in a lipidation independent manner through its STX17 interaction. {{#pmid: 30115558|Corona2018}} SNAP29 is held in a non-interacting state by O-GlcNAcylation with GlcNAC. {{#pmid: 25419848 |Guo2014}}
+*'''GlcNAC''' (N-acetyl-glucosamine) is a component of the ''PHALY'' system. O-GlcNAcylation of SNAP29 in nutrient-sufficient conditions inhibits the association of the SNAP29-STX17 Qabc-SNARE. {{#pmid: 30115558|Corona2018}} SNAP29 is O-GlcNAcylated by the promiscuous OGT (UDP-N-acetylglucosamine-peptide N-acetylglucosaminyltransferase) under nutrient-sufficient conditions and thus links the nutrient status sensing system with autophagic flux.{{#pmid: 25419848 |Guo2014}} SNAP29 has its  O-GlcNAcetylation reversed by the N-acetyl-β-glucosaminidase OGA (O-GlcNAcase).{{#pmid: 25419848 |Guo2014}}
+*'''STX17''' [STX17] (Syntaxin 17) is a component of the ''SNAP29-STX17 Qabc-SNARE''. STX17 is a Qa-SNARE which localizes to the phagosome by binding the phagosome membrane marker LC3-II via its LC3-interacting region (LIR).{{#pmid: 30115558|Corona2018}} STX17 phosporylation on S2 is a key decision point for fusion to proceed; dephosphorylation relieves an inhibitory interaction with VPS33A and the phosphomimetic S2E mutant cannot form a SNARE bundle. {{#pmid: 30655294 |Saleeb2019}}. STX17 has two glycine-zipper motif transmembrane domains that are required for membrane insertion. {{#pmid: 29420192 |Kumar2018}}
+*'''LAMP2''' [LAMP2] (lysosomal associated membrane protein 2) is a component of the ''PHALY'' system. LAMP2 is an integral membrane protein. The LAMP-2A isoform has a lysosomal targeting signature sequence. The presence of LAMP2 is required for the binding  of STX17.{{#pmid: 27628032 |Hubert2016}}
+*'''IRGM''' [IRGM] (immunity related GTPase M) is a component of the ''PHALY'' system. IRGM forms a complex (an autophagosome recognition particle, ARP) with STX17 and the Atg8 homologues LC3 and GABARAPL1 that is responsible for phagosomal targeting of STX17. IRGM does not directly bind LC3. IRGM's active conformation is GTP bound. IRGM also has a role in autophagy initiation complexes, binding BECLIN1, ULK1 and ATG16L1, which is indpendent of STX17 binding.{{#pmid: 29420192 |Kumar2018}}
+*'''RAB7''' [RAB7A] (RAB7A, member RAS oncogene family) is a component of the ''PHALY'' system. RAB7 is a small GTPase that replaces RAB5 in maturing endosomes.{{#pmid: 23645161 |Balderhaar2013}}. RAB7 localization to the membrane requires '''prenylation'''. {{#pmid: 30115558|Corona2018}} RAB7 is held in an inactive, soluble state by GDI (ARHGDIA), this interaction - and membrane recruitment - is released by the Mon1-CCZ1 complex.{{#pmid: 30333976 |Stroupe2018}} RAB7 is activated on the phagosome by the Mon1-CCZ1 GEF complex which localizes to the phagosome by Atg8 homologue protein binding. {{#pmid: 30115558|Corona2018}} RAB7 can be localized to the lysosome by interaction with active lysosomal proton pumping vacuolar-type ATPase (V-ATPase). {{#pmid: 30717974 |Matsumoto2019}} Inits active conformation, RAB7 can bind RILP to promote minus-end directed microtubular transport of the lysosome towards the MTOC. {{#pmid: 12944476 |Wijdeven2016}}
+*'''Mon1-CCZ1''' (Mon1-CCZ1 GEF complex) is a component of the ''PHALY'' system. The Mon1-CCZ1 GEF complex is a GEF that activates Rab7 by exchanging bound GDP (inactive form) to GTP (active form).{{#pmid: 30115558|Corona2018}} It is found on both phagosome and lysosome membranes. {{#pmid: 30333976 |Stroupe2018}}
+:*'''MON1A''' [MON1A] (MON1 homolog A, secretory trafficking associated) is a component of the ''Mon1-CCZ1'' system. MON1A is one of two proteins in the heterooligomeric Mon1-CCZ1 GEF complex. {{#pmid: 30115558|Corona2018}}
+:*'''CCZ1''' [CCZ1] (CCZ1 homolog, vacuolar protein trafficking and biogenesis associated) is a component of the ''Mon1-CCZ1'' system. CCZ1 is one of two proteins in the heterooligomeric Mon1-CCZ1 GEF complex. {{#pmid: 30115558|Corona2018}}
+*'''GABARAPL1''' [GABARAPL1] (GABA type A receptor associated protein like 1) is a component of the ''PHALY'' system. GABARAPL1 is a ubiquitin-like modifier that binds to the Mon1-CCZ1 GEF complex and localizes it to the autophagosome.{{#pmid: 30115558|Corona2018}} As a yeast Atg8 family homologue (like MAP1LC3A), GABARAPL1 is a downstream effector of the mTOR pathway. Lipidation by phosphatidylethanolamine causes it to be enriched in the autophagosome membrane, where it serves as a scaffold to recruit other proteins to the membrane.  {{#pmid: 30767700 |Birgisdottir2019}}
+*'''EPG5''' [EPG5] (ectopic P-granules autophagy protein 5 homolog) is a component of the ''PHALY''. EPG5 is a RAB7 effector that localizes to both the phagosome and the lysosome by RAB7 binding, and binds to and enhances the SNAP29-STX17 Qabc-SNARE, thus facilitating VAMP8 binding. Binding of EPG5 shifts STX17 affinity from SNAP25 (without EPG5) to SNAP29 (with EPG5). EPG5 mutations cause Vici syndrome. {{#pmid: 30115558|Corona2018}}
+
+{{Vspace}}
+
+====Preparing the lysosome====
+{{Smallvspace}}
+*'''VAMP8''' [VAMP8] (vesicle associated membrane protein) is a component of the ''SNAP29-STX17-VAMP8 SNARE-pin''. VAMP8 is a component of the lysosome membrane. VAMP8 is the single v-SNARE (an R-SNARE) that is recruited into the Qabc-SNARE complex for fusion. This SNARE "pairing" forms a membrane-bridging trans-SNARE complex, the SNAP29-STX17-VAMP8 SNAREpin. Localization of VAMP8 to the lysosome is dependent on active RAB21. {{#pmid: 30115558|Corona2018}}RAB21 activation by SBF2 (a guanine nucleotide exchange factor for GTPases) under starvation conditions is an interface to nutrient sensing. {{#pmid: 25648148 |Jean2015}}
+*'''VAMP7''' [VAMP7] (vesicle associated membrane protein 7) is a component of the ''PHALY'' system. The v-SNARE '''VAMP7''' has been considered to be characteristic of secretory lysosomes.{{#pmid: 30240735 |Wang2018}} However, VAMP7 interacts with the VPS33A domain of HOPS complex and has been found to interact productively initiating fusion with the SNAP29-STX17 Qabc-SNARE by FRET. {{#pmid: 30655294 |Saleeb2019}} VAMP7 is part of the SNARE-pin with STX4 and SNAP23 in secretory lysosomes. {{#pmid: 28471021 |Spessott2017}} VAMP7 has an autoinhibitory longin domain that VAMP8 does not have.{{#pmid: 26567219 |Daste2015}}
+
+{{Vspace}}
+
+====Tether Proteins and Docking====
+{{Smallvspace}}
+*The '''SNAP29-STX17-VAMP8 SNARE-pin''' is a component of the ''PHALY'' system. Binding of the SNAP29-STX17 Qabc-SNARE with VAMP8 forms the initial SNAP29-STX17-VAMP8 SNARE-pin which bridges the phagosome and the lysosome.  This trans-SNARE complex (membrane bridging) is the fusion initiator which ultimately leads to "zippering" - membrane apposition, lipid mixing, pore-formation, membrane bilayer fusion, which results in the formation of the cis-SNARE complex (inserted into a single membrane), and bringing the cis-SNARE pin into a alpha-SNAP binding competent conformation. {{#pmid: 30115558|Corona2018}}{{#pmid: 25581794|Zhao2015}}
+*'''ATG14''' [ATG14] (Barkor, beclin 1-associated autophagy-related key regulator) is a component of the ''PIK3C3 complex''. ATG14 stimulates BECN1 phosphorylation.{{#pmid: 23878393 |Fogel2013}} ATG14 regulates the PIK3C3 complex.{{#pmid: 25686604|Diao2015}}. ATG14 binds to and stabilizes the SNAP29-STX17 Qabc-SNARE on the membrane. {{#pmid: 25686604 |Diao2015}} ATG14 homooligomers have a membrane-tethering function via their BATS domains (Barkor autophagosome targeting sequence), which is enhanced in membranes with low curvature and high PI(3)P. {{#pmid: 25686604 |Diao2015}}
+*The '''HOPS complex''' (homotypic fusion and protein sorting complex) is a component of the ''PHALY'' system. The HOPS complex is a hexa-heterooligomeric membrane tethering complex (MTC complex) that bridges two membranes containing RAB7 molecules in active conformation. It bridges vesicle and target membranes via its Rab7 binding domains and acts as a SNARE chaperone via a SNARE binding domain. It is the major "clamping" factor in SNARE mediated fusion. {{#pmid: 23645161 |Balderhaar2013}} The chaperoning function is crucial for topologically correct assembly of the trans-SNARE-pin, and prevention of reassembly of a cis-SNARE complex after SNARE disassembly by NSF-SNAP.{{#pmid: 27301672 |Baker2016}}  The BORC complex recruits the HOPS complex to the lysosomal membrane. The BORC complex functions by interacting with kinesins and determining the position of the lysosome by regulating the balance of (+)-end and (-)-end microtubular transport. One of its effectors is Arl8. The BORC complex comprises BLOC1S1, BLOC1S2, SNAPIN, KXD1, BORCS5, BORCS6, BORCS7, and BORCS8. {{#pmid: 25898167|Pu2015}}
+:*'''VPS16''' [VPS16] (VPS16 core subunit of CORVET and HOPS complexes) is a component of the ''HOPS complex''. VPS16 (Vacuolar Protein Sorting) is one of the four subunits that are common to the HOPS complex and the CORVET complex. It provides part of the SNARE-pin interaction interface. {{#pmid: 23645161 |Balderhaar2013}}
+:*'''VPS33A''' [VPS33A] (VPS33A core subunit of CORVET and HOPS complexes) is a component of the ''HOPS complex''. VPS33 (Vacuolar Protein Sorting) is one of the four subunits that are common to the HOPS complex and the CORVET complex. It provides part of the SNARE-pin interaction interface. {{#pmid: 23645161 |Balderhaar2013}} VPS33A is an SM protein (Sec1/Munc18 protein) which stabilizes the nascent SNARE bundle by interacting with both v-SNARES and t-SNARES. {{#pmid: 30655294 |Saleeb2019}} VPS33A interacts with a "closed form of STX17. {{#pmid: 30655294 |Saleeb2019}}
+:*'''VPS18''' [VPS18] (VPS18 core subunit of CORVET and HOPS complexes) is a component of the ''HOPS complex''. VPS18 (Vacuolar Protein Sorting) is one of the four subunits that are common to the HOPS complex and the CORVET complex. It does not interact with the SNARE-pin. {{#pmid: 23645161 |Balderhaar2013}}
+:*'''VPS11''' [VPS11] (VPS18 core subunit of CORVET and HOPS complexes) is a component of the ''HOPS complex''. VPS11 (Vacuolar Protein Sorting) is one of the four subunits that are common to the HOPS complex and the CORVET complex. It does not interact with the SNARE-pin. {{#pmid: 23645161 |Balderhaar2013}}
+:*'''VPS41''' [VPS41] (VPS41 subunit of HOPS complex) is a component of the ''HOPS complex''. VPS41 (Vacuolar Protein Sorting) is one of the two subunits that are specific to the HOPS complex. It provides one of two Rab7 interaction interfaces. {{#pmid: 23645161 |Balderhaar2013}}
+:*'''VPS39''' [VPS39] (VPS39 subunit of HOPS complex) is a component of the ''HOPS complex''. VPS39 (Vacuolar Protein Sorting) is one of the two subunits that are specific to the HOPS complex. It provides one of two Rab7 interaction interfaces. {{#pmid: 23645161 |Balderhaar2013}}
+
+
+{{Vspace}}
+
+====Lipids====
+{{Smallvspace}}
+
+*'''lipid rafts''' are a component of the ''PHALY'' system. Lipid rafts are required for autophagic flux and play a role in the fusion event. {{#pmid: 30115558|Corona2018}}
+:*'''cholesterol''' is a component of ''lipid rafts''. It provides specific binding domains and increases membrane thickness and stiffness. {{#pmid: 30747526 |Cheng2019}}
+*'''OSBPL1A''' [OSBPL1A] (Oxysterol binding protein like 1A) is a component of the ''PHALY'' system. OSBPL1A is a RAB7-GTP effector. In active form it interacts with cholesterol in lipd rafts through its ORD domain. This interaction recruits PLEKHM1 and through it the HOPS complex. In the absence of cholesterol, OSBPL1A interacts with VAPA via its FFAT domain.{{#pmid: 30115558|Corona2018}} This inhibits PLEKHM1 binding to RAB7, whereupon PLEKHM1 and RILP recruit HOPS complex.{{#pmid: 27283760 |Wijdeven2016}} The ER-bound VAPA protein can be bound by OSBPL1A via its FFAT domain.This interaction creates contact sites between the ER and the phagosome, which inhibits membrane tethers, microtubular transport, and  stalls the fusion process.{{#pmid: 30115558|Corona2018}}
+*The '''PIK3C3 complex''' (RUBCNL-UVRAG–BECN1,2–PIK3C3 complex) is a component of the ''PHALY'' system. The PIK3C3 complex creates phosphoinositide-3-phosphate at the phagosome-lysosome fusion site. It integrates a number of general (GPCR) signalling pathways. {{#pmid: 30704899 |Cheng2019}}
+:*'''PIK3C3''' [PIK3C3] (phosphatidylinositol 3-kinase catalytic subunit type 3) is a component of the ''PIK3C3 complex''. PIK3C3 (also: Vps34) produces phosphatidylinositol-3-phosphate (PI(3)P) from PI.{{#pmid: 29089378 |Naufer2018}}
+:*'''UVRAG''' [UVRAG] (UV radiation resistance associated) is a component of the ''PIK3C3 complex''. UVRAG increases RAB7 concentration in maturing endosomes. It provides an interface to the MTORC1 complex: phosporylation of UVRAG by MTORC1 causes it to sequester with RUBCN, away from the HOPS complex.{{#pmid: 30115558|Corona2018}}
+:*'''NRBF2''' [NRBF2] (nuclear receptor binding factor 2) is a component of the ''PIK3C3 complex''. NRBF2 inhibts PIK3C3 activity and thus reduces PI(3)P levels.{{#pmid: 25086043 |Zhong2014}}
+:*'''PIK3R4''' [PIK3R4] (phosphoinositide-3-kinase regulatory subunit 4) is a component of the ''PIK3C3 complex''. PK3R4 (also called Vps15) is a protein kinase that regulates PIK3C3.{{#pmid: 18326940 |Lindmo2008}}
+:*'''RUBCN''' [RUBCN] (rubicon autophagy regulator) is a component of the ''PIK3C3 complex''. RUBCN sequesters UVRAG away from the HOPS complex.{{#pmid: 30115558|Corona2018}}
+:*'''RUBCNL''' [RUBCNL] (rubicon like autophagy enhancer) is a component of the ''PIK3C3 complex''. RUBCNL (Pacer, protein associated with UVRAG as autophagy enhancer) releases UVRAG from RUBCN.{{#pmid: 30115558|Corona2018}}. RUBCNL also anchors PI3KC3 as well as HOPS to STX17. Its phosphorylation by mTORC1 integrates the mTOR pathway (active mTOR shuts down RUBCNL enhancement of the system); its acetylation by TIP60 integrates the GSK3-TIP60 pathway. {{#pmid: 30704899 |Cheng2019}}
+:*'''BECN1''' [BECN1] (Beclin 1) is a component of the ''PIK3C3 complex''. BECN1 (Beclin1) is a core component of the RUBCNL-UVRAG–BECN1,2–PIK3C3 complex.{{#pmid: 30115558|Corona2018}} Phosphorylation of BECN1 is stimulated by ATG14.{{#pmid: 23878393 |Fogel2013}}
+:*'''PLEKHM1''' [PLEKHM1] (pleckstrin homology and RUN domain containing M1) is a component of the ''PIK3C3 complex''. PLEKHM1 (Pleckstrin homology domain-containing family M member 1) is a multivalent adaptor that enhances HOPS complex / LC3 (Atg8) interactions in a RAB7 dependent way.{{#pmid: 30115558|Corona2018}}
+:*'''PI(3)P''' (phosphatidylinositol-3-phosphate) is a component of the ''PIK3C3 complex''. PI(3)P interfaces with many signalling pathways. It is produced at the phagosome by PIK3C3 in the PIK3C3 complex, and is further phosphorylated to PI(3,5)P by PIKfyve after dissociation of PIK3C3.{{#pmid: 29089378 |Naufer2018}} Degradation of PI(3)P to PI on phagosomes reduces autophagy.{{#pmid: 27340123 |Hasegawa2016}}
+*'''INPP5E''' [INPP5E] (inositol polyphosphate-5-phosphatase E) is a component of the ''PHALY'' system. INPP5E decreases lysosomal phosphatidylinositol 3,5-bisphosphate (PI(3,5)P2)  and increases PI(3)P and is required for the fusion event. Both an excess and a reduction of the PI(3)P to PI(3,5)P2 ratio inhibits fusion.{{#pmid: 27340123 |Hasegawa2016}}
+*The '''PIKFYVE complex''' (PIKFYVE complex) is a component of the ''PHALY'' system. The complex controls PI(3,5)P2 levels and consists of PIKFYVE, FIG4, VAC14 (ArPIKfyve), and WIPI1. {{#pmid: 28302928|Hasegawa2017}}
+:*'''PIKFYVE''' [PIKFYVE] (phosphoinositide kinase, FYVE-type zinc finger containing) is a component of the ''PIKFYVE complex''. PIKFYVE phosphorylates PI(3)P to PI(3,5)P2. Both an excess and a reduction of the PI(3)P to PI(3,5)P2 ratio inhibits fusion. {{#pmid: 27340123 |Hasegawa2016}}
+:*'''PI(3,5)P2''' (phosphatidylinositol-3,5-bisphosphate) is a component of the ''PIKFYVE complex''. (PI(3,5)P2) is produced by the action of PIKFYVE on PI3P. {{#pmid: 29089378 |Naufer2018}} PI(3,5)P2 counteracts cortactin mediated actin filament stabilization on lysosomes; actin on the lysosome surface is required for fusion.{{#pmid: 27340123 |Hasegawa2016}}
+
+
+{{Vspace}}
+
+====Cytoskeleton====
+{{Smallvspace}}
+*The '''RAB7-RILP-dynein-dynactin complex''' (RAB7-RILP-dynein-dynactin complex) is a component of the ''PHALY'' system. The RAB7-RILP-dynein-dynactin complex is responsible for minus-end transport of lysosomes along microtubules towards the MTOC, where most lysosomes are located.{{#pmid: 27283760 |Wijdeven2016}}
+*'''RILP''' [RILP] (Rab interacting lysosomal protein) is a component of the ''RAB7-RILP-dynein-dynactin complex''. RILP associates with RAB7-GTP; the complex promotes dynein-dynactin association with the membrane and subsequent transport.{{#pmid: 12944476 |Wijdeven2016}}
+*An '''F-actin network''' (actin filament network) is a component of the ''PHALY'' system. A cortactin dependent, remodelled, local filamentous actin network between the phagosome and the lysosome promotes fusion. {{#pmid: 27146966|Kruppa2016}}
+:*'''CTTN''' [CTTN] (cortactin) is a component of the ''F-actin network''. CTTN is a branch-stabilizing interactor that remodels the F-actin network, which is a fusion requirement by recruiting the ARP2/3 complex to the fusion site.{{#pmid: 27146966|Kruppa2016}}
+:*'''HDAC6''' [HDAC6] (histone deacetylase 6) is a component of the ''F-actin network''. HDAC6, a ubiquitin binding deacylase, recruits CTTN to the autophagosome.{{#pmid: 27146966|Kruppa2016}}
+:*'''ARP2/3 complex''' (ARP2/3 complex) is a component of the ''F-actin network''. The actin-nucleator '''ARP2/3 complex''' is a seven-subunit complex that can nucleate actin-filament branchpoints to establish a network. It stimulates the local assembly of an F-actin network for efficient fusion. It containes ARP2, ARP3, ARPC1, ARPC2, ARPC3, ARPC4, and ARPC5. {{#pmid: 27146966|Kruppa2016}}
+:*'''F-actin''' (filamentous actin) is a component of the ''F-actin network''. F-actin is a filament of ACTB (G-actin) monomers which is a scaffold for myosin-motors like the fusion-promoting MYO1C myosin to move on. {{#pmid: 27146966|Kruppa2016}}
+:*'''ACTB''' [ACTB] (actin beta) is a component of ''F-actin''. The cytoplasmic, soluble globular G-actin polymerizes in to a filamentous form: F-actin. {{#pmid: 27146966|Kruppa2016}}
+:*'''MYO1C''' [MYO1C] (myosin 1C) is a component of the ''F-actin network''. MYO1C is a monomeric class I myosin, which associates with cholesterol lipid rafts. It contains a PH domain that binds specifically to PI(4,5)P2. It is a "slow" motor, ideal for translocating heavy cargos, not tethering, and thus is able to move lipid rafts from storage compartments to their site of action. {{#pmid: 27146966|Kruppa2016}}
+:*'''PI(4,5)P2''' (phosphatidylinositol-4,5-bisphosphate) is a component of the ''F-actin network''. PI(4,5)P2 clusters at lipid rafts in a cholesterol and Ca2+ dependent fashion. These clusters bind the ARP2/3 complex. {{#pmid: 30692198 |Bucki2019}}
+
+
+{{Vspace}}
+
+====Ion regulation====
+{{Smallvspace}}
+
+*'''Ca2+''' (calcium ion) is a component of the ''PHALY'' system. Ca2+ is required to stabilize the SNAREpin. {{#pmid: 30115558|Corona2018}}
+*'''CACNA1A''' [CACNA1A] (Voltage-dependent P/Q-type calcium channel subunit alpha-1A) is a component of the ''PHALY'' system. The lysosome resident population of voltage-gated calcium channel CACNA1A is required for calcium efflux from the lysosome for the fusion event. {{#pmid: 30115558|Corona2018}}
+
+
+{{Vspace}}
+
+====Fusion mechanism====
+{{Smallvspace}}
+
+*A '''SNAREpin team''' is a component of the ''PHALY'' system. NOTE. From three to six SNAP29-STX17-VAMP8 SNARE-pins form a mechanically coupled SNAREpin team in a rigid membrane (cholesterol lipid-raft) which accelerates fusion by four orders of magnitude. {{#pmid: 30700546 |Manca2019}}
+
+
+{{Vspace}}
+
+====Disassembly and recycling====
+{{Smallvspace}}
+*The '''20s supercomplex''' is a component of the ''PHALY'' system. This complex forms around the cis-SNARE complex, by binding two to four molecules of alpha-SNAP and an NSF homohexamer to the cis-SNARE-pin.{{#pmid: 25581794|Zhao2015}}
+*'''alpha-SNAP''' [NAPA] (NSF attachment protein alpha) is a component of the ''20s supercomplex''. Two to four molecules of cytoplasmic alpha-SNAP wrap around the cis-SNARE-pin to form a SNAP-SNARE subcomplex. {{#pmid: 25581794|Zhao2015}}
+*'''NSF''' [NSF] (N-ethylmaleimide sensitive factor) is a component of the ''20s supercomplex''. NSF is a cytoplasmic AAA+ ATPase that binds to the SNAP-SNARE subcomplex in an ATP-bound state. Subsequent ATP hydrolysis induces major conformational rearrangements of NSF that disassociate the SNARE-pin into individual constituent molecules. Nucleotide exchange presumably disassociates the remaining NSF-SNAP subcomplex, and allows the cycle to restart.{{#pmid: 25581794|Zhao2015}}
+*'''TBC1D2''' [TBC1D2] (TBC1 domain family member 2A) is a component of the ''PHALY'' system. TBC1D2 (Armus) is a RAB7 specific GAP that activates hydrolysis of RAB7 bound GTP to GDP and thus catalyzes conversion of RAB7 to its inactive state. {{#pmid: 30333976 |Stroupe2018}}
+
+----
+
+{{Vspace}}
+
