@@ -9,8 +9,22 @@
 #          This file assiste you in moving information from Wikitext to
 #          an Excel spreadsheet in which you keep initial collected data.
 #
-# Version: 1.0
-# Date:    2019-03-01
+# Version:  1.1
+#
+# Versions: 1.1 If no NAME is present, the name is taken from COMPONENT.
+#               NAME is only searched for in the first sentence.
+#               Template {{Unpublished}} is recognized as alternative to
+#                 {{#pmid: ...}}
+#               Bugfix: If COMPONENT contained parentheses ( e.g. PI(3,5)P2) )
+#                       these were interpreted as NAME. Solution: search for
+#                       NAME and SYMBOL only in the string after the
+#                       COMPONENT.
+#               Bugfix: If there was a period after the pmid tag, it was
+#                       retained. Solution: correct regex to remove it.
+#
+#           1.0 First release
+#
+# Date:    2019-03-03
 # Author:  Boris Steipe <boris.steipe@utoronto.ca>
 # ORCID:                <https://orcid.org/0000-0002-1134-6758>
 # License: MIT
@@ -103,14 +117,28 @@ facts <- data.frame(comp = character(l),
 for (i in 1:l) {
   s <- txt[i]
   facts$comp[i] <- getMatch("'''([^']+)'''", s)            # '''text'''
-  facts$symb[i] <- getMatch("\\[([^\\]]+)\\]", s)          #   [text]
-  facts$name[i] <- getMatch("\\(([^\\)]+)\\)", s)          #   (text)
-  facts$syst[i] <- getMatch("[^']''([^']+)''[^']", s)      # '''text'''
+
+  s2 <- getMatch("'''[^']+'''([^\\.]+)\\.", s)
+  facts$symb[i] <- getMatch("\\[([^\\]]+)\\]", s2)          #   [text] in s2
+
+  #   (text) in s2 only. If NA, use facts$comp[i]
+  facts$name[i] <- getMatch("\\(([^\\)]+)\\)", s2)
+  if (is.na(facts$name[i])) {
+    facts$name[i] <- facts$comp[i]
+  }
+
+  facts$syst[i] <- getMatch("[^']''([^']+)''[^']", s)      # ''text''
+
+  # pmid or "Unpublished"
   facts$pmid[i] <- getMatch("\\{\\{#pmid:\\s*([0-9]+)", s) #{{#pmid: text
+  if (is.na(facts$pmid[i])) {
+    facts$pmid[i] <- getMatch("\\{\\{(Unpublished)", s)
+  }
   facts$note[i] <- getMatch("\\.\\s+(.+)$", s)             #  . text
 
   facts$note[i] <- gsub("\\.*\\s*\\{\\{#pmid:\\s*", " (pmid:", facts$note[i])
-  facts$note[i] <- gsub("\\s*\\|.+?\\}\\}", "). ", facts$note[i])
+  facts$note[i] <- gsub("\\.*\\s*\\{\\{Unpublished", " (Unpublished", facts$note[i])
+  facts$note[i] <- gsub("\\s*\\|.+?\\}\\}\\s?(\\.?)", "). ", facts$note[i])
 }
 
 # Check:
