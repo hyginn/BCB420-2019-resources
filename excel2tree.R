@@ -32,7 +32,7 @@
 # ====  PARAMETERS  ============================================================
 
 list.files(pattern = "\\.xlsx")
-FN      <- "BCB420-2019-System-PHALY-0.2.xlsx"
+FN      <- "BCB420-2019-System-PHALY-0.3.xlsx"
 
 SEP <- ":" # A character that does not appear in system or component codes
 DEPTHMAX <- 20  # a safety net to cacth cyclical expansion

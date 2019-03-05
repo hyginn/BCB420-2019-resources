@@ -9,9 +9,13 @@
 #          This file assiste you in moving information from Wikitext to
 #          an Excel spreadsheet in which you keep initial collected data.
 #
-# Version:  1.1
+# Version:  1.2
 #
-# Versions: 1.1 If no NAME is present, the name is taken from COMPONENT.
+# Versions: 1.2  Bugfix: TSV output for the systems table should write only
+#                        the composed components. (Noted and patched by
+#                        Rachel Silverstein.)
+#
+#           1.1 If no NAME is present, the name is taken from COMPONENT.
 #               NAME is only searched for in the first sentence.
 #               Template {{Unpublished}} is recognized as alternative to
 #                 {{#pmid: ...}}
@@ -170,7 +174,7 @@ for (i in 1:l) {
 # (type <ctrl>-l to clear the console)
 mySys <- unique(facts$syst)
 sel <- facts$comp %in% mySys
-cat(sprintf("\n%s\t%s", c(SYSCODE, facts$comp), c(NA, facts$name)))
+cat(sprintf("\n%s\t%s", c(SYSCODE, facts$comp[sel]), c(NA, facts$name[sel])))
 cat("\n\n")
 
 
