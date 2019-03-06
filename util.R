@@ -321,13 +321,13 @@ getTypeID <- function(DB, key) {
 getSystemID <- function(DB, key) {
   isThisKey <- DB$system$code == key
   stopifnot(sum(isThisKey) == 1)
-  return(DB$system$code[isThisKey])
+  return(DB$system$ID[isThisKey])
 }
 
 getComponentID <- function(DB, key) {
   isThisKey <- DB$component$code == key
   stopifnot(sum(isThisKey) == 1)
-  return(DB$component$code[isThisKey])
+  return(DB$component$ID[isThisKey])
 }
 
 
