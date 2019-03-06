@@ -223,10 +223,7 @@ cat("\n\n")
 #                    table.
 #  - Add a SyRO role to each systemComponent.
 #  - Add a molecule type to each atomic component:
-#    (protein | RNA | lipid | metabolite)
-
-# Next code to follow: turn spreadsheet into JSON.
-
+#    (protein | RNA | lipid | metabolite | concept)
 
 
 # ====  TESTS  =================================================================

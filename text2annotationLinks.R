@@ -204,7 +204,7 @@ for (i in seq_along(mySys)) {
     ucsc <- HGNC[symb, "UCSCID"]
     ncbi <- HGNC[symb, "GeneID"]
 
-    out <- c(out, sprintf("  <tr class=\"%d\">", j %% 2 + 1))
+    out <- c(out, sprintf("  <tr class=\"s%d\">", j %% 2 + 1))
     out <- c(out, sprintf("    <td>[https://www.genenames.org/tools/search/#!/all?query=%s '''%s''']</td>", symb, symb))
     out <- c(out, sprintf("    <td>%s</td>", name))
     out <- c(out, sprintf("    <td>[https://www.uniprot.org/uniprot/%s %s]</td>", uprt, uprt))
