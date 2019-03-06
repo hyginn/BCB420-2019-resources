@@ -260,7 +260,7 @@ for (i in 1:nrow(XL$component)) {
     myDB$note[nrow(myDB$note) + 1, ] <- data.frame(
       ID = fetchQQ(1),
       targetID = thisComponentID,
-      typeID = getTypeID(myDB, "genericNote"),
+      typeID = getIDforKey(myDB$type, "name", "genericNote"),
       note = XL$component$notes[i],
       stringsAsFactors = FALSE)
   }
@@ -270,8 +270,12 @@ for (i in 1:nrow(XL$systemComponent)) {
   # process the systemComponent join table
   myDB$systemComponent[nrow(myDB$systemComponent) + 1, ] <- data.frame(
     ID = fetchQQ(1),
-    systemID = getSystemID(myDB, XL$systemComponent$systemCode[i]),
-    componentID = getComponentID(myDB, XL$systemComponent$componentCode[i]),
+    systemID = getIDforKey(myDB$system,
+                           "code",
+                           XL$systemComponent$systemCode[i]),
+    componentID = getIDforKey(myDB$component,
+                              "code",
+                              XL$systemComponent$componentCode[i]),
     evidenceType = XL$systemComponent$evidence[i],
     evidenceSource = XL$systemComponent$evidenceSource[i],
     role = XL$systemComponent$role[i],

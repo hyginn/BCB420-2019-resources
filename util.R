@@ -312,23 +312,12 @@ initSysDB <- function() {
   return(sysDB)
 }
 
-getTypeID <- function(DB, key) {
-  isThisKey <- DB$type$name == key
+getIDforKey <- function(DBtable, column, key) {
+  isThisKey <- DBtable[ , column] == key
   stopifnot(sum(isThisKey) == 1)
-  return(DB$type$ID[isThisKey])
+  return(DBtable[isThisKey, "ID"])
 }
 
-getSystemID <- function(DB, key) {
-  isThisKey <- DB$system$code == key
-  stopifnot(sum(isThisKey) == 1)
-  return(DB$system$ID[isThisKey])
-}
-
-getComponentID <- function(DB, key) {
-  isThisKey <- DB$component$code == key
-  stopifnot(sum(isThisKey) == 1)
-  return(DB$component$ID[isThisKey])
-}
 
 
 
