@@ -9,9 +9,11 @@
 #          This file assiste you in moving information from Wikitext to
 #          an Excel spreadsheet in which you keep initial collected data.
 #
-# Version:  1.2
+# Version:  1.3
 #
-# Versions: 1.2  Bugfix: TSV output for the systems table should write only
+# Versions: 1.3  Add support for non-PubMed database sources.
+#
+#           1.2  Bugfix: TSV output for the systems table should write only
 #                        the composed components. (Noted and patched by
 #                        Rachel Silverstein.)
 #
@@ -44,7 +46,9 @@
 #           associated fact.
 #          Notes are all taken together, not split into separate facts.
 #          Publications are identified by their PMID.
-#          The first PMID is the reference publication
+#          The first PMID is the reference publication.
+#          Other data sources are processed when presented as
+#          {{DB|<database>|<ID>}} tags.
 #
 # Output:  tab-separated text printed to the console. The output can be copied
 #          and pasted into an Excel spreadsheet.
@@ -135,13 +139,19 @@ for (i in 1:l) {
 
   # pmid or "Unpublished"
   facts$pmid[i] <- getMatch("\\{\\{#pmid:\\s*([0-9]+)", s) #{{#pmid: text
-  if (is.na(facts$pmid[i])) {
+  if (is.na(facts$pmid[i])) { # try to match "Unpublished"
     facts$pmid[i] <- getMatch("\\{\\{(Unpublished)", s)
+  }
+  if (is.na(facts$pmid[i])) { # Try to match database template
+    facts$pmid[i] <- getMatch("\\{\\{DB\\|([^}]+)", s)
+    facts$pmid[i] <- gsub("\\s", "", facts$pmid[i])
+    facts$pmid[i] <- gsub("\\|", ":", facts$pmid[i])
   }
   facts$note[i] <- getMatch("\\.\\s+(.+)$", s)             #  . text
 
   facts$note[i] <- gsub("\\.*\\s*\\{\\{#pmid:\\s*", " (pmid:", facts$note[i])
   facts$note[i] <- gsub("\\.*\\s*\\{\\{Unpublished", " (Unpublished", facts$note[i])
+  facts$note[i] <- gsub("\\.*\\s*\\{\\{DB\\s*\\|\\s*([^\\| ]+)\\s*\\|", " (\\1:", facts$note[i])
   facts$note[i] <- gsub("\\s*\\|.+?\\}\\}\\s?(\\.?)", "). ", facts$note[i])
 }
 
