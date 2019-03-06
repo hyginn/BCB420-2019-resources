@@ -3,16 +3,16 @@
 
 # === Packages =================================================================
 
-if (! requireNamespace("writexl", quietly = TRUE)) {
-  install.packages("writexl")
-}
+# if (! requireNamespace("writexl", quietly = TRUE)) {
+#   install.packages("writexl")
+# }
 
 if (! requireNamespace("readxl", quietly = TRUE)) {
   install.packages("readxl")
 }
 
 if (! requireNamespace("qrandom", quietly = TRUE)) {
-  install.packages("devtools")
+  install.packages("qrandom")
 }
 
 
@@ -222,86 +222,113 @@ QQID <- function(n = 1) {
 }
 
 
+makeFetchQQ <- function() {
+  # Fetch QQIDs from cached store. This closure keeps a cache of new QQIDs from
+  # which it shifts IDs when required. A call to the ANU server will only be
+  # triggered when the cache is depleted.
+  nBatch <- 1023  # largest batch that qrandom::qrandom will fetch in one call
+  QQ <- QQID(nBatch)
+  return(function(n = 1) {
+    # shift elements from QQ, replenish QQ when it gets smaller than n
+    if (length(QQ) < n) {
+      QQ <<- c(QQ, QQID(nBatch))
+    }
+    x <- QQ[1:n]
+    QQ <<- QQ[-(1:n)]
+    return(x)
+  })
+}
 
-# makeFetchQQ <- function() {
-#   # Fetch QQIDs from cached store. This closure keeps a cache of new QQIDs from
-#   # which it shifts IDs when required. A call to the ANU server will only be
-#   # triggered when the cache is depleted.
-#   nBatch <- 1023  # largest batch that qrandom::qrandom will fetch in one call
-#   QQ <- QQID(nBatch)
-#   return(function(n = 1) {
-#     # shift elements from QQ, replenish QQ when it gets smaller than n
-#     if (length(QQ) < n) {
-#       QQ <<- c(QQ, QQID(nBatch))
-#     }
-#     x <- QQ[1:n]
-#     QQ <<- QQ[-(1:n)]
-#     return(x)
-#   })
-# }
-
-# fetchQQ <- makeFetchQQ()
-# rm(makeFetchQQ) # Clean up - we needed this factory function only once per
-#                 # session to create the makeFetchQQ() closure.
+fetchQQ <- makeFetchQQ()
+rm(makeFetchQQ) # Clean up - we needed this factory function only once per
+                # session to create the makeFetchQQ() closure.
 
 
-# === Initialize a system spreadsheet
-# initSysXl <- function(FN = "BCB420-2019-System-XXXXX-0.0.xlsx") {
-#
-#   sysXl <- list()
-#   sysXl$system <- data.frame(ID = fetchQQ(),
-#                              name = "<name>",
-#                              code = "<ABCPQ>",
-#                              def = "<short definition>",
-#                              description = "<full description>",
-#                              stringsAsFactors = FALSE)
-#   N <- 5
-#   sysXl$systemComponent <- data.frame(ID = fetchQQ(N),
-#                                       systemID = rep(sysXl$system$ID[1], N),
-#                                       componentID = fetchQQ(N),
-#                                       role = NA_character_,
-#                                       description = NA_character_,
-#                                       stringsAsFactors = FALSE)
-#
-#   sysXl$componentSystem <- data.frame(ID = fetchQQ(N),
-#                                       componentID = NA_character_,
-#                                       systemID = NA_character_,
-#                                       stringsAsFactors = FALSE)
-#
-#   sysXl$component <- data.frame(ID = sysXl$systemComponent$componentID[1:N],
-#                                 name = NA_character_,
-#                                 type = NA_character_,
-#                                 stringsAsFactors = FALSE)
-#
-#   sysXl$componentMolecule <- data.frame(ID = fetchQQ(N),
-#                                         componentID = NA_character_,
-#                                         moleculeID = NA_character_,
-#                                         stringsAsFactors = FALSE)
-#
-#   sysXl$molecule <- data.frame(ID = fetchQQ(N),
-#                                name = NA_character_,
-#                                type = NA_character_,
-#                                structure = NA_character_,
-#                                stringsAsFactors = FALSE)
-#
-#   sysXl$geneProduct <- data.frame(ID = fetchQQ(N),
-#                                     geneID = NA_character_,
-#                                     moleculeID = NA_character_,
-#                                     stringsAsFactors = FALSE)
-#
-#   sysXl$gene <- data.frame(ID = fetchQQ(N),
-#                            symbol = NA_character_,
-#                            name = NA_character_,
-#                            type = NA_character_,
-#                            stringsAsFactors = FALSE)
-#
-#   sysXl$QQIDs <- data.frame(ID = fetchQQ(100),
-#                             stringsAsFactors = FALSE)
-#
-#   writexl::write_xlsx(sysXl, path = FN)
-#
-# }
+#=== Function to initialize a system datamodel
 
+
+initSysDB <- function() {
+  # initialize a systems database
+  initFile <- "sysDB_init_2.1.0.xlsx"
+  sysDB <- list()
+  sysDB$parameter <- as.data.frame(readxl::read_excel(initFile,
+                                                      sheet = "parameter"))
+  sysDB$type <- as.data.frame(readxl::read_excel(initFile,
+                                                      sheet = "type"))
+
+  sysDB$system <- data.frame(ID = character(),
+                             code = character(),
+                             name = character(),
+                             def = character(),
+                             description = character(),
+                             stringsAsFactors = FALSE)
+
+  sysDB$systemComponent <- data.frame(ID = character(),
+                                      systemID = character(),
+                                      componentID = character(),
+                                      evidenceType = character(),
+                                      evidenceSource = character(),
+                                      role = character(),
+                                      notes = character(),
+                                      stringsAsFactors = FALSE)
+
+  # sysDB$componentSystem <- data.frame(ID = character(),
+  #                                     componentID = character(),
+  #                                     systemID = character(),
+  #                                     stringsAsFactors = FALSE)
+
+  sysDB$component <- data.frame(ID = character(),
+                                code = character(),
+                                componentType = character(),
+                                stringsAsFactors = FALSE)
+
+  sysDB$componentMolecule <- data.frame(ID = character(),
+                                        componentID = character(),
+                                        moleculeID = character(),
+                                        stringsAsFactors = FALSE)
+
+  sysDB$molecule <- data.frame(ID = character(),
+                               name = character(),
+                               moleculeType = character(),
+                               structure = character(),
+                               stringsAsFactors = FALSE)
+
+  sysDB$geneProduct <- data.frame(ID = character(),
+                                    geneID = character(),
+                                    moleculeID = character(),
+                                    stringsAsFactors = FALSE)
+
+  sysDB$gene <- data.frame(ID = character(),
+                           symbol = character(),
+                           name = character(),
+                           stringsAsFactors = FALSE)
+
+  sysDB$note <- data.frame(ID = character(),
+                           targetID = character(),
+                           typeID = character(),
+                           note = character(),
+                           stringsAsFactors = FALSE)
+
+  return(sysDB)
+}
+
+getTypeID <- function(DB, key) {
+  isThisKey <- DB$type$name == key
+  stopifnot(sum(isThisKey) == 1)
+  return(DB$type$ID[isThisKey])
+}
+
+getSystemID <- function(DB, key) {
+  isThisKey <- DB$system$code == key
+  stopifnot(sum(isThisKey) == 1)
+  return(DB$system$code[isThisKey])
+}
+
+getComponentID <- function(DB, key) {
+  isThisKey <- DB$component$code == key
+  stopifnot(sum(isThisKey) == 1)
+  return(DB$component$code[isThisKey])
+}
 
 
 
