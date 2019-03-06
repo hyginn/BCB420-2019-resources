@@ -1,0 +1,3162 @@
+{"parameter":[{
+"ID":"dame.left-7a1-9ff7-2582-3b5a-b2094984aaa2",
+"typeID":"chop.cool-4d3-8407-c9d2-0b38-5b069be72da0",
+"value":"2.1.1"}],
+
+"type":[{
+"ID":"chop.cool-4d3-8407-c9d2-0b38-5b069be72da0",
+"name":"DBversion",
+"description":"Version of the systems database schema",
+"validation":"^\\\\d+\\\\.\\\\d+\\\\.\\\\d+$"
+},
+{
+"ID":"suit.tang-e32-67a8-4e32-1abb-c9e75ce1f2c1",
+"name":"componentType",
+"description":"Type of the component: atomic or composed",
+"validation":"^(atomic)|(composed)$"
+},
+{
+"ID":"cash.mare-ecf-5799-0f92-19ce-514bce3b5276",
+"name":"molType",
+"description":"The type of an atomic component",
+"validation":"^(protein)|(RNA)|(lipid)|(metabolite)|(concept)|(other)$"
+},
+{
+"ID":"wail.help-74b-baea-9c82-2adb-86e613d00ea2",
+"name":"xRefUniProt",
+"description":"Cross-reference UniProt KB ID",
+"validation":"^UniProt:[0-9A-Z_]+$"
+},
+{
+"ID":"coup.thus-73e-1292-0442-a97f-825167430bb5",
+"name":"xRefENST",
+"description":"Cross-reference Ensembl Transcript ID",
+"validation":"^ENST:\\\\d+$"
+},
+{
+"ID":"when.lute-8f9-b1e1-0ce2-1bd7-e861591869fb",
+"name":"xRefENSE",
+"description":"Cross-reference Ensembl Exon ID",
+"validation":"^ENSE:\\\\d+$"
+},
+{
+"ID":"gems.bird-2b4-0370-b092-da6f-a1ca41435587",
+"name":"xRefENSG",
+"description":"Cross-reference Ensembl Gene ID",
+"validation":"^ENSG:\\\\d+$"
+},
+{
+"ID":"time.barn-768-97b6-7962-684c-6cbd7d366979",
+"name":"xRefENSP",
+"description":"Cross-reference Ensembl Protein ID",
+"validation":"^ENSP:\\\\d+$"
+},
+{
+"ID":"warm.mate-bad-125f-a2a2-4b13-edefc11e1df0",
+"name":"xRefPMID",
+"description":"PubMed ID",
+"validation":"^PMID:\\\\d+$"
+},
+{
+"ID":"ribs.bolt-da3-5f2e-3ae2-5940-0b361a01abff",
+"name":"xRefHGNC",
+"description":"HGNC symbol",
+"validation":"^HGNC:.+$"
+},
+{
+"ID":"know.palm-46d-6143-b892-184d-0d3a420d31db",
+"name":"xRefRefSeq",
+"description":"RefSeq ID",
+"validation":"^RefSeq:.._\\\\d+(\\\\.\\\\d+)?$"
+},
+{
+"ID":"mall.case-f26-4df1-e892-9b70-380b2672a009",
+"name":"xRefUCSC",
+"description":"UCSC ID",
+"validation":"^UCSC:uc[0-9a-z]+(\\\\.\\\\d+)?$"
+},
+{
+"ID":"cork.span-2a0-f809-4182-49e2-2b3ce58c8710",
+"name":"xRefNCBIgene",
+"description":"NCBI gene ID",
+"validation":"^gene:\\\\d+$"
+},
+{
+"ID":"coat.curl-eab-3beb-e8e2-4aae-5e0f2235619c",
+"name":"xRefOMIM",
+"description":"OMIM ID",
+"validation":"^OMIM:\\\\d+$"
+},
+{
+"ID":"logs.nice-b29-62f6-c1d2-29f4-87bdb7e996ab",
+"name":"xRefPDB",
+"description":"PDB ID with optional chain separated with \".\" or \"_\"",
+"validation":"^PDB:[0-9][0-9A-Za-z]{3}([\\\\._][0-9A-Za-z])?$"
+},
+{
+"ID":"snow.gram-8a2-cb70-96e2-daba-61933e196c9b",
+"name":"genericNote",
+"description":"Free-text annotation of an entity",
+"validation":".+"
+},
+{
+"ID":"pure.heal-c14-7e5a-65b2-ebbe-d822be29e26c",
+"name":"historyNote",
+"description":"Information on a superseded entity",
+"validation":".+"
+},
+{
+"ID":"seat.fate-150-9459-c452-3a15-98518ebcd683",
+"name":"geneType",
+"description":"Gene  type as defined by HGNC",
+"validation":"^(immunoglobulin)|(lncRNA)|(miRNA)|(protein)|(protocadherin)|(RNA, cluster)|(RNA, misc)|(rRNA)|(scRNA)|(snoRNA)|(snRNA)|(TCR)|(tRNA)|(vtRNA)|(Y RNA)$"}],
+
+"system":[{
+"ID":"veil.meet-f5f-805d-bba2-bb29-0edad0c456e0",
+"code":"PHALY",
+"name":"Phagosome/Lysosome Fusion",
+"def":"control and process of phagosome-lysosome docking and fusion.",
+"description":"Phagosome-lysosome fusion is a key step in autophagy, the process in which a lysosome - a package of acidic, lytic enzymes - fuses to a phagosome that has enveloped some cargo, which is targeted for degradation and recycling. The fusion is a highly regulated process, involving the preparation of lipid microdomains, positioning of vesicles by dynein motors that move along the cytoskeleton, membrane anchored SNAREs that provide core docking functions, the facilitating CORVET, HOPS and BORC complexes, and precise regulation of fusion initiation at the protein level, the lipid level, and through the ionic context which involves calcium-selective voltage gated channels."
+},
+{
+"ID":"sole.bump-6e6-b2b8-2cf2-b981-459159806b4c",
+"code":"autophagosome",
+"name":"autophagosome",
+"def":"a phagosome that sequesters cell-internal material",
+"description":"Autophagosomes digest cell-internal material for general maintenance and under nutrient stress conditions."
+},
+{
+"ID":"chow.whip-dcb-f069-d4f2-bb39-0e97bc540e4c",
+"code":"LC3-II",
+"name":"LC3-II",
+"def":"lipidated LC3",
+"description":"Prenylated LC3 is membrane resident on phagosomes and lysosomes."
+},
+{
+"ID":"dawn.mime-c50-851e-02e2-2a82-72bb8a7d6421",
+"code":"SNAP29-STX17 Qabc-SNARE",
+"name":"SNAP29-STX17 Qabc-SNARE",
+"def":"t-snare bundle",
+"description":"Contains three of the four required helices on the target side."
+},
+{
+"ID":"role.mind-381-05f4-dd92-a88d-7a33da1f2f20",
+"code":"Mon1-CCZ1",
+"name":"Mon1-CCZ1 GEF complex",
+"def":"GEF for Rab7",
+"description":"Activates Rab7 by catalyzing the GDP-GTP exchange"
+},
+{
+"ID":"lurk.gill-610-a07c-cfe2-d850-9c3dfece54ff",
+"code":"ULK1 complex",
+"name":"ULK1 complex",
+"def":"heterotrimeric nutrient status sensor complex",
+"description":"The ULK1 complex integrates a large number of cellular systems: the mTOR pathway, AMPK as an effector of AMP homeostasis, growth factor pathways acting via TIP60, genotoxic stress response via PPM1D, protein biosynthesis, and response attenuation during prolonged starvation via the cullin E3 ligase."
+},
+{
+"ID":"harp.swap-c7d-1637-b042-b9c7-c6ed9d1e55bf",
+"code":"lysosome",
+"name":"lysosome",
+"def":"a vesicle that contains acidic, lytic enzymes",
+"description":"The cargo of the lysosome is evacuated into the phagosome after fusion and digests the phagosome's contents."
+},
+{
+"ID":"time.hair-4a5-c374-15d2-79e6-bcb1e4b07f1e",
+"code":"SNAP29-STX17-VAMP8 SNARE-pin",
+"name":"SNAP29-STX17-VAMP8 SNARE-pin",
+"def":"four-helix bundle SNARE",
+"description":"The SNARE pin is a trans-SNARE complex as it juxtaposes the membranes to be fused, and turns into a cis-SNARE complex after fusion."
+},
+{
+"ID":"mule.shim-43d-7420-8872-187e-aead2271cf16",
+"code":"STX17bound",
+"name":"Syntaxin 17 (membrane bound)",
+"def":"Syntaxin 17 (membrane bound)",
+"description":"Membrane bound form of the Q-SNARE syntaxin 17"
+},
+{
+"ID":"gait.node-c38-55ac-b242-caf2-466b0c3b828b",
+"code":"RAB7active",
+"name":"RAB7 (active)",
+"def":"active, membrane bound RAB7",
+"description":"The active (GTP bound) form of RAB7, prenylated and membrane bound."
+},
+{
+"ID":"both.dirt-d39-92d4-07b2-399b-7aee9ec4e79a",
+"code":"HOPS complex",
+"name":"homotypic fusion and protein sorting complex",
+"def":"a hexa-heterooligomeric membrane tethering complex (MTC complex)",
+"description":"A tethering complex that bridges phagosome and lysosome via RAB7 and functions as a SNAREpin chaperone."
+},
+{
+"ID":"plum.prey-485-c5b7-a6c2-a884-c31a21fb8949",
+"code":"lipid rafts",
+"name":"lipid rafts",
+"def":"cholesterol enriched membrane subdomains",
+"description":"Lipid raft subdomains are cholesterol rich patches in membranes that are foci of signalling activity."
+},
+{
+"ID":"hoop.rent-8a6-d6aa-d1a2-79d4-b3547bf9af39",
+"code":"PIK3C3 complex",
+"name":"RUBCNL-UVRAG–BECN1,2–PIK3C3 complex",
+"def":"PIK3C3 complex",
+"description":"The PIK3C3 kinase complex creates phosphoinositide-3-phosphate at the phagosome-lysosome fusion site."
+},
+{
+"ID":"rake.fork-fb3-bf5c-f622-d91b-f7206c000a43",
+"code":"PIKFYVE complex",
+"name":"PIKFYVE complex",
+"def":"PI(3)P-5 kinase",
+"description":"PIKFYVE phosphorylates PI(3)P to PI(3,5)P2. Both an excess and a reduction of the PI(3)P to PI(3,5)P2 ratio inhibits fusion"
+},
+{
+"ID":"same.tone-1a7-c3d4-e892-4b58-4b2730508331",
+"code":"RAB7-RILP-dynein-dynactin complex",
+"name":"RAB7-RILP-dynein-dynactin complex",
+"def":"vesicle-cytoskeleton connector",
+"description":"The RAB7-RILP-dynein-dynactin complex is responsible for minus-end transport of lysosomes along microtubules towards the MTOC, where most lysosomes are located."
+},
+{
+"ID":"text.just-5f6-713c-2622-4878-040fe741cf4d",
+"code":"F-actin network",
+"name":"actin filament network",
+"def":"actin network",
+"description":"A network of branched actin filaments. The branch points are constituted from the Arp2/3 complex."
+},
+{
+"ID":"tale.swap-5bf-88d2-3d72-497c-5e8e34bf466b",
+"code":"F-actin",
+"name":"filamentous actin",
+"def":"actin filament",
+"description":"F-actin is a filament that forms by polymerization of actin monomers."
+},
+{
+"ID":"hope.nets-852-5ee0-e1f2-b89c-c98bb21e7772",
+"code":"20s supercomplex",
+"name":"20s supercomplex",
+"def":"SNARE unfoldase",
+"description":"The 20s supercomplex forms around the cis-SNARE complex, by binding two to four molecules of alpha-SNAP and an NSF homohexamer to the cis-SNARE-pin"
+},
+{
+"ID":"yarn.hymn-3e3-6613-b142-fb92-3eebc52a642a",
+"code":"NOT IN PHALY",
+"name":"NOT IN PHALY",
+"def":"External to PHALY",
+"description":"Genes that are members of PHALY component protein families and/or interact with PHALY components but are not themselves a part of PHALY."}],
+
+"systemComponent":[{
+"ID":"girl.last-1d0-5b6c-f452-9948-a6b11f3bc249",
+"systemID":"PHALY",
+"componentID":"autophagosome",
+"evidenceType":"TAS",
+"evidenceSource":"30115558",
+"role":"input",
+"notes":"Fusion is the process of joining the outer phagosomal membrane of the autophagosome  with the membrane of a lysosome (pmid:30115558).  The outer autophagosomal membrane (OAM) and the inner autophagosomal membrane (IAM) form by membrane fission after closure of the phagosomal sac (pmid:27885029)."
+},
+{
+"ID":"rush.sore-fb6-bad9-5e22-f879-0095bf74ea0e",
+"systemID":"autophagosome",
+"componentID":"OAM",
+"evidenceType":"TAS",
+"evidenceSource":"27885029",
+"role":"location",
+"notes":"The outer autophagosomal membrane (OAM) forms by membrane fission after closure of the phagosomal sac (pmid:27885029)."
+},
+{
+"ID":"sees.page-2c9-004d-9d62-4b2d-4a487ec06bf5",
+"systemID":"autophagosome",
+"componentID":"IAM",
+"evidenceType":"TAS",
+"evidenceSource":"27885029",
+"role":"location",
+"notes":"The inner autophagosomal membrane (IAM) forms by membrane fission after closure of the phagosomal sac (pmid:27885029).  The IAM is degraded after lysosomal fusion and degradation of the IAM leads to immediate dissociation of STX17 from the cis-SNARE complex (pmid:27885029)."
+},
+{
+"ID":"once.rule-307-dbd0-6712-fb05-53d59aab55b8",
+"systemID":"autophagosome",
+"componentID":"LC3-II",
+"evidenceType":"TAS",
+"evidenceSource":"30115558",
+"role":"attachment",
+"notes":"LC3-II (PE lipidated LC3) has been conjugated to the PE-enriched phagosome membrane and thereby serves as phagosome marker (pmid:30115558).  The LC3-II conjugate is produced by the Atg8 conjugation system (Atg7, Atg3, Atg5, Atg12, Atg16L1/2, Atg4A/B/C/D) (pmid:28939950).  Priming of the Atg8 conjugation system requires the Atg12 conjugating system (Atg12, Atg5, Atg7, Atg10) (pmid:28939950)."
+},
+{
+"ID":"game.pest-af5-e85d-f282-4999-cf2cda1c6aae",
+"systemID":"LC3-II",
+"componentID":"LC3",
+"evidenceType":"TAS",
+"evidenceSource":"30115558",
+"role":"input",
+"notes":"LC3 is a cytosolic protein that is conjugated to PE in the PE-enriched phagosome membrane in a stress response (pmid:30115558).  Conjugation of LC3 and PE involves a ubiquitin-like conjugation system (pmid:27146966)."
+},
+{
+"ID":"wine.font-24b-4f4e-0062-08ec-a49345830f24",
+"systemID":"LC3-II",
+"componentID":"PE",
+"evidenceType":"TAS",
+"evidenceSource":"30115558",
+"role":"input",
+"notes":"PE is the lipid anchor of LC3 in the phagosome membrane (pmid:30115558)."
+},
+{
+"ID":"wife.worm-621-2307-bf92-6b24-d5cb7fa416ed",
+"systemID":"LC3-II",
+"componentID":"ATG4A",
+"evidenceType":"TAS",
+"evidenceSource":"KEGG:hsa04140",
+"role":"transform",
+"notes":"ATG4 proteins play a role in Atg8 protein PTM (priming for lipidation) and in delipidation for phagosome disassembly (KEGG:hsa04140}}"
+},
+{
+"ID":"make.shin-d7f-b334-8ac2-a8a1-28b43ba865d3",
+"systemID":"LC3-II",
+"componentID":"ATG4B",
+"evidenceType":"TAS",
+"evidenceSource":"KEGG:hsa04140",
+"role":"transform",
+"notes":"ATG4 proteins play a role in Atg8 protein PTM (priming for lipidation) and in delipidation for phagosome disassembly (KEGG:hsa04140}}"
+},
+{
+"ID":"doll.mile-ec4-c855-2e32-3a0b-e391f5291f0f",
+"systemID":"LC3-II",
+"componentID":"ATG4C",
+"evidenceType":"TAS",
+"evidenceSource":"KEGG:hsa04140",
+"role":"transform",
+"notes":"ATG4 proteins play a role in Atg8 protein PTM (priming for lipidation) and in delipidation for phagosome disassembly (KEGG:hsa04140}}"
+},
+{
+"ID":"cape.cure-aaf-8be5-8102-39d1-8c317c3e86b7",
+"systemID":"LC3-II",
+"componentID":"ATG4D",
+"evidenceType":"TAS",
+"evidenceSource":"KEGG:hsa04140",
+"role":"transform",
+"notes":"ATG4 proteins play a role in Atg8 protein PTM (priming for lipidation) and in delipidation for phagosome disassembly (KEGG:hsa04140}}"
+},
+{
+"ID":"late.than-8a0-fa25-86c2-79d2-b80d82ea1b2c",
+"systemID":"SNAP29-STX17-VAMP8 SNARE-pin",
+"componentID":"SNAP29-STX17 Qabc-SNARE",
+"evidenceType":"TAS",
+"evidenceSource":"30115558",
+"role":"compose",
+"notes":"The SNAP29-STX17 Qabc-SNARE forms through the interaction of SNAP29 and STX17 in the phagosome membrane (pmid:30115558)."
+},
+{
+"ID":"buds.both-4c9-1f55-53f2-a944-db2ffd74a5bb",
+"systemID":"SNAP29-STX17 Qabc-SNARE",
+"componentID":"SNAP29",
+"evidenceType":"TAS",
+"evidenceSource":"30115558",
+"role":"compose",
+"notes":"SNAP29 is a Qa-SNARE (a t-SNARE) that localizes to the membrane in a lipidation independent manner through its STX17 interaction (pmid:30115558).  SNAP29 is held in a non-interacting state by O-GlcNAcylation with GlcNAC (pmid:25419848)."
+},
+{
+"ID":"meal.hunt-0a6-4482-e412-5b29-7576fbcc42a5",
+"systemID":"SNAP29-STX17 Qabc-SNARE",
+"componentID":"GlcNAC",
+"evidenceType":"TAS",
+"evidenceSource":"30115558",
+"role":"prevent",
+"notes":"O-GlcNAcylation of SNAP29 in nutrient-sufficient conditions inhibits the association of the SNAP29-STX17 Qabc-SNARE (pmid:30115558).  SNAP29 is O-GlcNAcylated by the promiscuous OGT (UDP-N-acetylglucosamine-peptide N-acetylglucosaminyltransferase) under nutrient-sufficient conditions and thus links the nutrient status sensing system with autophagic flux (pmid:25419848).  SNAP29 has its  O-GlcNAcetylation reversed by the N-acetyl-β-glucosaminidase OGA (O-GlcNAcase) (pmid:25419848)."
+},
+{
+"ID":"kept.tide-c90-4375-6ba2-abf5-eb8657f11bcc",
+"systemID":"SNAP29-STX17 Qabc-SNARE",
+"componentID":"STX17bound",
+"evidenceType":"TAS",
+"evidenceSource":"30115558",
+"role":"compose",
+"notes":"Bound STX17 phosporylation on S2 is a key decision point for fusion to proceed; dephosphorylation relieves an inhibitory interaction with VPS33A and the phosphomimetic S2E mutant cannot form a SNARE bundle (pmid:30655294). STX17 has two glycine-zipper motif transmembrane domains that are required for membrane insertion (pmid:29420192)."
+},
+{
+"ID":"laws.poor-23e-77b0-f322-ab77-5ec2661eddd7",
+"systemID":"STX17bound",
+"componentID":"STX17free",
+"evidenceType":"TAS",
+"evidenceSource":"29420192",
+"role":"transform",
+"notes":"STX17 is a Qa-SNARE which localizes to the phagosome by binding the phagosome membrane marker LC3-II via its LC3-interacting region (LIR) (pmid:30115558)."
+},
+{
+"ID":"blue.fist-308-e3e4-a482-b97c-cc44aff09c41",
+"systemID":"PHALY",
+"componentID":"LAMP2",
+"evidenceType":"TAS",
+"evidenceSource":"27628032",
+"role":"attachment",
+"notes":"LAMP2 is an integral membrane protein. The LAMP-2A isoform has a lysosomal targeting signature sequence. The presence of LAMP2 is required for the binding  of STX17 (pmid:27628032)."
+},
+{
+"ID":"tune.mast-2af-e0e7-9712-2bd9-9a1f73387930",
+"systemID":"STX17bound",
+"componentID":"IRGM",
+"evidenceType":"TAS",
+"evidenceSource":"29420192",
+"role":"prepare",
+"notes":"IRGM forms a complex (an autophagosome recognition particle, ARP) with STX17 and the Atg8 homologues LC3 and GABARAPL1 that is responsible for phagosomal targeting of STX17. IRGM does not directly bind LC3. IRGM's active conformation is GTP bound. IRGM also has a role in autophagy initiation complexes, binding BECLIN1, ULK1 and ATG16L1, which is independent of STX17 binding (pmid:29420192)."
+},
+{
+"ID":"fuss.lots-78f-b407-5752-88c7-8826f2febaea",
+"systemID":"autophagosome",
+"componentID":"RAB7active",
+"evidenceType":"TAS",
+"evidenceSource":"23645161",
+"role":"attachment",
+"notes":"RAB7 is a small GTPase that replaces RAB5 in maturing endosomes (pmid:23645161). RAB7 localization to the membrane requires '''prenylation''' (pmid:30115558).  RAB7 is held in an inactive, soluble state by GDI (ARHGDIA), this interaction - and membrane recruitment - is released by the Mon1-CCZ1 complex (pmid:30333976).  RAB7 is activated on the phagosome by the Mon1-CCZ1 GEF complex which localizes to the phagosome by Atg8 homologue protein binding (pmid:30115558)."
+},
+{
+"ID":"made.spur-525-f7ad-f102-7b08-295e00fa65f1",
+"systemID":"lysosome",
+"componentID":"RAB7active",
+"evidenceType":"TAS",
+"evidenceSource":"23645161",
+"role":"attachment",
+"notes":"RAB7 can be localized to the lysosome by interaction with active lysosomal proton pumping vacuolar-type ATPase (V-ATPase) (pmid:30717974).  In its active conformation, RAB7 can bind RILP to promote minus-end directed microtubular transport of the lysosome towards the MTOC (pmid:12944476)."
+},
+{
+"ID":"wine.coin-737-4592-5242-da72-0a8de174c71c",
+"systemID":"RAB7active",
+"componentID":"Mon1-CCZ1",
+"evidenceType":"TAS",
+"evidenceSource":"30115558",
+"role":"transform",
+"notes":"The Mon1-CCZ1 GEF complex is a GEF that activates Rab7 by exchanging bound GDP (inactive form) to GTP (active form) (pmid:30115558).  It is found on both phagosome and lysosome membranes (pmid:30333976)."
+},
+{
+"ID":"crow.torn-e69-d1d0-1932-4813-3f923e7121b1",
+"systemID":"Mon1-CCZ1",
+"componentID":"MON1A",
+"evidenceType":"TAS",
+"evidenceSource":"30115558",
+"role":"compose",
+"notes":"MON1A is one of two proteins in the heterooligomeric Mon1-CCZ1 GEF complex (pmid:30115558)."
+},
+{
+"ID":"font.labs-4c8-4578-2312-99e7-70a5fb8445cd",
+"systemID":"Mon1-CCZ1",
+"componentID":"CCZ1",
+"evidenceType":"TAS",
+"evidenceSource":"30115558",
+"role":"compose",
+"notes":"CCZ1 is one of two proteins in the heterooligomeric Mon1-CCZ1 GEF complex (pmid:30115558)."
+},
+{
+"ID":"ruin.sock-f2a-2d98-7942-0bf3-37bf987afda7",
+"systemID":"Mon1-CCZ1",
+"componentID":"GABARAPL1",
+"evidenceType":"TAS",
+"evidenceSource":"30115558",
+"role":"localize",
+"notes":"GABARAPL1 is a ubiquitin-like modifier that binds to the Mon1-CCZ1 GEF complex and localizes it to the autophagosome (pmid:30115558).  As a yeast Atg8 family homologue (like LC3), GABARAPL1 is a downstream effector of the mTOR pathway. Lipidation by phosphatidylethanolamine causes it to be enriched in the autophagosome membrane, where it serves as a scaffold to recruit other proteins to the membrane (pmid:30767700)."
+},
+{
+"ID":"fang.sell-a26-c21b-2ee2-2a42-2f6dae2afe6a",
+"systemID":"SNAP29-STX17 Qabc-SNARE",
+"componentID":"EPG5",
+"evidenceType":"TAS",
+"evidenceSource":"30115558",
+"role":"enhance",
+"notes":"EPG5 is a RAB7 effector that localizes to both the phagosome and the lysosome by RAB7 binding, and binds to and enhances the SNAP29-STX17 Qabc-SNARE, thus facilitating VAMP8 binding. Binding of EPG5 shifts STX17 affinity from SNAP25 (without EPG5) to SNAP29 (with EPG5). EPG5 mutations cause Vici syndrome (pmid:30115558)."
+},
+{
+"ID":"link.sing-abf-ff68-9bc2-5948-604b1b2eb580",
+"systemID":"ULK1 complex",
+"componentID":"ATG13",
+"evidenceType":"TAS",
+"evidenceSource":"24290141",
+"role":"compose",
+"notes":"Mutations in LC3 can destroy ATG13 interactions and reduce autophagosome formation (UniProt:Q9H492}}  ATG13 interacts with LC3 via its LIR (LC3-interacting region) (pmid:24290141).  ATG13 is a member of the ULK1 complex which consists of ULK1 (formerly Atg1, unc-51 like autophagy activating kinase 1), ATG13, RB1CC1 (formerly Atg17 / FIP200, RB1 inducible coiled-coil 1), and ATG101 (pmid:24290141)."
+},
+{
+"ID":"dame.burr-750-f848-4aa2-3b2d-41cf9b8aafbf",
+"systemID":"autophagosome",
+"componentID":"ULK1 complex",
+"evidenceType":"TAS",
+"evidenceSource":"24290141",
+"role":"transform",
+"notes":"The ULK1 complex consists of ULK1 (formerly Atg1, unc-51 like autophagy activating kinase 1), ATG13, RB1CC1 (formerly Atg17 / FIP200, RB1 inducible coiled-coil 1), and ATG101 (pmid:24290141). The ULK1 complex integrates a large number of cellular systems: the mTOR pathway, AMPK as an effector of AMP homeostasis, growth factor pathways acting via TIP60, genotoxic stress response via PPM1D, protein biosynthesis, and response attenuation during prolonged starvation via the cullin E3 ligase (pmid:29233870).  The ULK1 complex is activated under stress conditions  by TORC1 and PKA, it is thus a sensor of nutrient signals that activates autophagy (pmid:24290141)."
+},
+{
+"ID":"bead.them-43a-9b73-fb92-788c-c86e0b6ebddb",
+"systemID":"LC3-II",
+"componentID":"MAP1LC3B",
+"evidenceType":"TAS",
+"evidenceSource":"UCSC:uc002xaq.3",
+"role":"input",
+"notes":"LC3 beta and gamma are functionally equivalent homologues of MAP1LC3A (UCSC:uc002xaq.3}}."
+},
+{
+"ID":"lint.halt-199-3f7c-04f2-094c-a9e86aac0451",
+"systemID":"LC3-II",
+"componentID":"MAP1LC3C",
+"evidenceType":"TAS",
+"evidenceSource":"UCSC:uc002xaq.3",
+"role":"input",
+"notes":"LC3 beta and gamma are functionally equivalent homologues of MAP1LC3A (UCSC:uc002xaq.3}}."
+},
+{
+"ID":"gram.less-1df-454a-39a2-3832-1f3f2c23cb63",
+"systemID":"PHALY",
+"componentID":"lysosome",
+"evidenceType":"TAS",
+"evidenceSource":"30115558",
+"role":"input",
+"notes":"Fusion is the process of joining the outer phagosomal membrane of the phagosome with the membrane of a lysosome (pmid:30115558)."
+},
+{
+"ID":"text.ease-d04-6f90-e502-3ac4-a331f8717283",
+"systemID":"lysosome",
+"componentID":"LAMP1",
+"evidenceType":"TAS",
+"evidenceSource":"30115558",
+"role":"attachment",
+"notes":"LAMP1 is an integral membrane protein that is a lysosomal marker (pmid:30115558)."
+},
+{
+"ID":"shed.lore-cda-ebfa-b822-f81e-2c7d93c773d0",
+"systemID":"SNAP29-STX17-VAMP8 SNARE-pin",
+"componentID":"VAMP8",
+"evidenceType":"TAS",
+"evidenceSource":"30115558",
+"role":"compose",
+"notes":"VAMP8 is a component of the lysosome membrane. VAMP8 is the single v-SNARE (an R-SNARE) that is recruited into the Qabc-SNARE complex for fusion. This SNARE \"pairing\" forms a membrane-bridging trans-SNARE complex, the SNAP29-STX17-VAMP8 SNAREpin. Localization of VAMP8 to the lysosome is dependent on active RAB21 (pmid:30115558). RAB21 activation by SBF2 (a guanine nucleotide exchange factor for GTPases) under starvation conditions is an interface to nutrient sensing (pmid:25648148)."
+},
+{
+"ID":"mite.bald-448-ac1e-f7f2-7a50-22d208504414",
+"systemID":"lysosome",
+"componentID":"VAMP7",
+"evidenceType":"TAS",
+"evidenceSource":"30240735",
+"role":"compose",
+"notes":"The v-SNARE VAMP7 has been considered to be characteristic of secretory lysosomes, i.e. not PHALY (pmid:30240735).  However, VAMP7 interacts with the VPS33A domain of HOPS complex and has been found to be able to initiate fusion with the SNAP29-STX17 Qabc-SNARE by FRET (pmid:30655294).  VAMP7 is part of the SNARE-pin with STX4 and SNAP23 in secretory lysosomes (pmid:28471021).  VAMP7 has an autoinhibitory longin domain that VAMP8 does not have (pmid:26567219)."
+},
+{
+"ID":"soak.bear-e8c-6a19-b782-a8b5-7bb340245727",
+"systemID":"PHALY",
+"componentID":"SNAP29-STX17-VAMP8 SNARE-pin",
+"evidenceType":"TAS",
+"evidenceSource":"30115558",
+"role":"integrate",
+"notes":"Binding of the SNAP29-STX17 Qabc-SNARE with VAMP8 forms the initial SNAP29-STX17-VAMP8 SNARE-pin which bridges the phagosome and the lysosome.  This trans-SNARE complex (membrane bridging) is the fusion initiator which ultimately leads to \"zippering\" - membrane apposition, lipid mixing, pore-formation, membrane bilayer fusion, which results in the formation of the cis-SNARE complex (inserted into a single membrane), and bringing the cis-SNARE pin into a alpha-SNAP binding competent conformation (pmid:30115558).  (pmid:25581794)."
+},
+{
+"ID":"camp.slow-52d-4b9b-1ed2-58f0-5cfc0f8140c0",
+"systemID":"PIK3C3 complex",
+"componentID":"ATG14",
+"evidenceType":"TAS",
+"evidenceSource":"23878393",
+"role":"transform",
+"notes":"ATG14 stimulates BECN1 phosphorylation (pmid:23878393).  ATG14 regulates the PIK3C3 complex (pmid:25686604). ATG14 binds to and stabilizes the SNAP29-STX17 Qabc-SNARE on the membrane (pmid:25686604).  ATG14 homooligomers have a membrane-tethering function via their BATS domains (Barkor autophagosome targeting sequence), which is enhanced in membranes with low curvature and high PI(3)P (pmid:25686604)."
+},
+{
+"ID":"dome.cove-bc6-7f7c-4e32-9a6c-5b3f45dd82a6",
+"systemID":"PHALY",
+"componentID":"HOPS complex",
+"evidenceType":"TAS",
+"evidenceSource":"23645161",
+"role":"locate",
+"notes":"The HOPS complex is a hexa-heterooligomeric membrane tethering complex (MTC complex) that bridges two membranes containing RAB7 molecules in active conformation. It bridges vesicle and target membranes via its Rab7 binding domains and acts as a SNARE chaperone via a SNARE binding domain. It is the major \"clamping\" factor in SNARE mediated fusion (pmid:23645161).  The chaperoning function is crucial for topologically correct assembly of the trans-SNARE-pin, and prevention of reassembly of a cis-SNARE complex after SNARE disassembly by NSF-SNAP (pmid:27301672).   The BORC complex recruits the HOPS complex to the lysosomal membrane. The BORC complex functions by interacting with kinesins and determining the position of the lysosome by regulating the balance of (+)-end and (-)-end microtubular transport. One of its effectors is Arl8. The BORC complex comprises BLOC1S1, BLOC1S2, SNAPIN, KXD1, BORCS5, BORCS6, BORCS7, and BORCS8 (pmid:25898167)."
+},
+{
+"ID":"shut.lisp-32b-3bbb-07c2-ca73-f806d2583873",
+"systemID":"HOPS complex",
+"componentID":"VPS16",
+"evidenceType":"TAS",
+"evidenceSource":"23645161",
+"role":"compose",
+"notes":"VPS16 provides part of the SNARE-pin interaction interface (pmid:23645161)."
+},
+{
+"ID":"lean.land-d35-b9a0-bc12-79ed-d8fa3b57f3cc",
+"systemID":"HOPS complex",
+"componentID":"VPS33A",
+"evidenceType":"TAS",
+"evidenceSource":"23645161",
+"role":"compose",
+"notes":"VPS33 provides part of the SNARE-pin interaction interface (pmid:23645161).  VPS33A is an SM protein (Sec1/Munc18 protein) which stabilizes the nascent SNARE bundle by interacting with both v-SNARES and t-SNARES (pmid:30655294).  VPS33A interacts with a \"closed form of STX17 (pmid:30655294)."
+},
+{
+"ID":"wool.scan-e6c-1700-add2-9922-ff10f5eb6ea1",
+"systemID":"HOPS complex",
+"componentID":"VPS18",
+"evidenceType":"TAS",
+"evidenceSource":"23645161",
+"role":"compose",
+"notes":"VPS18 does not interact with the SNARE-pin (pmid:23645161)."
+},
+{
+"ID":"told.quit-22e-7273-f862-3898-dedff49cde1d",
+"systemID":"HOPS complex",
+"componentID":"VPS11",
+"evidenceType":"TAS",
+"evidenceSource":"23645161",
+"role":"compose",
+"notes":"VPS11 does not interact with the SNARE-pin (pmid:23645161)."
+},
+{
+"ID":"laid.toss-c5c-acff-0d02-5885-a71e950db245",
+"systemID":"HOPS complex",
+"componentID":"VPS41",
+"evidenceType":"TAS",
+"evidenceSource":"23645161",
+"role":"compose",
+"notes":"VPS41 provides one of two Rab7 interaction interfaces (pmid:23645161)."
+},
+{
+"ID":"tend.lock-302-e1ae-9f52-39dc-f7165ab7cd24",
+"systemID":"HOPS complex",
+"componentID":"VPS39",
+"evidenceType":"TAS",
+"evidenceSource":"23645161",
+"role":"compose",
+"notes":"VPS39 provides one of two Rab7 interaction interfaces (pmid:23645161)."
+},
+{
+"ID":"tops.sent-d32-d741-3b22-8ab3-31facc2554aa",
+"systemID":"autophagosome",
+"componentID":"lipid rafts",
+"evidenceType":"TAS",
+"evidenceSource":"30115558",
+"role":"location",
+"notes":"Lipid rafts are required for autophagic flux and play a role in the fusion event (pmid:30115558)."
+},
+{
+"ID":"cool.rift-bdf-9e5a-44b2-1913-2254a14ed7d5",
+"systemID":"lysosome",
+"componentID":"lipid rafts",
+"evidenceType":"TAS",
+"evidenceSource":"30115558",
+"role":"location",
+"notes":"Lipid rafts are required for autophagic flux and play a role in the fusion event (pmid:30115558)."
+},
+{
+"ID":"pest.nets-427-1f70-0852-6b58-60ac9589dd01",
+"systemID":"lipid rafts",
+"componentID":"cholesterol",
+"evidenceType":"TAS",
+"evidenceSource":"30747526",
+"role":"compose",
+"notes":"Cholesterol provides specific binding domains and increases membrane thickness and stiffness (pmid:30747526)."
+},
+{
+"ID":"odds.bids-703-694c-92a2-1a81-6be06b9bef4c",
+"systemID":"PHALY",
+"componentID":"OSBPL1A",
+"evidenceType":"TAS",
+"evidenceSource":"30115558",
+"role":"localize",
+"notes":"OSBPL1A is a RAB7-GTP effector. In active form it interacts with cholesterol in lipd rafts through its ORD domain. This interaction recruits PLEKHM1 and through it the HOPS complex. In the absence of cholesterol, OSBPL1A interacts with VAPA via its FFAT domain (pmid:30115558).  This inhibits PLEKHM1 binding to RAB7, whereupon PLEKHM1 and RILP recruit HOPS complex (pmid:27283760).  The ER-bound VAPA protein can be bound by OSBPL1A via its FFAT domain.This interaction creates contact sites between the ER and the phagosome, which inhibits membrane tethers, microtubular transport, and  stalls the fusion process (pmid:30115558)."
+},
+{
+"ID":"take.tint-158-958b-6682-3805-75ed474db951",
+"systemID":"PHALY",
+"componentID":"PIK3C3 complex",
+"evidenceType":"TAS",
+"evidenceSource":"30704899",
+"role":"integrate",
+"notes":"The PIK3C3 complex creates phosphoinositide-3-phosphate at the phagosome-lysosome fusion site. It integrates a number of general (GPCR) signalling pathways (pmid:30704899)."
+},
+{
+"ID":"ploy.made-406-e503-91d2-199f-db4f233b04c1",
+"systemID":"PIK3C3 complex",
+"componentID":"PIK3C3",
+"evidenceType":"TAS",
+"evidenceSource":"29089378",
+"role":"compose",
+"notes":"PIK3C3 (also: Vps34) produces phosphatidylinositol-3-phosphate (PI(3)P) from PI (pmid:29089378)."
+},
+{
+"ID":"lost.that-1d9-e73b-57f2-b8f6-06b13a720f2f",
+"systemID":"PIK3C3 complex",
+"componentID":"UVRAG",
+"evidenceType":"TAS",
+"evidenceSource":"30115558",
+"role":"compose",
+"notes":"UVRAG increases RAB7 concentration in maturing endosomes. It provides an interface to the MTORC1 complex: phosporylation of UVRAG by MTORC1 causes it to sequester with RUBCN, away from the HOPS complex (pmid:30115558)."
+},
+{
+"ID":"such.song-2b2-30ac-d882-5a67-ee673e5bc38d",
+"systemID":"PIK3C3 complex",
+"componentID":"NRBF2",
+"evidenceType":"TAS",
+"evidenceSource":"25086043",
+"role":"compose",
+"notes":"NRBF2 inhibts PIK3C3 activity and thus reduces PI(3)P levels (pmid:25086043)."
+},
+{
+"ID":"lint.rake-19a-1f69-acd2-8a76-76bacfab9c91",
+"systemID":"PIK3C3 complex",
+"componentID":"PIK3R4",
+"evidenceType":"TAS",
+"evidenceSource":"18326940",
+"role":"compose",
+"notes":"PK3R4 (also called Vps15) is a protein kinase that regulates PIK3C3 (pmid:18326940)."
+},
+{
+"ID":"meal.lead-741-0d64-0342-e923-4a619c6b70b2",
+"systemID":"PIK3C3 complex",
+"componentID":"RUBCN",
+"evidenceType":"TAS",
+"evidenceSource":"30115558",
+"role":"compose",
+"notes":"RUBCN sequesters UVRAG away from the HOPS complex (pmid:30115558)."
+},
+{
+"ID":"base.harp-f5d-42d6-c342-4a5e-24626896a04a",
+"systemID":"PIK3C3 complex",
+"componentID":"RUBCNL",
+"evidenceType":"TAS",
+"evidenceSource":"30115558",
+"role":"compose",
+"notes":"RUBCNL (Pacer, protein associated with UVRAG as autophagy enhancer) releases UVRAG from RUBCN (pmid:30115558). . RUBCNL also anchors PI3KC3 as well as HOPS to STX17. Its phosphorylation by mTORC1 integrates the mTOR pathway (active mTOR shuts down RUBCNL enhancement of the system); its acetylation by TIP60 integrates the GSK3-TIP60 pathway (pmid:30704899)."
+},
+{
+"ID":"load.slot-c2a-b305-9762-6965-b380d4f5de4f",
+"systemID":"PIK3C3 complex",
+"componentID":"BECN1",
+"evidenceType":"TAS",
+"evidenceSource":"30115558",
+"role":"compose",
+"notes":"BECN1 (Beclin1) is a core component of the RUBCNL-UVRAG–BECN1,2–PIK3C3 complex (pmid:30115558).  Phosphorylation of BECN1 is stimulated by ATG14 (pmid:23878393)."
+},
+{
+"ID":"fate.band-99f-eacb-94f2-99a4-b6417b4820b5",
+"systemID":"PIK3C3 complex",
+"componentID":"PLEKHM1",
+"evidenceType":"TAS",
+"evidenceSource":"30115558",
+"role":"compose",
+"notes":"PLEKHM1 (Pleckstrin homology domain-containing family M member 1) is a multivalent adaptor that enhances HOPS complex / LC3 (Atg8) interactions in a RAB7 dependent way (pmid:30115558)."
+},
+{
+"ID":"pair.prop-fcb-744b-2102-e841-01bce0b88e06",
+"systemID":"PIK3C3 complex",
+"componentID":"PI(3)P",
+"evidenceType":"TAS",
+"evidenceSource":"29089378",
+"role":"output",
+"notes":"PI(3)P interfaces with many signalling pathways. It is produced at the phagosome by PIK3C3 in the PIK3C3 complex, and is further phosphorylated to PI(3,5)P by PIKfyve after dissociation of PIK3C3 (pmid:29089378).  Degradation of PI(3)P to PI on phagosomes reduces autophagy (pmid:27340123)."
+},
+{
+"ID":"rush.slab-9bd-3bf3-4072-c889-5a8e627f546b",
+"systemID":"PIK3C3 complex",
+"componentID":"PI",
+"evidenceType":"TAS",
+"evidenceSource":"29089378",
+"role":"input",
+"notes":"PI is phosphorylated at the phagosome toPI(3)P by PIK3C3 in the PIK3C3 complex. Degradation of PI(3)P to PI on phagosomes reduces autophagy (pmid:27340123)."
+},
+{
+"ID":"dine.twin-95f-e697-5292-398b-0bc0a334c9e2",
+"systemID":"PHALY",
+"componentID":"INPP5E",
+"evidenceType":"TAS",
+"evidenceSource":"27340123",
+"role":"set",
+"notes":"INPP5E decreases lysosomal phosphatidylinositol 3,5-bisphosphate (PI(3,5)P2)  and increases PI(3)P and is required for the fusion event. Both an excess and a reduction of the PI(3)P to PI(3,5)P2 ratio inhibits fusion (pmid:27340123)."
+},
+{
+"ID":"disk.lack-1a0-8ee2-f522-c987-d20a7ef66820",
+"systemID":"PHALY",
+"componentID":"PIKFYVE complex",
+"evidenceType":"TAS",
+"evidenceSource":"28302928",
+"role":"set",
+"notes":"The PIKFYVE complex controls PI(3,5)P2 levels and consists of PIKFYVE, FIG4, VAC14 (ArPIKfyve), and WIPI1 (pmid:28302928)."
+},
+{
+"ID":"gray.coal-681-7aa4-d422-bacd-5fee9c039fb4",
+"systemID":"PIKFYVE complex",
+"componentID":"PIKFYVE",
+"evidenceType":"TAS",
+"evidenceSource":"27340123",
+"role":"set",
+"notes":"PIKFYVE phosphorylates PI(3)P to PI(3,5)P2. Both an excess and a reduction of the PI(3)P to PI(3,5)P2 ratio inhibits fusion (pmid:27340123)."
+},
+{
+"ID":"dust.ruin-6d3-a4c0-6992-9bf2-a953b391d645",
+"systemID":"PIKFYVE complex",
+"componentID":"PI(3,5)P2",
+"evidenceType":"TAS",
+"evidenceSource":"29089378",
+"role":"output",
+"notes":"(PI(3,5)P2) is produced by the action of PIKFYVE on PI3P (pmid:29089378).  PI(3,5)P2 counteracts cortactin mediated actin filament stabilization on lysosomes; actin on the lysosome surface is required for fusion (pmid:27340123)."
+},
+{
+"ID":"keen.dots-88d-dcba-f732-38f2-2deb412832c7",
+"systemID":"PHALY",
+"componentID":"RAB7-RILP-dynein-dynactin complex",
+"evidenceType":"TAS",
+"evidenceSource":"27283760",
+"role":"locate",
+"notes":"The RAB7-RILP-dynein-dynactin complex is responsible for minus-end transport of lysosomes along microtubules towards the MTOC, where most lysosomes are located (pmid:27283760)."
+},
+{
+"ID":"thru.flow-ca6-ecc9-9ac2-8a62-398261d8a6fc",
+"systemID":"RAB7-RILP-dynein-dynactin complex",
+"componentID":"RILP",
+"evidenceType":"TAS",
+"evidenceSource":"12944476",
+"role":"compose",
+"notes":"RILP associates with RAB7-GTP; the complex promotes dynein-dynactin association with the membrane and subsequent transport (pmid:12944476)."
+},
+{
+"ID":"cage.worm-f76-1474-ecf2-49c0-c9bf2767ee6a",
+"systemID":"PHALY",
+"componentID":"F-actin network",
+"evidenceType":"TAS",
+"evidenceSource":"27146966",
+"role":"location",
+"notes":"A cortactin dependent, remodelled, local filamentous actin network between the phagosome and the lysosome promotes fusion (pmid:27146966)."
+},
+{
+"ID":"spin.feel-313-4aa2-c382-2be5-34a1d2105aa1",
+"systemID":"F-actin network",
+"componentID":"CTTN",
+"evidenceType":"TAS",
+"evidenceSource":"27146966",
+"role":"compose",
+"notes":"CTTN is a branch-stabilizing interactor that remodels the F-actin network, which is a fusion requirement by recruiting the ARP2/3 complex to the fusion site (pmid:27146966)."
+},
+{
+"ID":"hang.wild-b44-be0c-54a2-9b7a-83e6ef5a6856",
+"systemID":"F-actin network",
+"componentID":"HDAC6",
+"evidenceType":"TAS",
+"evidenceSource":"27146966",
+"role":"locate",
+"notes":"HDAC6, a ubiquitin binding deacylase, recruits CTTN to the autophagosome (pmid:27146966)."
+},
+{
+"ID":"wear.wage-11a-ebb7-6c72-2b78-1c8603332638",
+"systemID":"F-actin network",
+"componentID":"ARP2/3 complex",
+"evidenceType":"TAS",
+"evidenceSource":"27146966",
+"role":"compose",
+"notes":"The actin-nucleator ARP2/3 complex is a seven-subunit complex that can nucleate actin-filament branchpoints to establish a network. It stimulates the local assembly of an F-actin network for efficient fusion. It consists of ARP2, ARP3, ARPC1, ARPC2, ARPC3, ARPC4, and ARPC5 (pmid:27146966)."
+},
+{
+"ID":"burr.been-c86-5f29-e132-296b-20f633739a65",
+"systemID":"F-actin network",
+"componentID":"F-actin",
+"evidenceType":"TAS",
+"evidenceSource":"27146966",
+"role":"compose",
+"notes":"F-actin is a filament of ACTB (G-actin) monomers which is a scaffold for myosin-motors like the fusion-promoting MYO1C myosin to move on (pmid:27146966)."
+},
+{
+"ID":"teal.self-901-4948-6a32-281f-3dc481496fab",
+"systemID":"F-actin",
+"componentID":"ACTB",
+"evidenceType":"TAS",
+"evidenceSource":"27146966",
+"role":"compose",
+"notes":"The cytoplasmic, soluble globular G-actin polymerizes in to a filamentous form: F-actin (pmid:27146966)."
+},
+{
+"ID":"head.mint-44d-9201-3b82-8926-44a0ec76b180",
+"systemID":"F-actin network",
+"componentID":"MYO1C",
+"evidenceType":"TAS",
+"evidenceSource":"27146966",
+"role":"locate",
+"notes":"MYO1C is a monomeric class I myosin, which associates with cholesterol lipid rafts. It contains a PH domain that binds specifically to PI(4,5)P2. It is a \"slow\" motor, ideal for translocating heavy cargos, not tethering, and thus is able to move lipid rafts from storage compartments to their site of action (pmid:27146966)."
+},
+{
+"ID":"gain.rode-dc8-1624-cdb2-3956-539558ceb105",
+"systemID":"F-actin network",
+"componentID":"PI(4,5)P2",
+"evidenceType":"TAS",
+"evidenceSource":"30692198",
+"role":"attachment",
+"notes":"PI(4,5)P2 clusters at lipid rafts in a cholesterol and Ca2+ dependent fashion. These clusters bind the ARP2/3 complex (pmid:30692198)."
+},
+{
+"ID":"fate.hide-7b5-bc79-1c82-daba-fc95ccb31f2a",
+"systemID":"SNAP29-STX17-VAMP8 SNARE-pin",
+"componentID":"Ca2+",
+"evidenceType":"TAS",
+"evidenceSource":"30115558",
+"role":"compose",
+"notes":"Ca2+ is required to stabilize the SNAREpin (pmid:30115558)."
+},
+{
+"ID":"case.dirt-5e1-1ad5-b4b2-e8cb-1880aa6f19eb",
+"systemID":"PHALY",
+"componentID":"CACNA1A",
+"evidenceType":"TAS",
+"evidenceSource":"30115558",
+"role":"input",
+"notes":"The lysosome resident population of voltage-gated calcium channel CACNA1A is required for calcium efflux from the lysosome for the fusion event (pmid:30115558)."
+},
+{
+"ID":"mate.robe-c31-8a9c-7aa2-bb9b-f887770148a2",
+"systemID":"PHALY",
+"componentID":"SNAREpin team",
+"evidenceType":"TAS",
+"evidenceSource":"30700546",
+"role":"transmit",
+"notes":"From three to six SNAP29-STX17-VAMP8 SNARE-pins form a mechanically coupled SNAREpin team in a rigid membrane (cholesterol lipid-raft) which accelerates fusion by four orders of magnitude (pmid:30700546)."
+},
+{
+"ID":"chow.born-7df-4c0f-66b2-eb85-5469c304a380",
+"systemID":"SNAP29-STX17-VAMP8 SNARE-pin",
+"componentID":"20s supercomplex",
+"evidenceType":"TAS",
+"evidenceSource":"25581794",
+"role":"decompose",
+"notes":"The 20s supercomplex forms around the cis-SNARE complex, by binding two to four molecules of alpha-SNAP and an NSF homohexamer to the cis-SNARE-pin (pmid:25581794)."
+},
+{
+"ID":"weak.stem-306-c2bb-75d2-981c-07047be16bd1",
+"systemID":"20s supercomplex",
+"componentID":"alpha-SNAP",
+"evidenceType":"TAS",
+"evidenceSource":"25581794",
+"role":"compose",
+"notes":"Two to four molecules of cytoplasmic alpha-SNAP wrap around the cis-SNARE-pin to form a SNAP-SNARE subcomplex (pmid:25581794)."
+},
+{
+"ID":"lied.form-5b4-bd7d-7c42-5931-32c0bf5b4484",
+"systemID":"20s supercomplex",
+"componentID":"NSF",
+"evidenceType":"TAS",
+"evidenceSource":"25581794",
+"role":"compose",
+"notes":"NSF is a cytoplasmic AAA+ ATPase that binds to the SNAP-SNARE subcomplex in an ATP-bound state. Subsequent ATP hydrolysis induces major conformational rearrangements of NSF that disassociate the SNARE-pin into individual constituent molecules. Nucleotide exchange presumably disassociates the remaining NSF-SNAP subcomplex, and allows the cycle to restart (pmid:25581794)."
+},
+{
+"ID":"soak.toll-81d-3fba-e242-cab6-757c2447b044",
+"systemID":"RAB7active",
+"componentID":"TBC1D2",
+"evidenceType":"TAS",
+"evidenceSource":"30333976",
+"role":"inactivate",
+"notes":"TBC1D2 (Armus) is a RAB7 specific GAP that activates hydrolysis of RAB7 bound GTP to GDP and thus catalyzes conversion of RAB7 to its inactive state (pmid:30333976)."
+},
+{
+"ID":"bead.isle-c44-caa9-5462-aa5a-cbec49055d86",
+"systemID":"PHALY",
+"componentID":"NOT IN PHALY",
+"evidenceType":"TAS",
+"evidenceSource":"Unpublished",
+"role":"external",
+"notes":"NOT IN PHALY genes are related to PHALY system components, but are demonstrably not part of PHALY (Unpublished}}"
+},
+{
+"ID":"crow.weld-ee0-8bb0-60c2-2a0c-25e13df38ead",
+"systemID":"NOT IN PHALY",
+"componentID":"VTI1B",
+"evidenceType":"TAS",
+"evidenceSource":"30115558",
+"role":"external",
+"notes":"The t-SNARE VTI1B may work in a pathway that is parallel to STX17, in pathogen containing autophagosomes or recycling endosomes (pmid:30115558)."
+},
+{
+"ID":"care.bets-2e1-b587-a622-1a83-213d54affa96",
+"systemID":"NOT IN PHALY",
+"componentID":"STX6",
+"evidenceType":"TAS",
+"evidenceSource":"30115558",
+"role":"external",
+"notes":"The t-SNARE STX6 is the interaction partner of VTI1B (pmid:30115558)."
+},
+{
+"ID":"rash.font-561-1357-1f32-8ad8-2582baefa2d0",
+"systemID":"NOT IN PHALY",
+"componentID":"VAMP3",
+"evidenceType":"TAS",
+"evidenceSource":"30115558",
+"role":"external",
+"notes":"The v-SNARE VAMP3 forms a SNAREpin with the  VTI1B-STX6 complex (pmid:30115558)."
+},
+{
+"ID":"bars.cart-5da-d6d8-d012-aba5-7736b06acfd0",
+"systemID":"NOT IN PHALY",
+"componentID":"SNAP23",
+"evidenceType":"TAS",
+"evidenceSource":"UniProt:O00161",
+"role":"external",
+"notes":"SNAP23 is a t-SNARE for general membrane fusion (UniProt:O00161}}"
+},
+{
+"ID":"keel.jade-6e3-09d9-b772-2995-3490b72beeee",
+"systemID":"NOT IN PHALY",
+"componentID":"SNAP25",
+"evidenceType":"TAS",
+"evidenceSource":"UniProt:P61266",
+"role":"external",
+"notes":"SNAP25 is a t-SNARE involved in neurotransmitter release at the synapse (UniProt:P61266}}"
+},
+{
+"ID":"mute.ware-255-944e-3ec2-aabe-a66dd0a378a9",
+"systemID":"NOT IN PHALY",
+"componentID":"STX1A",
+"evidenceType":"TAS",
+"evidenceSource":"UniProt:Q16623",
+"role":"external",
+"notes":"STX1A is involved in hormone and neurotransmitter exocytosis (UniProt:Q16623}}"
+},
+{
+"ID":"dams.tray-3a1-10fc-0462-f925-23493bc753d1",
+"systemID":"NOT IN PHALY",
+"componentID":"STX1B",
+"evidenceType":"TAS",
+"evidenceSource":"UniProt:Q16623",
+"role":"external",
+"notes":"STX1B is involved in docking of synaptic vesicles at presynaptic active zones (UniProt:Q16623}}"
+},
+{
+"ID":"bent.jade-1fe-297f-3332-d9d6-c6e66268e5a6",
+"systemID":"NOT IN PHALY",
+"componentID":"STX2",
+"evidenceType":"TAS",
+"evidenceSource":"UniProt:P32856",
+"role":"external",
+"notes":"STX2 is essential for epithelial morphogenesis (UniProt:P32856}}"
+},
+{
+"ID":"hull.bean-c2d-ac76-2b72-f844-543640907067",
+"systemID":"NOT IN PHALY",
+"componentID":"STX3",
+"evidenceType":"TAS",
+"evidenceSource":"UniProt:Q13277",
+"role":"external",
+"notes":"STX3 is involved in docking of synaptic vesicles at presynaptic active zones (UniProt:Q13277}}"
+},
+{
+"ID":"push.plum-4e8-0c22-e2c2-8b0d-ca6f05702017",
+"systemID":"NOT IN PHALY",
+"componentID":"STX4",
+"evidenceType":"TAS",
+"evidenceSource":"UniProt:Q12846",
+"role":"external",
+"notes":"STX3 is a plasma mebrane t-SNARE that is involved in docking of transport vesicles (UniProt:Q12846}}"
+},
+{
+"ID":"edge.tier-1d6-b212-6492-6a3e-28ed7234cfac",
+"systemID":"NOT IN PHALY",
+"componentID":"STX6",
+"evidenceType":"TAS",
+"evidenceSource":"UniProt:O43752",
+"role":"external",
+"notes":"STX6 is essential involved in vesicle trafficking (UniProt:O43752}}"
+},
+{
+"ID":"melt.safe-d7f-5daa-8402-0a5f-1d5e9e968fc5",
+"systemID":"NOT IN PHALY",
+"componentID":"STX7",
+"evidenceType":"TAS",
+"evidenceSource":"UniProt:O15400",
+"role":"external",
+"notes":"STX7 is involved in homotypic fusion of endocytic organelles (UniProt:O15400}}"
+},
+{
+"ID":"days.shed-26b-f432-a022-aa8b-1c9d6c0a8cca",
+"systemID":"NOT IN PHALY",
+"componentID":"STX8",
+"evidenceType":"TAS",
+"evidenceSource":"UniProt:Q9UNK0",
+"role":"external",
+"notes":"STX8 is involved in early-secretory retrograde transport (UniProt:Q9UNK0}}"
+},
+{
+"ID":"know.help-99d-bbea-02f2-0896-1a944473df6e",
+"systemID":"NOT IN PHALY",
+"componentID":"STX10",
+"evidenceType":"TAS",
+"evidenceSource":"UniProt:O60499",
+"role":"external",
+"notes":"STX10 is  involved in vesicular transport from the late endosomes to the trans-Golgi network (UniProt:O60499}}"
+},
+{
+"ID":"wand.bake-6a6-f29c-6042-5a80-a8e7738fee8d",
+"systemID":"NOT IN PHALY",
+"componentID":"STX11",
+"evidenceType":"TAS",
+"evidenceSource":"UniProt:O75558",
+"role":"external",
+"notes":"STX11 acts between the late endosome and the trans-Golgi network (UniProt:O75558}}"
+},
+{
+"ID":"mint.bays-a5e-169f-3bb2-3bdf-ee028b4a155c",
+"systemID":"NOT IN PHALY",
+"componentID":"STX12",
+"evidenceType":"TAS",
+"evidenceSource":"UniProt:Q86Y82",
+"role":"external",
+"notes":"STX12 acts between the late endosome and the trans-Golgi network (UniProt:Q86Y82}}"
+},
+{
+"ID":"safe.hall-d56-8390-3e12-da82-c0cf2f8fa224",
+"systemID":"NOT IN PHALY",
+"componentID":"STX16",
+"evidenceType":"TAS",
+"evidenceSource":"UniProt:O14662",
+"role":"external",
+"notes":"STX16 is a t-SNARE localized to the trans-Golgi network (UniProt:O14662}}"
+},
+{
+"ID":"reed.with-4c7-0db7-cee2-a901-d13b94f87fd3",
+"systemID":"NOT IN PHALY",
+"componentID":"STX18",
+"evidenceType":"TAS",
+"evidenceSource":"UniProt:Q9P2W9",
+"role":"external",
+"notes":"STX18 is a SNARE that is involved in Golgi-derived retrograde transport vesicles (UniProt:Q9P2W9}}"
+},
+{
+"ID":"ribs.stub-10a-1f7c-25e2-1a13-43a0056bd7a8",
+"systemID":"NOT IN PHALY",
+"componentID":"STX19",
+"evidenceType":"TAS",
+"evidenceSource":"UniProt:Q8N4C7",
+"role":"external",
+"notes":"STX19 is involved in in endosomal trafficking of the epidermal growth factor receptor (EGFR) (UniProt:Q8N4C7}}"
+},
+{
+"ID":"grab.here-f59-5e43-0552-b9e8-b5ef7cdd22ac",
+"systemID":"NOT IN PHALY",
+"componentID":"SEC22B",
+"evidenceType":"TAS",
+"evidenceSource":"UniProt:O75396",
+"role":"external",
+"notes":"SEC22B is a high-confidence interactor in STRING, but it is a SNARE that is involved in retrograde transport from the Golgi to the ER (UniProt:O75396}}"}],
+
+"component":[{
+"ID":"trap.have-cac-4cee-9312-4add-7a927f071b0d",
+"code":"autophagosome",
+"componentType":"composed"
+},
+{
+"ID":"foul.jaws-a81-0a3e-cb02-ebcb-d2e9fd11a400",
+"code":"OAM",
+"componentType":"atomic"
+},
+{
+"ID":"rate.moon-998-8c65-9512-3a41-cc05393fba97",
+"code":"IAM",
+"componentType":"atomic"
+},
+{
+"ID":"play.lied-fe0-0653-e3e2-4a07-dbce699be658",
+"code":"LC3-II",
+"componentType":"composed"
+},
+{
+"ID":"dare.cats-875-2ebc-02c2-b84e-207b76f3c223",
+"code":"LC3",
+"componentType":"atomic"
+},
+{
+"ID":"mild.fact-ed1-e298-9dd2-5bc6-9d93a0447b01",
+"code":"PE",
+"componentType":"atomic"
+},
+{
+"ID":"hood.skin-671-f087-cad2-7aea-1e540b0302e9",
+"code":"SNAP29-STX17 Qabc-SNARE",
+"componentType":"composed"
+},
+{
+"ID":"gave.port-ff3-27b3-6982-7931-51f62ac70f40",
+"code":"SNAP29",
+"componentType":"atomic"
+},
+{
+"ID":"lean.raid-31e-a29f-2f22-893d-a92a82073a5f",
+"code":"GlcNAC",
+"componentType":"atomic"
+},
+{
+"ID":"what.bulk-35e-deb6-a002-2a95-a0e92fc32e62",
+"code":"STX17bound",
+"componentType":"composed"
+},
+{
+"ID":"rice.duck-27a-d57f-7ec2-a839-2ae3289c267f",
+"code":"STX17free",
+"componentType":"atomic"
+},
+{
+"ID":"lift.loaf-b03-6db0-5f92-9858-1005c72ead2d",
+"code":"LAMP2",
+"componentType":"atomic"
+},
+{
+"ID":"spin.tone-179-3310-a102-891a-b30f99e3c8e3",
+"code":"IRGM",
+"componentType":"atomic"
+},
+{
+"ID":"pear.firm-250-df33-7ca2-9b9f-059774c1874c",
+"code":"RAB7active",
+"componentType":"composed"
+},
+{
+"ID":"cool.seat-04c-6f3b-5cd2-a8f6-3bbaf01fbf5e",
+"code":"RAB7",
+"componentType":"atomic"
+},
+{
+"ID":"tuck.lark-37b-9a09-e672-8bf2-adf792368d1b",
+"code":"Mon1-CCZ1",
+"componentType":"composed"
+},
+{
+"ID":"rare.pave-229-d5ca-9882-abf9-2f97b2658225",
+"code":"MON1A",
+"componentType":"atomic"
+},
+{
+"ID":"verb.tilt-894-a72d-7f02-e946-e53ec5dd4c8f",
+"code":"CCZ1",
+"componentType":"atomic"
+},
+{
+"ID":"grow.laws-b5e-0af9-e3d2-ba4c-fb35548d4bd5",
+"code":"GABARAPL1",
+"componentType":"atomic"
+},
+{
+"ID":"coil.glad-031-fff4-bde2-5ad3-cb457c3ce1f7",
+"code":"EPG5",
+"componentType":"atomic"
+},
+{
+"ID":"norm.balm-faa-e8d2-86b2-992a-ce5c306cbf3f",
+"code":"ATG13",
+"componentType":"atomic"
+},
+{
+"ID":"flee.pray-b3b-7e05-1b52-3a19-fc749cdfc4f7",
+"code":"ULK1 complex",
+"componentType":"composed"
+},
+{
+"ID":"boys.cars-168-17c3-b872-ea3c-e183dc0f90e2",
+"code":"MAP1LC3B",
+"componentType":"atomic"
+},
+{
+"ID":"pray.drop-fda-9d50-8322-09a8-c47c6135d79a",
+"code":"MAP1LC3C",
+"componentType":"atomic"
+},
+{
+"ID":"glad.plan-547-864b-03e2-3b76-0bff8ed31a07",
+"code":"lysosome",
+"componentType":"composed"
+},
+{
+"ID":"lots.grip-f5b-d4c1-9172-b9d8-1b9250e8319b",
+"code":"LAMP1",
+"componentType":"atomic"
+},
+{
+"ID":"hymn.joke-cb1-0ed6-9282-f900-b5b8c6aa89cc",
+"code":"VAMP8",
+"componentType":"atomic"
+},
+{
+"ID":"shop.blur-8ad-7cc6-4c92-081c-9a9965807643",
+"code":"VAMP7",
+"componentType":"atomic"
+},
+{
+"ID":"eggs.halt-663-f4a7-b752-da40-012e977b1742",
+"code":"SNAP29-STX17-VAMP8 SNARE-pin",
+"componentType":"composed"
+},
+{
+"ID":"suns.teak-263-94c5-3bf2-f886-fe9f7abeb46c",
+"code":"ATG14",
+"componentType":"atomic"
+},
+{
+"ID":"boss.bats-9ee-8c7c-dcf2-08a4-8f9267529581",
+"code":"HOPS complex",
+"componentType":"composed"
+},
+{
+"ID":"just.alps-1a1-0a8c-f972-da5c-f1d198c8bb55",
+"code":"VPS16",
+"componentType":"atomic"
+},
+{
+"ID":"coal.move-e2d-acab-7542-5919-8ccebc9e6fd0",
+"code":"VPS33A",
+"componentType":"atomic"
+},
+{
+"ID":"hoax.tort-2a4-703f-f5e2-092d-dafd841cf37e",
+"code":"VPS18",
+"componentType":"atomic"
+},
+{
+"ID":"wolf.knee-dff-930e-06f2-b926-408994e22a32",
+"code":"VPS11",
+"componentType":"atomic"
+},
+{
+"ID":"rich.gems-6e3-a46e-ccd2-489e-1b93ff422802",
+"code":"VPS41",
+"componentType":"atomic"
+},
+{
+"ID":"laud.bows-b4e-62e4-5152-588a-75211946f2cc",
+"code":"VPS39",
+"componentType":"atomic"
+},
+{
+"ID":"jaws.tray-024-493b-6be2-3b9b-af406fbeeb89",
+"code":"lipid rafts",
+"componentType":"composed"
+},
+{
+"ID":"barb.cold-804-c2e1-a0c2-5871-3d265f1e556a",
+"code":"cholesterol",
+"componentType":"atomic"
+},
+{
+"ID":"hall.fork-cb5-f040-6a02-587d-bfe3f91454f4",
+"code":"OSBPL1A",
+"componentType":"atomic"
+},
+{
+"ID":"husk.nose-a4a-cd73-6462-d8fb-e2c363e00693",
+"code":"PIK3C3 complex",
+"componentType":"composed"
+},
+{
+"ID":"ruin.dart-0d0-f1e1-dfc2-8a52-8c62b7fde868",
+"code":"PIK3C3",
+"componentType":"atomic"
+},
+{
+"ID":"webs.cool-4c4-ecd0-9bd2-5bfb-688935759846",
+"code":"UVRAG",
+"componentType":"atomic"
+},
+{
+"ID":"mugs.silk-43e-3f60-6682-badc-313c246a71c2",
+"code":"NRBF2",
+"componentType":"atomic"
+},
+{
+"ID":"cult.fawn-662-287c-87d2-eaed-2c3db3f1788c",
+"code":"PIK3R4",
+"componentType":"atomic"
+},
+{
+"ID":"lush.tour-998-50df-d682-8803-d1f20e0c4b56",
+"code":"RUBCN",
+"componentType":"atomic"
+},
+{
+"ID":"oath.feat-3f1-df68-33d2-08a6-7559534f6e32",
+"code":"RUBCNL",
+"componentType":"atomic"
+},
+{
+"ID":"down.fell-74d-078d-36d2-593a-1d6cedf9e012",
+"code":"BECN1",
+"componentType":"atomic"
+},
+{
+"ID":"tier.load-ca7-b57c-6ad2-6a79-99e676aaa6f2",
+"code":"PLEKHM1",
+"componentType":"atomic"
+},
+{
+"ID":"rook.fast-cef-a999-b962-0a25-12566d81e1f6",
+"code":"PI",
+"componentType":"atomic"
+},
+{
+"ID":"junk.will-cf0-c129-1de2-eb0e-d707a586c40b",
+"code":"PI(3)P",
+"componentType":"atomic"
+},
+{
+"ID":"span.sell-d42-7be0-50f2-ab75-b93301ad5e89",
+"code":"PI(3,5)P2",
+"componentType":"atomic"
+},
+{
+"ID":"hits.germ-d9b-b7be-1fa2-1ba3-3bfe53147739",
+"code":"INPP5E",
+"componentType":"atomic"
+},
+{
+"ID":"bark.prop-876-d970-d722-8977-b4a7c3a22c53",
+"code":"PIKFYVE complex",
+"componentType":"composed"
+},
+{
+"ID":"doll.dose-a80-7698-5612-4ba1-bacae56b1e9f",
+"code":"PIKFYVE",
+"componentType":"atomic"
+},
+{
+"ID":"mink.snap-e89-4951-57b2-2966-d44205d7fed5",
+"code":"RAB7-RILP-dynein-dynactin complex",
+"componentType":"composed"
+},
+{
+"ID":"ride.rule-633-a59e-ca02-bbfe-f0404eb28177",
+"code":"RILP",
+"componentType":"atomic"
+},
+{
+"ID":"fern.bred-c72-f2ac-8ff2-fb0d-e6cda56f8fdf",
+"code":"F-actin network",
+"componentType":"composed"
+},
+{
+"ID":"yawn.bees-d13-7df0-d932-1be6-1bb8256afcec",
+"code":"CTTN",
+"componentType":"atomic"
+},
+{
+"ID":"muse.deep-27c-301c-2722-9b94-d973b60a092b",
+"code":"HDAC6",
+"componentType":"atomic"
+},
+{
+"ID":"food.grab-d4e-5e56-d212-bb2c-b5de01c26209",
+"code":"ARP2/3 complex",
+"componentType":"composed"
+},
+{
+"ID":"sell.spar-3fa-0107-cf32-2ac0-de5bf48c5f12",
+"code":"F-actin",
+"componentType":"composed"
+},
+{
+"ID":"tong.sons-e5b-1b24-a462-a8ef-7c9d38c40b75",
+"code":"ACTB",
+"componentType":"atomic"
+},
+{
+"ID":"live.soak-bf0-0a77-9742-4a46-928355375eaa",
+"code":"MYO1C",
+"componentType":"atomic"
+},
+{
+"ID":"slip.feed-b78-489a-eb62-1a52-1c720ad953f4",
+"code":"PI(4,5)P2",
+"componentType":"atomic"
+},
+{
+"ID":"dots.burn-6d3-5ed8-2822-2bf1-8e3420aafc94",
+"code":"Ca2+",
+"componentType":"atomic"
+},
+{
+"ID":"bolt.flat-1ad-2811-a302-c814-7595f60bda04",
+"code":"CACNA1A",
+"componentType":"atomic"
+},
+{
+"ID":"walk.claw-e8a-f607-0192-3b26-10f8f7a1a916",
+"code":"SNAREpin team",
+"componentType":"atomic"
+},
+{
+"ID":"spin.skid-ad6-7a83-1612-f8c7-eaa0a836b11c",
+"code":"20s supercomplex",
+"componentType":"composed"
+},
+{
+"ID":"scan.mint-ac6-e0e6-9b02-a8b8-1542a9e1380b",
+"code":"alpha-SNAP",
+"componentType":"atomic"
+},
+{
+"ID":"sane.calf-3ab-19cc-f432-28ec-d8e826f8e973",
+"code":"NSF",
+"componentType":"atomic"
+},
+{
+"ID":"mile.cone-ef1-dbf1-9002-19f2-fb71539cd040",
+"code":"TBC1D2",
+"componentType":"atomic"
+},
+{
+"ID":"foil.long-31b-f1db-93d2-3876-5d2b4f1daf98",
+"code":"NOT IN PHALY",
+"componentType":"composed"
+},
+{
+"ID":"torn.silk-e23-b0e6-2062-e8fa-495a66605ec3",
+"code":"VTI1B",
+"componentType":"atomic"
+},
+{
+"ID":"aunt.used-aa1-ba1f-09a2-2b2c-af4d5ca3def5",
+"code":"VAMP3",
+"componentType":"atomic"
+},
+{
+"ID":"here.fell-e40-9bc4-3532-aa52-45a42d6eb86f",
+"code":"STX1A",
+"componentType":"atomic"
+},
+{
+"ID":"barn.void-b6d-966c-d982-ba37-36105568921c",
+"code":"STX1B",
+"componentType":"atomic"
+},
+{
+"ID":"show.pawn-c0e-445c-cb52-7800-5a7fe30d7728",
+"code":"STX2",
+"componentType":"atomic"
+},
+{
+"ID":"ones.coop-b97-2788-c0e2-0846-6cf670dc624a",
+"code":"STX3",
+"componentType":"atomic"
+},
+{
+"ID":"hive.pour-0fe-221f-b562-e8e7-cb59bbcb12ef",
+"code":"STX4",
+"componentType":"atomic"
+},
+{
+"ID":"guys.pins-fff-827b-1112-eba1-ca7c39de9453",
+"code":"STX6",
+"componentType":"atomic"
+},
+{
+"ID":"land.hats-80f-d124-8c62-28cc-4c9a4016eb5f",
+"code":"STX7",
+"componentType":"atomic"
+},
+{
+"ID":"test.mint-8bc-2b84-b962-581b-0955851d5837",
+"code":"STX8",
+"componentType":"atomic"
+},
+{
+"ID":"mist.work-d28-db17-fbd2-6a3b-233271436494",
+"code":"STX10",
+"componentType":"atomic"
+},
+{
+"ID":"lane.rock-952-b0fa-4de2-0856-ee26615bbad7",
+"code":"STX11",
+"componentType":"atomic"
+},
+{
+"ID":"fool.thaw-725-47c3-c4b2-8945-6e1454841282",
+"code":"STX12",
+"componentType":"atomic"
+},
+{
+"ID":"aims.hoop-3e4-a304-6292-9966-d94f68ca11be",
+"code":"STX16",
+"componentType":"atomic"
+},
+{
+"ID":"urge.feet-51e-a050-23e2-ea5d-18423907507e",
+"code":"STX18",
+"componentType":"atomic"
+},
+{
+"ID":"prod.duke-5ce-12eb-0712-4a70-6682071eeb4c",
+"code":"STX19",
+"componentType":"atomic"
+},
+{
+"ID":"keys.both-e4f-1b51-7012-79b6-68110a215129",
+"code":"SEC22B",
+"componentType":"atomic"
+},
+{
+"ID":"left.file-7d0-012b-8dc2-a92b-15af33e06719",
+"code":"ATG4A",
+"componentType":"atomic"
+},
+{
+"ID":"bike.hare-dae-b694-5202-49ff-ade435b0ec22",
+"code":"ATG4B",
+"componentType":"atomic"
+},
+{
+"ID":"keel.lull-d95-b002-74c2-c978-e88d8379e68e",
+"code":"ATG4C",
+"componentType":"atomic"
+},
+{
+"ID":"born.kiln-5bf-66d1-4a02-7a9b-706facc177bd",
+"code":"ATG4D",
+"componentType":"atomic"
+},
+{
+"ID":"pane.drum-86c-cfc0-16c2-5b01-2f67616769f2",
+"code":"SNAP23",
+"componentType":"atomic"
+},
+{
+"ID":"foot.sled-149-f750-5722-09aa-952ceb0d8df2",
+"code":"SNAP25",
+"componentType":"atomic"}],
+
+"componentMolecule":[{
+"ID":"reel.bell-fe5-9362-1ec2-18fd-b6c3a1e31e76",
+"componentID":"foul.jaws-a81-0a3e-cb02-ebcb-d2e9fd11a400",
+"moleculeID":"snow.beef-0f4-a11b-c7e2-5a52-1ca4c5490c9b"
+},
+{
+"ID":"tilt.loan-cee-e523-dd62-999d-3ff8ab25ce69",
+"componentID":"rate.moon-998-8c65-9512-3a41-cc05393fba97",
+"moleculeID":"plan.flea-1f7-eb2c-0a62-e8c4-fd2ae37fb8a0"
+},
+{
+"ID":"code.keep-136-9bee-9662-dbfa-9715cee99071",
+"componentID":"dare.cats-875-2ebc-02c2-b84e-207b76f3c223",
+"moleculeID":"flax.carp-902-8841-da42-b9a7-0c6bfa898c37"
+},
+{
+"ID":"curb.jars-720-99e5-8a22-f968-e4f1f2867ab8",
+"componentID":"mild.fact-ed1-e298-9dd2-5bc6-9d93a0447b01",
+"moleculeID":"days.deal-e73-ee06-8f32-0a76-ba7b2160d0b6"
+},
+{
+"ID":"dies.hand-243-9eba-1122-cabf-7b5f2c942c94",
+"componentID":"gave.port-ff3-27b3-6982-7931-51f62ac70f40",
+"moleculeID":"deer.boil-408-a3d1-3fe2-4bfe-897d6c5bbb12"
+},
+{
+"ID":"dash.pest-038-c8fa-ef22-d863-9d054b64767f",
+"componentID":"lean.raid-31e-a29f-2f22-893d-a92a82073a5f",
+"moleculeID":"mesh.verb-253-58a1-4552-da3e-d414921b441f"
+},
+{
+"ID":"four.temp-002-072e-b042-290c-3988644cbeee",
+"componentID":"rice.duck-27a-d57f-7ec2-a839-2ae3289c267f",
+"moleculeID":"foul.flat-407-be50-eb22-6943-54822d01a838"
+},
+{
+"ID":"goes.gage-e19-33c0-73e2-482d-13f59c7a0973",
+"componentID":"lift.loaf-b03-6db0-5f92-9858-1005c72ead2d",
+"moleculeID":"tine.shop-cdd-15dd-1ee2-7a71-43dcff5a5ead"
+},
+{
+"ID":"scar.base-31e-a48f-a3b2-6867-25da80d4bef6",
+"componentID":"spin.tone-179-3310-a102-891a-b30f99e3c8e3",
+"moleculeID":"deem.late-98b-dcfd-7e62-eb27-c549c0ff007a"
+},
+{
+"ID":"dear.stew-5a5-532b-fee2-fb58-f7a6d000e72f",
+"componentID":"cool.seat-04c-6f3b-5cd2-a8f6-3bbaf01fbf5e",
+"moleculeID":"help.beef-6e7-e86e-5642-39dd-646a24947c05"
+},
+{
+"ID":"barb.zinc-524-3af0-4952-48b7-8888c6d3cb67",
+"componentID":"rare.pave-229-d5ca-9882-abf9-2f97b2658225",
+"moleculeID":"blue.wren-158-e05a-7812-7834-b9e88884161d"
+},
+{
+"ID":"make.mail-009-466b-cd22-7a19-a982a6dc71ee",
+"componentID":"verb.tilt-894-a72d-7f02-e946-e53ec5dd4c8f",
+"moleculeID":"herd.else-965-39f9-8322-abf5-8a5a3e994392"
+},
+{
+"ID":"gang.role-618-4c2e-e742-3b22-d2957eb33e5f",
+"componentID":"grow.laws-b5e-0af9-e3d2-ba4c-fb35548d4bd5",
+"moleculeID":"limp.link-d6a-cbfa-f0e2-9a03-311de2a16454"
+},
+{
+"ID":"bulb.mink-2fa-9a72-01c2-79a5-ad555de66365",
+"componentID":"coil.glad-031-fff4-bde2-5ad3-cb457c3ce1f7",
+"moleculeID":"east.fare-dd4-92a9-1002-f8ec-3dcc0651433d"
+},
+{
+"ID":"dish.jaws-3c8-8b7a-6552-9b39-7c4f72facee9",
+"componentID":"norm.balm-faa-e8d2-86b2-992a-ce5c306cbf3f",
+"moleculeID":"miss.bans-338-7b91-8072-5a3f-46b7706cb33a"
+},
+{
+"ID":"mens.bean-873-e450-e3b2-e971-3fef5164ff24",
+"componentID":"boys.cars-168-17c3-b872-ea3c-e183dc0f90e2",
+"moleculeID":"bits.gait-8a6-667a-8842-098e-5a71413b9880"
+},
+{
+"ID":"till.they-2cf-7724-1b32-7a88-31e100a5768a",
+"componentID":"pray.drop-fda-9d50-8322-09a8-c47c6135d79a",
+"moleculeID":"bile.thus-3c8-3dc3-7ff2-8828-e823afb4a1b7"
+},
+{
+"ID":"myth.miss-0c1-31ed-e7f2-78ba-482d11a18ae9",
+"componentID":"lots.grip-f5b-d4c1-9172-b9d8-1b9250e8319b",
+"moleculeID":"mile.fool-e2b-0d6c-6992-088f-f6707dc05f1f"
+},
+{
+"ID":"such.port-983-2d58-8ef2-08cd-479357d89072",
+"componentID":"hymn.joke-cb1-0ed6-9282-f900-b5b8c6aa89cc",
+"moleculeID":"date.skid-9db-4ac2-89b2-3ba2-0389fa1450d6"
+},
+{
+"ID":"hold.chow-5d8-1037-3782-0bc1-7cf7a43f5997",
+"componentID":"shop.blur-8ad-7cc6-4c92-081c-9a9965807643",
+"moleculeID":"silk.ends-689-f707-f742-6b66-04f2d37497d0"
+},
+{
+"ID":"side.boys-2e8-6609-a062-b8d0-037ebee72792",
+"componentID":"suns.teak-263-94c5-3bf2-f886-fe9f7abeb46c",
+"moleculeID":"them.glow-41b-6fa2-4832-3a67-7ca5f98f7831"
+},
+{
+"ID":"june.tree-d6b-737b-8932-eb0f-9c85cbd84b80",
+"componentID":"just.alps-1a1-0a8c-f972-da5c-f1d198c8bb55",
+"moleculeID":"find.pets-02e-7e75-5062-7a5a-8f9af3a2669d"
+},
+{
+"ID":"bank.sent-253-7f54-8992-f9e0-820cc61f3f16",
+"componentID":"coal.move-e2d-acab-7542-5919-8ccebc9e6fd0",
+"moleculeID":"folk.push-604-8b85-1202-7b60-ec1f4303473b"
+},
+{
+"ID":"gave.mink-729-d620-b962-d876-57d95ae4d1c3",
+"componentID":"hoax.tort-2a4-703f-f5e2-092d-dafd841cf37e",
+"moleculeID":"flow.nest-e6d-c1b3-d722-0b7a-4ac802667cb9"
+},
+{
+"ID":"aims.snip-876-213d-5762-8a29-85cd3cc884c4",
+"componentID":"wolf.knee-dff-930e-06f2-b926-408994e22a32",
+"moleculeID":"bare.bars-63c-019f-aa82-caf9-0d6d5e6ed8b2"
+},
+{
+"ID":"wolf.drum-50a-9658-07c2-89ba-63426f264d07",
+"componentID":"rich.gems-6e3-a46e-ccd2-489e-1b93ff422802",
+"moleculeID":"shin.five-a04-16b2-12b2-7be4-ecddc6915722"
+},
+{
+"ID":"crab.lack-626-87aa-9da2-b9a9-17ca3a1a13cd",
+"componentID":"laud.bows-b4e-62e4-5152-588a-75211946f2cc",
+"moleculeID":"keel.door-523-8b8f-1132-7b00-cb41676e5283"
+},
+{
+"ID":"live.lord-f6d-72ce-9ce2-9b6b-8457eaf14b42",
+"componentID":"barb.cold-804-c2e1-a0c2-5871-3d265f1e556a",
+"moleculeID":"flea.ware-d2b-b35e-68c2-9b3d-aebd91f88a88"
+},
+{
+"ID":"warm.reel-9e5-77f4-88f2-7b2b-8f8f13d262aa",
+"componentID":"hall.fork-cb5-f040-6a02-587d-bfe3f91454f4",
+"moleculeID":"mill.line-45d-739b-c2b2-5a8f-cdb3f0126e53"
+},
+{
+"ID":"scar.hiss-fbd-cb0f-6ab2-4ab5-1ca0b8f45e05",
+"componentID":"ruin.dart-0d0-f1e1-dfc2-8a52-8c62b7fde868",
+"moleculeID":"seat.verb-662-8325-df22-9af8-bd304eba4c43"
+},
+{
+"ID":"rice.mite-bf9-108b-fc52-3aaf-b30a2a01710d",
+"componentID":"webs.cool-4c4-ecd0-9bd2-5bfb-688935759846",
+"moleculeID":"late.malt-9bd-7939-4522-7a63-481b7438bbd0"
+},
+{
+"ID":"tank.curb-b67-6d16-aba2-28b5-85d78227ac0d",
+"componentID":"mugs.silk-43e-3f60-6682-badc-313c246a71c2",
+"moleculeID":"jump.mark-9b5-21dd-ba12-5af7-68e9d5ec4858"
+},
+{
+"ID":"pain.ring-3da-924a-6d62-7a09-01f852171898",
+"componentID":"cult.fawn-662-287c-87d2-eaed-2c3db3f1788c",
+"moleculeID":"wail.fade-6eb-e1e8-4582-194a-fd38a489b9d9"
+},
+{
+"ID":"them.lamp-0f8-3c45-6a72-4bea-5158a1da3682",
+"componentID":"lush.tour-998-50df-d682-8803-d1f20e0c4b56",
+"moleculeID":"deed.snap-bb2-0657-b842-d9fe-5d663c568e14"
+},
+{
+"ID":"pets.teal-b6b-0eaa-cc42-f9a4-55743e687076",
+"componentID":"oath.feat-3f1-df68-33d2-08a6-7559534f6e32",
+"moleculeID":"shoe.pace-f0e-2bff-f3e2-68cf-83b8760e35c0"
+},
+{
+"ID":"main.mine-926-24bf-98b2-68a3-1067c57422fe",
+"componentID":"down.fell-74d-078d-36d2-593a-1d6cedf9e012",
+"moleculeID":"aunt.loaf-6a8-a75d-07c2-0bca-106c1450b0eb"
+},
+{
+"ID":"mesh.debt-391-2877-f632-a99e-d0e6a91962ad",
+"componentID":"tier.load-ca7-b57c-6ad2-6a79-99e676aaa6f2",
+"moleculeID":"mean.hemp-a14-2c61-f762-d8e5-f23c748de7f0"
+},
+{
+"ID":"west.lamb-7f9-61de-1772-b9f9-f7e6f3690226",
+"componentID":"rook.fast-cef-a999-b962-0a25-12566d81e1f6",
+"moleculeID":"must.owns-dea-b49f-97a2-9b84-e429a033e409"
+},
+{
+"ID":"took.push-97f-ec98-4902-79fc-0e9167cdbb70",
+"componentID":"junk.will-cf0-c129-1de2-eb0e-d707a586c40b",
+"moleculeID":"salt.robe-a88-234e-c612-38d5-a4d89db7cd9c"
+},
+{
+"ID":"dame.pipe-ace-5319-e962-aa0d-dbb1629887b8",
+"componentID":"span.sell-d42-7be0-50f2-ab75-b93301ad5e89",
+"moleculeID":"dive.went-232-4425-4b42-3aa9-907374080147"
+},
+{
+"ID":"life.chef-488-a424-a412-786d-a909b78906a2",
+"componentID":"hits.germ-d9b-b7be-1fa2-1ba3-3bfe53147739",
+"moleculeID":"fail.rook-d7c-a2c7-dec2-ea49-faaa4a79fd34"
+},
+{
+"ID":"hoax.keen-a30-4272-98d2-78bb-69e3caedb670",
+"componentID":"doll.dose-a80-7698-5612-4ba1-bacae56b1e9f",
+"moleculeID":"keen.cast-ac6-1763-e4a2-7a24-e78fd7ef7268"
+},
+{
+"ID":"newt.ship-3df-7305-e132-b8b9-75d3732afb30",
+"componentID":"ride.rule-633-a59e-ca02-bbfe-f0404eb28177",
+"moleculeID":"been.girl-de2-1f0e-8052-988c-18e36b2bfaab"
+},
+{
+"ID":"ease.fern-a9b-ff5a-7db2-8908-1752fc33caa6",
+"componentID":"yawn.bees-d13-7df0-d932-1be6-1bb8256afcec",
+"moleculeID":"cast.thug-aab-b4e7-3622-08f5-5d35cb91d052"
+},
+{
+"ID":"tier.soul-915-7acd-5912-1943-e2e35a5e8642",
+"componentID":"muse.deep-27c-301c-2722-9b94-d973b60a092b",
+"moleculeID":"wail.feat-fb4-e0fa-7c82-5b37-27520c629938"
+},
+{
+"ID":"wore.fled-801-1ebe-8932-297d-6dd0d90f5426",
+"componentID":"tong.sons-e5b-1b24-a462-a8ef-7c9d38c40b75",
+"moleculeID":"hair.head-ed8-d868-0ab2-f9ca-13f464396ab6"
+},
+{
+"ID":"lens.shed-88e-9f7b-fc72-b853-a5bc0e04e8c2",
+"componentID":"live.soak-bf0-0a77-9742-4a46-928355375eaa",
+"moleculeID":"rest.wasp-f5d-448c-ded2-294e-28d6d4a65b9c"
+},
+{
+"ID":"coal.heap-ba9-a105-19a2-080f-905e3152dd78",
+"componentID":"slip.feed-b78-489a-eb62-1a52-1c720ad953f4",
+"moleculeID":"vote.webs-e49-c776-2262-0bc0-4b9f180b2b4c"
+},
+{
+"ID":"help.sway-bc9-612f-fde2-38c5-c79a9883ba61",
+"componentID":"dots.burn-6d3-5ed8-2822-2bf1-8e3420aafc94",
+"moleculeID":"cake.swap-14f-8bab-f972-e898-9903b3571427"
+},
+{
+"ID":"load.palm-5b2-754b-f692-6863-0964a0f911bd",
+"componentID":"bolt.flat-1ad-2811-a302-c814-7595f60bda04",
+"moleculeID":"fang.hoax-073-428d-3002-c93b-b7fb41c343b6"
+},
+{
+"ID":"tags.fine-b34-3ff5-e702-3847-f922275612ec",
+"componentID":"walk.claw-e8a-f607-0192-3b26-10f8f7a1a916",
+"moleculeID":"news.hoax-b46-58c7-84d2-9ac2-8613e426a3fd"
+},
+{
+"ID":"swat.flop-de7-a732-1112-6b1b-88395f700898",
+"componentID":"scan.mint-ac6-e0e6-9b02-a8b8-1542a9e1380b",
+"moleculeID":"mead.self-607-f895-73e2-8931-78f0edebf1bf"
+},
+{
+"ID":"jest.pail-e7b-b255-3882-8885-7a5bfa81f376",
+"componentID":"sane.calf-3ab-19cc-f432-28ec-d8e826f8e973",
+"moleculeID":"foil.roar-51a-c60d-b9d2-7905-af73756a4fb2"
+},
+{
+"ID":"tune.call-23e-dc93-5a42-ca90-5953a597ac06",
+"componentID":"mile.cone-ef1-dbf1-9002-19f2-fb71539cd040",
+"moleculeID":"bath.coat-b6c-a14f-fce2-7af0-be6b8e0b1ba0"
+},
+{
+"ID":"oils.tray-4ca-d7b5-f262-3b4b-ea7a2f246ecc",
+"componentID":"torn.silk-e23-b0e6-2062-e8fa-495a66605ec3",
+"moleculeID":"leek.hook-537-eec2-9e52-eb2b-e40644ff801e"
+},
+{
+"ID":"club.ploy-6dd-36d4-ca12-99b9-18484c3ab546",
+"componentID":"aunt.used-aa1-ba1f-09a2-2b2c-af4d5ca3def5",
+"moleculeID":"bins.full-275-f22a-0c22-5a22-0812c7854f63"
+},
+{
+"ID":"tear.thru-4db-20a3-ce12-29be-f51aa81b4afd",
+"componentID":"here.fell-e40-9bc4-3532-aa52-45a42d6eb86f",
+"moleculeID":"ripe.meal-ce4-d584-f492-ca43-79dbe8466920"
+},
+{
+"ID":"were.must-14e-12b0-3fb2-0b73-42f437b99766",
+"componentID":"barn.void-b6d-966c-d982-ba37-36105568921c",
+"moleculeID":"gram.torn-743-6a6d-d6f2-dbed-20928a9d4de3"
+},
+{
+"ID":"pits.less-942-7332-e312-ea79-3908467cb9fb",
+"componentID":"show.pawn-c0e-445c-cb52-7800-5a7fe30d7728",
+"moleculeID":"pile.stew-504-f931-1012-fa75-bf143adf1cfd"
+},
+{
+"ID":"odds.sane-dbd-1a4e-f472-7bb4-adf58ef6f459",
+"componentID":"ones.coop-b97-2788-c0e2-0846-6cf670dc624a",
+"moleculeID":"suns.doll-80b-0851-9c62-ead6-dd0ab05be90f"
+},
+{
+"ID":"halt.dare-ee5-809c-fa92-b92d-a7d54752e422",
+"componentID":"hive.pour-0fe-221f-b562-e8e7-cb59bbcb12ef",
+"moleculeID":"wail.lute-b5a-c215-0912-78ae-070272a2fd58"
+},
+{
+"ID":"curb.guys-ce7-960e-91d2-cbf5-3c24426bf75e",
+"componentID":"guys.pins-fff-827b-1112-eba1-ca7c39de9453",
+"moleculeID":"dots.bald-475-2ffb-38e2-7b06-dfd9698d70b7"
+},
+{
+"ID":"pens.lids-4a1-9c4e-dec2-e8c0-955ea340d493",
+"componentID":"land.hats-80f-d124-8c62-28cc-4c9a4016eb5f",
+"moleculeID":"rook.bolt-0da-3866-6ca2-38f9-543716ff1509"
+},
+{
+"ID":"hiss.good-95c-924f-b3a2-5914-c61052578445",
+"componentID":"test.mint-8bc-2b84-b962-581b-0955851d5837",
+"moleculeID":"gall.mite-3be-753a-9102-f98f-887f12ef1f7b"
+},
+{
+"ID":"cart.mile-959-4860-20d2-a94d-a2e66921c381",
+"componentID":"mist.work-d28-db17-fbd2-6a3b-233271436494",
+"moleculeID":"seen.plow-95b-e7ea-ab02-48ea-d59588e615bb"
+},
+{
+"ID":"move.blue-0be-4385-5ff2-a8bf-1dc6a1148113",
+"componentID":"lane.rock-952-b0fa-4de2-0856-ee26615bbad7",
+"moleculeID":"burr.pork-65b-fadd-57d2-6b05-01cf007cc61b"
+},
+{
+"ID":"wind.curl-66f-0195-5272-2be1-6800fa27267a",
+"componentID":"fool.thaw-725-47c3-c4b2-8945-6e1454841282",
+"moleculeID":"true.gaps-08f-f96d-0412-48c4-d46f39946c0c"
+},
+{
+"ID":"bays.dams-b93-63fb-9b92-5a8f-e74ec5858e44",
+"componentID":"aims.hoop-3e4-a304-6292-9966-d94f68ca11be",
+"moleculeID":"barn.bets-089-7474-4b92-fb98-2095f809e1c9"
+},
+{
+"ID":"made.stay-23f-ccb7-0062-19f4-b58b5e7b8beb",
+"componentID":"urge.feet-51e-a050-23e2-ea5d-18423907507e",
+"moleculeID":"film.bank-92f-ed3c-c6d2-eb21-3e07c6b53c09"
+},
+{
+"ID":"hunt.mold-36e-1688-5942-dab3-c437a853e5ab",
+"componentID":"prod.duke-5ce-12eb-0712-4a70-6682071eeb4c",
+"moleculeID":"duke.text-92f-ae15-4fa2-9adc-eaa9c5d797f5"
+},
+{
+"ID":"else.acts-83a-e4c3-cea2-4b8c-feaaa4f5e056",
+"componentID":"keys.both-e4f-1b51-7012-79b6-68110a215129",
+"moleculeID":"safe.pays-250-abe9-b402-48ff-24aef08331dc"
+},
+{
+"ID":"ease.teas-1b3-3e30-6ae2-185d-890d6bad191e",
+"componentID":"left.file-7d0-012b-8dc2-a92b-15af33e06719",
+"moleculeID":"none.huge-054-7ac8-da92-282d-72c62577f9c1"
+},
+{
+"ID":"desk.sled-81e-b2ea-a682-3963-25dbefc82afe",
+"componentID":"bike.hare-dae-b694-5202-49ff-ade435b0ec22",
+"moleculeID":"pave.wish-edb-2a0e-e312-cb08-3b10c67b817b"
+},
+{
+"ID":"webs.tort-6e2-5365-ebf2-eb17-bd7ac3d09a1b",
+"componentID":"keel.lull-d95-b002-74c2-c978-e88d8379e68e",
+"moleculeID":"find.drip-3bf-68a9-b962-4aac-336c0f3662aa"
+},
+{
+"ID":"tour.maid-cb3-2a2a-1212-2a58-6ef0fee9d4ff",
+"componentID":"born.kiln-5bf-66d1-4a02-7a9b-706facc177bd",
+"moleculeID":"rust.noon-1a6-04cc-01a2-2adf-2d3b58c2288d"
+},
+{
+"ID":"poll.gaps-799-81e6-b6e2-c832-497ffddcc4bd",
+"componentID":"pane.drum-86c-cfc0-16c2-5b01-2f67616769f2",
+"moleculeID":"slot.loft-076-3818-ad42-3bed-0e8dd1de8e5c"
+},
+{
+"ID":"rant.yarn-391-9fcd-8252-dab8-832ba9ad19be",
+"componentID":"foot.sled-149-f750-5722-09aa-952ceb0d8df2",
+"moleculeID":"lawn.gown-e5c-29e2-db72-3b48-2b7c9c504b5f"}],
+
+"molecule":[{
+"ID":"snow.beef-0f4-a11b-c7e2-5a52-1ca4c5490c9b",
+"name":"outer autophagosomal membrane",
+"moleculeType":"concept",
+"structure":"TBD"
+},
+{
+"ID":"plan.flea-1f7-eb2c-0a62-e8c4-fd2ae37fb8a0",
+"name":"inner autophagosomal membrane",
+"moleculeType":"concept",
+"structure":"TBD"
+},
+{
+"ID":"flax.carp-902-8841-da42-b9a7-0c6bfa898c37",
+"name":"microtubule associated protein 1 light chain 3 alpha",
+"moleculeType":"protein",
+"structure":"TBD"
+},
+{
+"ID":"days.deal-e73-ee06-8f32-0a76-ba7b2160d0b6",
+"name":"phosphatidylethanolamine",
+"moleculeType":"lipid",
+"structure":"TBD"
+},
+{
+"ID":"deer.boil-408-a3d1-3fe2-4bfe-897d6c5bbb12",
+"name":"synaptosome associated protein 29",
+"moleculeType":"protein",
+"structure":"TBD"
+},
+{
+"ID":"mesh.verb-253-58a1-4552-da3e-d414921b441f",
+"name":"N-acetyl-glucosamine",
+"moleculeType":"metabolite",
+"structure":"TBD"
+},
+{
+"ID":"foul.flat-407-be50-eb22-6943-54822d01a838",
+"name":"Syntaxin 17",
+"moleculeType":"protein",
+"structure":"TBD"
+},
+{
+"ID":"tine.shop-cdd-15dd-1ee2-7a71-43dcff5a5ead",
+"name":"lysosomal associated membrane protein 2",
+"moleculeType":"protein",
+"structure":"TBD"
+},
+{
+"ID":"deem.late-98b-dcfd-7e62-eb27-c549c0ff007a",
+"name":"immunity related GTPase M",
+"moleculeType":"protein",
+"structure":"TBD"
+},
+{
+"ID":"help.beef-6e7-e86e-5642-39dd-646a24947c05",
+"name":"RAB7A, member RAS oncogene family",
+"moleculeType":"protein",
+"structure":"TBD"
+},
+{
+"ID":"blue.wren-158-e05a-7812-7834-b9e88884161d",
+"name":"MON1 homolog A, secretory trafficking associated",
+"moleculeType":"protein",
+"structure":"TBD"
+},
+{
+"ID":"herd.else-965-39f9-8322-abf5-8a5a3e994392",
+"name":"CCZ1 homolog, vacuolar protein trafficking and biogenesis associated",
+"moleculeType":"protein",
+"structure":"TBD"
+},
+{
+"ID":"limp.link-d6a-cbfa-f0e2-9a03-311de2a16454",
+"name":"GABA type A receptor associated protein like 1",
+"moleculeType":"protein",
+"structure":"TBD"
+},
+{
+"ID":"east.fare-dd4-92a9-1002-f8ec-3dcc0651433d",
+"name":"ectopic P-granules autophagy protein 5 homolog",
+"moleculeType":"protein",
+"structure":"TBD"
+},
+{
+"ID":"miss.bans-338-7b91-8072-5a3f-46b7706cb33a",
+"name":"autophagy related 13",
+"moleculeType":"protein",
+"structure":"TBD"
+},
+{
+"ID":"bits.gait-8a6-667a-8842-098e-5a71413b9880",
+"name":"microtubule associated protein 1 light chain 3 beta",
+"moleculeType":"protein",
+"structure":"TBD"
+},
+{
+"ID":"bile.thus-3c8-3dc3-7ff2-8828-e823afb4a1b7",
+"name":"microtubule associated protein 1 light chain 3 gamma",
+"moleculeType":"protein",
+"structure":"TBD"
+},
+{
+"ID":"mile.fool-e2b-0d6c-6992-088f-f6707dc05f1f",
+"name":"lysosomal associated membrane protein 1",
+"moleculeType":"protein",
+"structure":"TBD"
+},
+{
+"ID":"date.skid-9db-4ac2-89b2-3ba2-0389fa1450d6",
+"name":"vesicle associated membrane protein",
+"moleculeType":"protein",
+"structure":"TBD"
+},
+{
+"ID":"silk.ends-689-f707-f742-6b66-04f2d37497d0",
+"name":"vesicle associated membrane protein 7",
+"moleculeType":"protein",
+"structure":"TBD"
+},
+{
+"ID":"them.glow-41b-6fa2-4832-3a67-7ca5f98f7831",
+"name":"Barkor, beclin 1-associated autophagy-related key regulator",
+"moleculeType":"protein",
+"structure":"TBD"
+},
+{
+"ID":"find.pets-02e-7e75-5062-7a5a-8f9af3a2669d",
+"name":"VPS16 core subunit of CORVET and HOPS complexes",
+"moleculeType":"protein",
+"structure":"TBD"
+},
+{
+"ID":"folk.push-604-8b85-1202-7b60-ec1f4303473b",
+"name":"VPS33A core subunit of CORVET and HOPS complexes",
+"moleculeType":"protein",
+"structure":"TBD"
+},
+{
+"ID":"flow.nest-e6d-c1b3-d722-0b7a-4ac802667cb9",
+"name":"VPS18 core subunit of CORVET and HOPS complexes",
+"moleculeType":"protein",
+"structure":"TBD"
+},
+{
+"ID":"bare.bars-63c-019f-aa82-caf9-0d6d5e6ed8b2",
+"name":"VPS18 core subunit of CORVET and HOPS complexes",
+"moleculeType":"protein",
+"structure":"TBD"
+},
+{
+"ID":"shin.five-a04-16b2-12b2-7be4-ecddc6915722",
+"name":"VPS41 subunit of HOPS complex",
+"moleculeType":"protein",
+"structure":"TBD"
+},
+{
+"ID":"keel.door-523-8b8f-1132-7b00-cb41676e5283",
+"name":"VPS39 subunit of HOPS complex",
+"moleculeType":"protein",
+"structure":"TBD"
+},
+{
+"ID":"flea.ware-d2b-b35e-68c2-9b3d-aebd91f88a88",
+"name":"cholesterol",
+"moleculeType":"lipid",
+"structure":"TBD"
+},
+{
+"ID":"mill.line-45d-739b-c2b2-5a8f-cdb3f0126e53",
+"name":"Oxysterol binding protein like 1A",
+"moleculeType":"protein",
+"structure":"TBD"
+},
+{
+"ID":"seat.verb-662-8325-df22-9af8-bd304eba4c43",
+"name":"phosphatidylinositol 3-kinase catalytic subunit type 3",
+"moleculeType":"protein",
+"structure":"TBD"
+},
+{
+"ID":"late.malt-9bd-7939-4522-7a63-481b7438bbd0",
+"name":"UV radiation resistance associated",
+"moleculeType":"protein",
+"structure":"TBD"
+},
+{
+"ID":"jump.mark-9b5-21dd-ba12-5af7-68e9d5ec4858",
+"name":"nuclear receptor binding factor 2",
+"moleculeType":"protein",
+"structure":"TBD"
+},
+{
+"ID":"wail.fade-6eb-e1e8-4582-194a-fd38a489b9d9",
+"name":"phosphoinositide-3-kinase regulatory subunit 4",
+"moleculeType":"protein",
+"structure":"TBD"
+},
+{
+"ID":"deed.snap-bb2-0657-b842-d9fe-5d663c568e14",
+"name":"rubicon autophagy regulator",
+"moleculeType":"protein",
+"structure":"TBD"
+},
+{
+"ID":"shoe.pace-f0e-2bff-f3e2-68cf-83b8760e35c0",
+"name":"rubicon like autophagy enhancer",
+"moleculeType":"protein",
+"structure":"TBD"
+},
+{
+"ID":"aunt.loaf-6a8-a75d-07c2-0bca-106c1450b0eb",
+"name":"Beclin 1",
+"moleculeType":"protein",
+"structure":"TBD"
+},
+{
+"ID":"mean.hemp-a14-2c61-f762-d8e5-f23c748de7f0",
+"name":"pleckstrin homology and RUN domain containing M1",
+"moleculeType":"protein",
+"structure":"TBD"
+},
+{
+"ID":"must.owns-dea-b49f-97a2-9b84-e429a033e409",
+"name":"phosphatidylinositol",
+"moleculeType":"lipid",
+"structure":"TBD"
+},
+{
+"ID":"salt.robe-a88-234e-c612-38d5-a4d89db7cd9c",
+"name":"phosphatidylinositol-3-phosphate",
+"moleculeType":"lipid",
+"structure":"TBD"
+},
+{
+"ID":"dive.went-232-4425-4b42-3aa9-907374080147",
+"name":"phosphatidylinositol-3,5-bisphosphate",
+"moleculeType":"lipid",
+"structure":"TBD"
+},
+{
+"ID":"fail.rook-d7c-a2c7-dec2-ea49-faaa4a79fd34",
+"name":"inositol polyphosphate-5-phosphatase E",
+"moleculeType":"protein",
+"structure":"TBD"
+},
+{
+"ID":"keen.cast-ac6-1763-e4a2-7a24-e78fd7ef7268",
+"name":"phosphoinositide kinase, FYVE-type zinc finger containing",
+"moleculeType":"protein",
+"structure":"TBD"
+},
+{
+"ID":"been.girl-de2-1f0e-8052-988c-18e36b2bfaab",
+"name":"Rab interacting lysosomal protein",
+"moleculeType":"protein",
+"structure":"TBD"
+},
+{
+"ID":"cast.thug-aab-b4e7-3622-08f5-5d35cb91d052",
+"name":"cortactin",
+"moleculeType":"protein",
+"structure":"TBD"
+},
+{
+"ID":"wail.feat-fb4-e0fa-7c82-5b37-27520c629938",
+"name":"histone deacetylase 6",
+"moleculeType":"protein",
+"structure":"TBD"
+},
+{
+"ID":"hair.head-ed8-d868-0ab2-f9ca-13f464396ab6",
+"name":"actin beta",
+"moleculeType":"protein",
+"structure":"TBD"
+},
+{
+"ID":"rest.wasp-f5d-448c-ded2-294e-28d6d4a65b9c",
+"name":"myosin 1C",
+"moleculeType":"protein",
+"structure":"TBD"
+},
+{
+"ID":"vote.webs-e49-c776-2262-0bc0-4b9f180b2b4c",
+"name":"phosphatidylinositol-4,5-bisphosphate",
+"moleculeType":"lipid",
+"structure":"TBD"
+},
+{
+"ID":"cake.swap-14f-8bab-f972-e898-9903b3571427",
+"name":"calcium ion",
+"moleculeType":"metabolite",
+"structure":"TBD"
+},
+{
+"ID":"fang.hoax-073-428d-3002-c93b-b7fb41c343b6",
+"name":"Voltage-dependent P/Q-type calcium channel subunit alpha-1A",
+"moleculeType":"protein",
+"structure":"TBD"
+},
+{
+"ID":"news.hoax-b46-58c7-84d2-9ac2-8613e426a3fd",
+"name":"SNAREpin team",
+"moleculeType":"concept",
+"structure":"TBD"
+},
+{
+"ID":"mead.self-607-f895-73e2-8931-78f0edebf1bf",
+"name":"NSF attachment protein alpha",
+"moleculeType":"protein",
+"structure":"TBD"
+},
+{
+"ID":"foil.roar-51a-c60d-b9d2-7905-af73756a4fb2",
+"name":"N-ethylmaleimide sensitive factor",
+"moleculeType":"protein",
+"structure":"TBD"
+},
+{
+"ID":"bath.coat-b6c-a14f-fce2-7af0-be6b8e0b1ba0",
+"name":"TBC1 domain family member 2A",
+"moleculeType":"protein",
+"structure":"TBD"
+},
+{
+"ID":"leek.hook-537-eec2-9e52-eb2b-e40644ff801e",
+"name":"vesicle transport through interaction with t-SNAREs 1B",
+"moleculeType":"protein",
+"structure":"TBD"
+},
+{
+"ID":"bins.full-275-f22a-0c22-5a22-0812c7854f63",
+"name":"vesicle associated membrane protein 3",
+"moleculeType":"protein",
+"structure":"TBD"
+},
+{
+"ID":"ripe.meal-ce4-d584-f492-ca43-79dbe8466920",
+"name":"syntaxin 1A",
+"moleculeType":"protein",
+"structure":"TBD"
+},
+{
+"ID":"gram.torn-743-6a6d-d6f2-dbed-20928a9d4de3",
+"name":"syntaxin 1B",
+"moleculeType":"protein",
+"structure":"TBD"
+},
+{
+"ID":"pile.stew-504-f931-1012-fa75-bf143adf1cfd",
+"name":"syntaxin 2",
+"moleculeType":"protein",
+"structure":"TBD"
+},
+{
+"ID":"suns.doll-80b-0851-9c62-ead6-dd0ab05be90f",
+"name":"syntaxin 3",
+"moleculeType":"protein",
+"structure":"TBD"
+},
+{
+"ID":"wail.lute-b5a-c215-0912-78ae-070272a2fd58",
+"name":"syntaxin 4",
+"moleculeType":"protein",
+"structure":"TBD"
+},
+{
+"ID":"dots.bald-475-2ffb-38e2-7b06-dfd9698d70b7",
+"name":"syntaxin 6",
+"moleculeType":"protein",
+"structure":"TBD"
+},
+{
+"ID":"rook.bolt-0da-3866-6ca2-38f9-543716ff1509",
+"name":"syntaxin 7",
+"moleculeType":"protein",
+"structure":"TBD"
+},
+{
+"ID":"gall.mite-3be-753a-9102-f98f-887f12ef1f7b",
+"name":"syntaxin 8",
+"moleculeType":"protein",
+"structure":"TBD"
+},
+{
+"ID":"seen.plow-95b-e7ea-ab02-48ea-d59588e615bb",
+"name":"syntaxin 10",
+"moleculeType":"protein",
+"structure":"TBD"
+},
+{
+"ID":"burr.pork-65b-fadd-57d2-6b05-01cf007cc61b",
+"name":"syntaxin 11",
+"moleculeType":"protein",
+"structure":"TBD"
+},
+{
+"ID":"true.gaps-08f-f96d-0412-48c4-d46f39946c0c",
+"name":"syntaxin 12",
+"moleculeType":"protein",
+"structure":"TBD"
+},
+{
+"ID":"barn.bets-089-7474-4b92-fb98-2095f809e1c9",
+"name":"syntaxin 16",
+"moleculeType":"protein",
+"structure":"TBD"
+},
+{
+"ID":"film.bank-92f-ed3c-c6d2-eb21-3e07c6b53c09",
+"name":"syntaxin 18",
+"moleculeType":"protein",
+"structure":"TBD"
+},
+{
+"ID":"duke.text-92f-ae15-4fa2-9adc-eaa9c5d797f5",
+"name":"syntaxin 19",
+"moleculeType":"protein",
+"structure":"TBD"
+},
+{
+"ID":"safe.pays-250-abe9-b402-48ff-24aef08331dc",
+"name":"SEC22 homolog B, vesicle trafficking protein",
+"moleculeType":"protein",
+"structure":"TBD"
+},
+{
+"ID":"none.huge-054-7ac8-da92-282d-72c62577f9c1",
+"name":"autophagy related 4A cysteine peptidase",
+"moleculeType":"protein",
+"structure":"TBD"
+},
+{
+"ID":"pave.wish-edb-2a0e-e312-cb08-3b10c67b817b",
+"name":"autophagy related 4B cysteine peptidase",
+"moleculeType":"protein",
+"structure":"TBD"
+},
+{
+"ID":"find.drip-3bf-68a9-b962-4aac-336c0f3662aa",
+"name":"autophagy related 4C cysteine peptidase",
+"moleculeType":"protein",
+"structure":"TBD"
+},
+{
+"ID":"rust.noon-1a6-04cc-01a2-2adf-2d3b58c2288d",
+"name":"autophagy related 4D cysteine peptidase",
+"moleculeType":"protein",
+"structure":"TBD"
+},
+{
+"ID":"slot.loft-076-3818-ad42-3bed-0e8dd1de8e5c",
+"name":"synaptosome associated protein 23",
+"moleculeType":"protein",
+"structure":"TBD"
+},
+{
+"ID":"lawn.gown-e5c-29e2-db72-3b48-2b7c9c504b5f",
+"name":"synaptosome associated protein 25",
+"moleculeType":"protein",
+"structure":"TBD"}],
+
+"geneProduct":[{
+"ID":"beam.wish-7a9-b187-fa22-5947-cad083055771",
+"geneID":"lush.bead-585-9c5c-a732-a84d-ad86ffd8f36c",
+"moleculeID":"flax.carp-902-8841-da42-b9a7-0c6bfa898c37"
+},
+{
+"ID":"lack.took-a43-d080-ae12-a901-bc0258b326c5",
+"geneID":"hide.peak-c89-15d3-1bc2-392d-50efd5cb8c07",
+"moleculeID":"deer.boil-408-a3d1-3fe2-4bfe-897d6c5bbb12"
+},
+{
+"ID":"less.duck-759-e4e0-e4f2-ba2c-4e7885b9d958",
+"geneID":"died.mode-fff-c9d9-7042-e835-b4814405e7ed",
+"moleculeID":"foul.flat-407-be50-eb22-6943-54822d01a838"
+},
+{
+"ID":"sled.meet-311-d796-5c42-2971-2babbb351445",
+"geneID":"sane.soot-a74-f31a-b172-4892-2fe81e214db7",
+"moleculeID":"tine.shop-cdd-15dd-1ee2-7a71-43dcff5a5ead"
+},
+{
+"ID":"bike.lynx-83c-7807-2062-697c-8ca61482cd7d",
+"geneID":"carp.maze-840-2adf-f6b2-c950-ffe7bc46f502",
+"moleculeID":"deem.late-98b-dcfd-7e62-eb27-c549c0ff007a"
+},
+{
+"ID":"bulk.turf-9cb-1d41-3612-79e7-36c32be20250",
+"geneID":"kept.stay-23d-b12d-bf52-fa5c-0524bfed5376",
+"moleculeID":"help.beef-6e7-e86e-5642-39dd-646a24947c05"
+},
+{
+"ID":"lake.seem-4a6-bbad-5f52-8932-a2e696af10d1",
+"geneID":"raft.lend-5bd-b182-9432-5a5c-803676b76f9c",
+"moleculeID":"blue.wren-158-e05a-7812-7834-b9e88884161d"
+},
+{
+"ID":"root.dish-a1d-9c88-b072-2866-e7bb4b5c3515",
+"geneID":"jars.pose-2b8-eb18-52e2-0836-b259feb69f7a",
+"moleculeID":"herd.else-965-39f9-8322-abf5-8a5a3e994392"
+},
+{
+"ID":"mesh.coal-e69-0f9c-e572-e93c-fff637afa289",
+"geneID":"poll.pins-fc4-bbfd-57d2-b971-799f1375e7f9",
+"moleculeID":"limp.link-d6a-cbfa-f0e2-9a03-311de2a16454"
+},
+{
+"ID":"herd.your-e7b-211e-7f92-b94a-941870c6e2c7",
+"geneID":"dash.blue-512-803b-4532-a890-167a4bf7d2dd",
+"moleculeID":"east.fare-dd4-92a9-1002-f8ec-3dcc0651433d"
+},
+{
+"ID":"sift.load-af4-61a0-d802-7822-b0ee5147bc39",
+"geneID":"loss.ward-d17-951f-ad42-bb07-9e38d2e89d32",
+"moleculeID":"miss.bans-338-7b91-8072-5a3f-46b7706cb33a"
+},
+{
+"ID":"sane.golf-849-d970-9d82-78d5-c0fffd73fef1",
+"geneID":"gust.aims-0c7-1542-48d2-1858-7834f46c0326",
+"moleculeID":"bits.gait-8a6-667a-8842-098e-5a71413b9880"
+},
+{
+"ID":"teak.veil-1a7-e8a0-55e2-4933-088ddcfcd1ec",
+"geneID":"bugs.grim-dd1-d079-7a42-3a61-0c2c2bfab6f3",
+"moleculeID":"bile.thus-3c8-3dc3-7ff2-8828-e823afb4a1b7"
+},
+{
+"ID":"warp.full-a55-3204-ae72-da34-8b358fa72e3f",
+"geneID":"slug.huts-ac3-d0d0-b592-790e-ea762c19a6bf",
+"moleculeID":"mile.fool-e2b-0d6c-6992-088f-f6707dc05f1f"
+},
+{
+"ID":"pure.tone-744-b0be-ed32-ab63-65c33148a85d",
+"geneID":"veil.tern-1a4-d2bc-aeb2-e92c-aea0410892e6",
+"moleculeID":"date.skid-9db-4ac2-89b2-3ba2-0389fa1450d6"
+},
+{
+"ID":"mine.case-d01-b3f4-1532-fa4c-434d6a929239",
+"geneID":"shin.live-52b-1d95-09f2-e902-8b0b1f30720e",
+"moleculeID":"silk.ends-689-f707-f742-6b66-04f2d37497d0"
+},
+{
+"ID":"crop.tool-605-28cd-2082-f97e-0c4fc496b41c",
+"geneID":"loss.keep-854-158b-5472-5b97-d24e112ca15c",
+"moleculeID":"them.glow-41b-6fa2-4832-3a67-7ca5f98f7831"
+},
+{
+"ID":"mesh.prep-184-9b00-b902-492b-e9c2db30c859",
+"geneID":"crop.spun-b67-e524-c0d2-7ad5-24607caf663c",
+"moleculeID":"find.pets-02e-7e75-5062-7a5a-8f9af3a2669d"
+},
+{
+"ID":"mail.cost-94b-58f0-cb42-3b3e-0403b13d312e",
+"geneID":"laws.they-f1f-6588-3882-caf8-4ba868ac86a6",
+"moleculeID":"folk.push-604-8b85-1202-7b60-ec1f4303473b"
+},
+{
+"ID":"flat.site-096-55d3-a942-e852-db9dc746c09b",
+"geneID":"chew.foam-be2-ae7e-e8e2-0aaa-ff332589d069",
+"moleculeID":"flow.nest-e6d-c1b3-d722-0b7a-4ac802667cb9"
+},
+{
+"ID":"pain.wake-560-13e5-3542-2913-7efce5c6523f",
+"geneID":"sort.male-2c5-dbd3-ca32-58b2-6cbfda436883",
+"moleculeID":"bare.bars-63c-019f-aa82-caf9-0d6d5e6ed8b2"
+},
+{
+"ID":"team.form-19c-ba91-d582-ebcb-d7a15ca30aeb",
+"geneID":"swap.them-149-bfc6-a9b2-888f-2ed02e5324f4",
+"moleculeID":"shin.five-a04-16b2-12b2-7be4-ecddc6915722"
+},
+{
+"ID":"want.leak-95c-1f39-1152-fbcd-bc107d0f616c",
+"geneID":"dash.wasp-c1a-ac0d-d522-887e-7496f175a1eb",
+"moleculeID":"keel.door-523-8b8f-1132-7b00-cb41676e5283"
+},
+{
+"ID":"calf.yawn-c87-38a0-1252-5b9f-15bd5dad8243",
+"geneID":"temp.rays-d6d-374a-4e12-fb09-a18e30fffafd",
+"moleculeID":"mill.line-45d-739b-c2b2-5a8f-cdb3f0126e53"
+},
+{
+"ID":"fade.tong-bb6-605d-3352-0b16-eb09ee088802",
+"geneID":"hoop.buds-bba-2ae9-7bc2-5a95-4eb6b73bbba1",
+"moleculeID":"seat.verb-662-8325-df22-9af8-bd304eba4c43"
+},
+{
+"ID":"fell.helm-343-d92c-33b2-38d1-5905c96b352a",
+"geneID":"much.flea-c03-bc98-58a2-6a17-f0804f3931ad",
+"moleculeID":"late.malt-9bd-7939-4522-7a63-481b7438bbd0"
+},
+{
+"ID":"herd.cuff-77d-30db-bc22-f91c-7478483674c6",
+"geneID":"quit.pulp-a9e-4c0e-e432-3bc3-910412940a6c",
+"moleculeID":"jump.mark-9b5-21dd-ba12-5af7-68e9d5ec4858"
+},
+{
+"ID":"raid.plea-476-34e1-4c22-9980-aa7d0db2076b",
+"geneID":"leak.kite-615-95fd-3a62-7a67-94109c430da4",
+"moleculeID":"wail.fade-6eb-e1e8-4582-194a-fd38a489b9d9"
+},
+{
+"ID":"shut.fuse-5b3-244c-05b2-6965-cc44cd4378c8",
+"geneID":"deed.rift-163-e024-3652-9b2c-42b460b9d4e6",
+"moleculeID":"deed.snap-bb2-0657-b842-d9fe-5d663c568e14"
+},
+{
+"ID":"pint.some-c47-5884-f432-fa21-34c21afaaa2a",
+"geneID":"noun.sons-3e8-a948-ae52-1b56-c6580b57e846",
+"moleculeID":"shoe.pace-f0e-2bff-f3e2-68cf-83b8760e35c0"
+},
+{
+"ID":"stub.hack-d07-8ef9-9082-4814-f93254146166",
+"geneID":"mare.jest-367-80a2-9a42-1bcc-92869d9f932c",
+"moleculeID":"aunt.loaf-6a8-a75d-07c2-0bca-106c1450b0eb"
+},
+{
+"ID":"lack.tuck-054-90df-7b22-1916-a461cb3d798d",
+"geneID":"feud.tall-c5f-127c-6e82-891d-e6853ecdd86b",
+"moleculeID":"mean.hemp-a14-2c61-f762-d8e5-f23c748de7f0"
+},
+{
+"ID":"pint.camp-224-37d4-0de2-8950-eb75ac64014d",
+"geneID":"gull.hive-b01-2eb5-0b02-caf0-45c7c432bee7",
+"moleculeID":"fail.rook-d7c-a2c7-dec2-ea49-faaa4a79fd34"
+},
+{
+"ID":"harp.soak-647-55e0-1e12-b988-abba3dd008ad",
+"geneID":"true.near-ac0-2381-9d82-6808-5a8fc2edd9a7",
+"moleculeID":"keen.cast-ac6-1763-e4a2-7a24-e78fd7ef7268"
+},
+{
+"ID":"skin.seas-9b6-70b2-2432-6817-115c052df1c5",
+"geneID":"seen.sees-1fd-a1da-3bc2-c80c-e3d9055fd73d",
+"moleculeID":"been.girl-de2-1f0e-8052-988c-18e36b2bfaab"
+},
+{
+"ID":"coin.surf-af5-6067-4342-f85c-3e08b9a2afb6",
+"geneID":"wine.toss-905-1bcc-2732-4b19-6e5212ce6c43",
+"moleculeID":"cast.thug-aab-b4e7-3622-08f5-5d35cb91d052"
+},
+{
+"ID":"wigs.blot-d40-957e-8642-186b-c15315ab4e0e",
+"geneID":"leap.down-d74-d488-3f12-eb1c-6369c5d3195f",
+"moleculeID":"wail.feat-fb4-e0fa-7c82-5b37-27520c629938"
+},
+{
+"ID":"role.bets-799-f383-8bd2-aaab-a7b0641ab6e7",
+"geneID":"rode.boat-fb0-83c2-e7d2-c9d9-2df39455f6fa",
+"moleculeID":"hair.head-ed8-d868-0ab2-f9ca-13f464396ab6"
+},
+{
+"ID":"hare.bald-254-a5aa-ced2-490f-1325bbd230e3",
+"geneID":"path.robe-272-dbf8-f232-883d-81028b932e00",
+"moleculeID":"rest.wasp-f5d-448c-ded2-294e-28d6d4a65b9c"
+},
+{
+"ID":"zoom.file-587-fb7d-74d2-2a57-3f12292b8b69",
+"geneID":"will.drag-3cf-35c2-17e2-d821-b8d63d118e72",
+"moleculeID":"fang.hoax-073-428d-3002-c93b-b7fb41c343b6"
+},
+{
+"ID":"part.hens-b28-b4d4-65b2-e902-fc7b0c358b11",
+"geneID":"bear.plow-2c2-d698-18a2-bbc2-f4dc85a12089",
+"moleculeID":"mead.self-607-f895-73e2-8931-78f0edebf1bf"
+},
+{
+"ID":"dirt.pith-a0f-ab19-97b2-39db-134bd3da6c1d",
+"geneID":"pest.tell-501-4328-2302-58c8-6829999a551d",
+"moleculeID":"foil.roar-51a-c60d-b9d2-7905-af73756a4fb2"
+},
+{
+"ID":"mere.swim-c94-65a5-3cb2-c8ac-3349dbbc1836",
+"geneID":"skip.slow-b7f-c643-7892-bb53-590aebdbcca8",
+"moleculeID":"bath.coat-b6c-a14f-fce2-7af0-be6b8e0b1ba0"
+},
+{
+"ID":"yawn.fort-286-12b5-f312-1b3d-98275a79c149",
+"geneID":"weld.hush-a53-d0da-e722-0a89-16ffe0dbab4a",
+"moleculeID":"leek.hook-537-eec2-9e52-eb2b-e40644ff801e"
+},
+{
+"ID":"math.rain-373-710e-caa2-28c3-46b51c77bbf4",
+"geneID":"isle.prop-940-f26f-26e2-0ac1-aa822a3f3201",
+"moleculeID":"bins.full-275-f22a-0c22-5a22-0812c7854f63"
+},
+{
+"ID":"ploy.join-d0b-c411-cb22-7a3a-411bb5d3ef56",
+"geneID":"died.sunk-676-5721-eaa2-b9be-0d6adccc144a",
+"moleculeID":"ripe.meal-ce4-d584-f492-ca43-79dbe8466920"
+},
+{
+"ID":"slap.coup-a05-2e4c-7d82-5afc-2108092b98ec",
+"geneID":"duck.hail-981-ae99-2432-b87b-3760c519406e",
+"moleculeID":"gram.torn-743-6a6d-d6f2-dbed-20928a9d4de3"
+},
+{
+"ID":"half.prop-600-9a70-5222-e873-7502bf2c3eec",
+"geneID":"drop.keys-e9e-1ce7-3912-0925-f2099e67cfe5",
+"moleculeID":"pile.stew-504-f931-1012-fa75-bf143adf1cfd"
+},
+{
+"ID":"grab.type-3be-b51a-c712-f952-593b0629dc0a",
+"geneID":"pods.pane-c70-3494-cce2-ba16-ca51b2711b34",
+"moleculeID":"suns.doll-80b-0851-9c62-ead6-dd0ab05be90f"
+},
+{
+"ID":"figs.wish-f9b-fc3a-5252-7a21-7c61a1d72c4f",
+"geneID":"moon.cool-45b-2258-dd02-ca16-aa70ad2e351d",
+"moleculeID":"wail.lute-b5a-c215-0912-78ae-070272a2fd58"
+},
+{
+"ID":"vine.pope-d29-a2aa-6532-c8b4-b52f865dce01",
+"geneID":"cope.look-53c-74d5-4552-4a08-ff399a47fd00",
+"moleculeID":"dots.bald-475-2ffb-38e2-7b06-dfd9698d70b7"
+},
+{
+"ID":"pith.rust-abf-53c2-7d72-1be0-07185e52054e",
+"geneID":"wife.dies-b7f-c794-8852-2ba6-44090e71536d",
+"moleculeID":"rook.bolt-0da-3866-6ca2-38f9-543716ff1509"
+},
+{
+"ID":"seal.hose-bf0-ed11-d7c2-59cc-cf7e403fc889",
+"geneID":"hens.stem-e41-f9d0-1f12-29e4-42d169386cf1",
+"moleculeID":"gall.mite-3be-753a-9102-f98f-887f12ef1f7b"
+},
+{
+"ID":"sins.cure-3ce-28cc-4882-4bbf-707eadad5c01",
+"geneID":"plea.peer-418-08b2-81f2-ebf9-09ea4873c04d",
+"moleculeID":"seen.plow-95b-e7ea-ab02-48ea-d59588e615bb"
+},
+{
+"ID":"fish.club-b67-d53c-18b2-3919-a45d7707509a",
+"geneID":"tent.skin-0db-2580-daa2-7b42-abb62d45de39",
+"moleculeID":"burr.pork-65b-fadd-57d2-6b05-01cf007cc61b"
+},
+{
+"ID":"bulk.rest-0f2-31d2-2eb2-aba0-c8d98db096be",
+"geneID":"peek.asks-e73-5ff4-1932-18bf-4618cecb80ce",
+"moleculeID":"true.gaps-08f-f96d-0412-48c4-d46f39946c0c"
+},
+{
+"ID":"rode.pens-805-a7ec-0662-b8e1-fe8d0af60b8e",
+"geneID":"tick.sect-f1a-184d-0712-0b88-4a02aca14643",
+"moleculeID":"barn.bets-089-7474-4b92-fb98-2095f809e1c9"
+},
+{
+"ID":"isle.yawn-b83-9109-8bd2-790e-c66d6fbf2daa",
+"geneID":"spam.raft-fc0-482e-f0a2-3bf3-0a34e9477284",
+"moleculeID":"film.bank-92f-ed3c-c6d2-eb21-3e07c6b53c09"
+},
+{
+"ID":"zinc.pack-0a1-a8db-3c62-693e-51ec4cc4263c",
+"geneID":"dorm.deaf-291-3304-1ff2-08aa-132982438b33",
+"moleculeID":"duke.text-92f-ae15-4fa2-9adc-eaa9c5d797f5"
+},
+{
+"ID":"deer.wing-213-9079-c202-6a26-8589ae59219a",
+"geneID":"peat.cook-992-16c0-0422-38bd-4f513a82965a",
+"moleculeID":"safe.pays-250-abe9-b402-48ff-24aef08331dc"
+},
+{
+"ID":"loss.reap-e57-d091-6452-38b1-7a30893d1812",
+"geneID":"fate.give-7d5-36bb-2022-b8b9-9029d84ccd95",
+"moleculeID":"none.huge-054-7ac8-da92-282d-72c62577f9c1"
+},
+{
+"ID":"skip.nick-cce-c7f4-f992-19ea-d0c81dc377de",
+"geneID":"wink.look-8e4-2fee-3bf2-1af9-2719bcf2ba2d",
+"moleculeID":"pave.wish-edb-2a0e-e312-cb08-3b10c67b817b"
+},
+{
+"ID":"tape.golf-539-6ea5-2f52-68d8-4fd9e8927446",
+"geneID":"seek.gage-a88-a5b6-1982-1bba-f2fe9958a788",
+"moleculeID":"find.drip-3bf-68a9-b962-4aac-336c0f3662aa"
+},
+{
+"ID":"meet.eats-585-f79c-ea72-1875-99c02bef88e8",
+"geneID":"dorm.sing-5d9-5d35-a6a2-39ad-dcc44a73b8b7",
+"moleculeID":"rust.noon-1a6-04cc-01a2-2adf-2d3b58c2288d"
+},
+{
+"ID":"once.hang-72f-9214-7b52-9bbb-1108f3636894",
+"geneID":"deem.rich-356-c7e3-ba82-fb08-5e622ca74068",
+"moleculeID":"slot.loft-076-3818-ad42-3bed-0e8dd1de8e5c"
+},
+{
+"ID":"boot.mark-e5b-fdb1-4612-e8fc-e1c6dc9cb593",
+"geneID":"cook.bays-b47-a212-fb72-1a88-85c2504f964a",
+"moleculeID":"lawn.gown-e5c-29e2-db72-3b48-2b7c9c504b5f"}],
+
+"gene":[{
+"ID":"lush.bead-585-9c5c-a732-a84d-ad86ffd8f36c",
+"symbol":"MAP1LC3A",
+"name":"microtubule associated protein 1 light chain 3 alpha"
+},
+{
+"ID":"hide.peak-c89-15d3-1bc2-392d-50efd5cb8c07",
+"symbol":"SNAP29",
+"name":"synaptosome associated protein 29"
+},
+{
+"ID":"died.mode-fff-c9d9-7042-e835-b4814405e7ed",
+"symbol":"STX17",
+"name":"Syntaxin 17"
+},
+{
+"ID":"sane.soot-a74-f31a-b172-4892-2fe81e214db7",
+"symbol":"LAMP2",
+"name":"lysosomal associated membrane protein 2"
+},
+{
+"ID":"carp.maze-840-2adf-f6b2-c950-ffe7bc46f502",
+"symbol":"IRGM",
+"name":"immunity related GTPase M"
+},
+{
+"ID":"kept.stay-23d-b12d-bf52-fa5c-0524bfed5376",
+"symbol":"RAB7A",
+"name":"RAB7A, member RAS oncogene family"
+},
+{
+"ID":"raft.lend-5bd-b182-9432-5a5c-803676b76f9c",
+"symbol":"MON1A",
+"name":"MON1 homolog A, secretory trafficking associated"
+},
+{
+"ID":"jars.pose-2b8-eb18-52e2-0836-b259feb69f7a",
+"symbol":"CCZ1",
+"name":"CCZ1 homolog, vacuolar protein trafficking and biogenesis associated"
+},
+{
+"ID":"poll.pins-fc4-bbfd-57d2-b971-799f1375e7f9",
+"symbol":"GABARAPL1",
+"name":"GABA type A receptor associated protein like 1"
+},
+{
+"ID":"dash.blue-512-803b-4532-a890-167a4bf7d2dd",
+"symbol":"EPG5",
+"name":"ectopic P-granules autophagy protein 5 homolog"
+},
+{
+"ID":"loss.ward-d17-951f-ad42-bb07-9e38d2e89d32",
+"symbol":"ATG13",
+"name":"autophagy related 13"
+},
+{
+"ID":"gust.aims-0c7-1542-48d2-1858-7834f46c0326",
+"symbol":"MAP1LC3B",
+"name":"microtubule associated protein 1 light chain 3 beta"
+},
+{
+"ID":"bugs.grim-dd1-d079-7a42-3a61-0c2c2bfab6f3",
+"symbol":"MAP1LC3C",
+"name":"microtubule associated protein 1 light chain 3 gamma"
+},
+{
+"ID":"slug.huts-ac3-d0d0-b592-790e-ea762c19a6bf",
+"symbol":"LAMP1",
+"name":"lysosomal associated membrane protein 1"
+},
+{
+"ID":"veil.tern-1a4-d2bc-aeb2-e92c-aea0410892e6",
+"symbol":"VAMP8",
+"name":"vesicle associated membrane protein"
+},
+{
+"ID":"shin.live-52b-1d95-09f2-e902-8b0b1f30720e",
+"symbol":"VAMP7",
+"name":"vesicle associated membrane protein 7"
+},
+{
+"ID":"loss.keep-854-158b-5472-5b97-d24e112ca15c",
+"symbol":"ATG14",
+"name":"Barkor, beclin 1-associated autophagy-related key regulator"
+},
+{
+"ID":"crop.spun-b67-e524-c0d2-7ad5-24607caf663c",
+"symbol":"VPS16",
+"name":"VPS16 core subunit of CORVET and HOPS complexes"
+},
+{
+"ID":"laws.they-f1f-6588-3882-caf8-4ba868ac86a6",
+"symbol":"VPS33A",
+"name":"VPS33A core subunit of CORVET and HOPS complexes"
+},
+{
+"ID":"chew.foam-be2-ae7e-e8e2-0aaa-ff332589d069",
+"symbol":"VPS18",
+"name":"VPS18 core subunit of CORVET and HOPS complexes"
+},
+{
+"ID":"sort.male-2c5-dbd3-ca32-58b2-6cbfda436883",
+"symbol":"VPS11",
+"name":"VPS18 core subunit of CORVET and HOPS complexes"
+},
+{
+"ID":"swap.them-149-bfc6-a9b2-888f-2ed02e5324f4",
+"symbol":"VPS41",
+"name":"VPS41 subunit of HOPS complex"
+},
+{
+"ID":"dash.wasp-c1a-ac0d-d522-887e-7496f175a1eb",
+"symbol":"VPS39",
+"name":"VPS39 subunit of HOPS complex"
+},
+{
+"ID":"temp.rays-d6d-374a-4e12-fb09-a18e30fffafd",
+"symbol":"OSBPL1A",
+"name":"Oxysterol binding protein like 1A"
+},
+{
+"ID":"hoop.buds-bba-2ae9-7bc2-5a95-4eb6b73bbba1",
+"symbol":"PIK3C3",
+"name":"phosphatidylinositol 3-kinase catalytic subunit type 3"
+},
+{
+"ID":"much.flea-c03-bc98-58a2-6a17-f0804f3931ad",
+"symbol":"UVRAG",
+"name":"UV radiation resistance associated"
+},
+{
+"ID":"quit.pulp-a9e-4c0e-e432-3bc3-910412940a6c",
+"symbol":"NRBF2",
+"name":"nuclear receptor binding factor 2"
+},
+{
+"ID":"leak.kite-615-95fd-3a62-7a67-94109c430da4",
+"symbol":"PIK3R4",
+"name":"phosphoinositide-3-kinase regulatory subunit 4"
+},
+{
+"ID":"deed.rift-163-e024-3652-9b2c-42b460b9d4e6",
+"symbol":"RUBCN",
+"name":"rubicon autophagy regulator"
+},
+{
+"ID":"noun.sons-3e8-a948-ae52-1b56-c6580b57e846",
+"symbol":"RUBCNL",
+"name":"rubicon like autophagy enhancer"
+},
+{
+"ID":"mare.jest-367-80a2-9a42-1bcc-92869d9f932c",
+"symbol":"BECN1",
+"name":"Beclin 1"
+},
+{
+"ID":"feud.tall-c5f-127c-6e82-891d-e6853ecdd86b",
+"symbol":"PLEKHM1",
+"name":"pleckstrin homology and RUN domain containing M1"
+},
+{
+"ID":"gull.hive-b01-2eb5-0b02-caf0-45c7c432bee7",
+"symbol":"INPP5E",
+"name":"inositol polyphosphate-5-phosphatase E"
+},
+{
+"ID":"true.near-ac0-2381-9d82-6808-5a8fc2edd9a7",
+"symbol":"PIKFYVE",
+"name":"phosphoinositide kinase, FYVE-type zinc finger containing"
+},
+{
+"ID":"seen.sees-1fd-a1da-3bc2-c80c-e3d9055fd73d",
+"symbol":"RILP",
+"name":"Rab interacting lysosomal protein"
+},
+{
+"ID":"wine.toss-905-1bcc-2732-4b19-6e5212ce6c43",
+"symbol":"CTTN",
+"name":"cortactin"
+},
+{
+"ID":"leap.down-d74-d488-3f12-eb1c-6369c5d3195f",
+"symbol":"HDAC6",
+"name":"histone deacetylase 6"
+},
+{
+"ID":"rode.boat-fb0-83c2-e7d2-c9d9-2df39455f6fa",
+"symbol":"ACTB",
+"name":"actin beta"
+},
+{
+"ID":"path.robe-272-dbf8-f232-883d-81028b932e00",
+"symbol":"MYO1C",
+"name":"myosin 1C"
+},
+{
+"ID":"will.drag-3cf-35c2-17e2-d821-b8d63d118e72",
+"symbol":"CACNA1A",
+"name":"Voltage-dependent P/Q-type calcium channel subunit alpha-1A"
+},
+{
+"ID":"bear.plow-2c2-d698-18a2-bbc2-f4dc85a12089",
+"symbol":"NAPA",
+"name":"NSF attachment protein alpha"
+},
+{
+"ID":"pest.tell-501-4328-2302-58c8-6829999a551d",
+"symbol":"NSF",
+"name":"N-ethylmaleimide sensitive factor"
+},
+{
+"ID":"skip.slow-b7f-c643-7892-bb53-590aebdbcca8",
+"symbol":"TBC1D2",
+"name":"TBC1 domain family member 2A"
+},
+{
+"ID":"weld.hush-a53-d0da-e722-0a89-16ffe0dbab4a",
+"symbol":"VTI1B",
+"name":"vesicle transport through interaction with t-SNAREs 1B"
+},
+{
+"ID":"isle.prop-940-f26f-26e2-0ac1-aa822a3f3201",
+"symbol":"VAMP3",
+"name":"vesicle associated membrane protein 3"
+},
+{
+"ID":"died.sunk-676-5721-eaa2-b9be-0d6adccc144a",
+"symbol":"STX1A",
+"name":"syntaxin 1A"
+},
+{
+"ID":"duck.hail-981-ae99-2432-b87b-3760c519406e",
+"symbol":"STX1B",
+"name":"syntaxin 1B"
+},
+{
+"ID":"drop.keys-e9e-1ce7-3912-0925-f2099e67cfe5",
+"symbol":"STX2",
+"name":"syntaxin 2"
+},
+{
+"ID":"pods.pane-c70-3494-cce2-ba16-ca51b2711b34",
+"symbol":"STX3",
+"name":"syntaxin 3"
+},
+{
+"ID":"moon.cool-45b-2258-dd02-ca16-aa70ad2e351d",
+"symbol":"STX4",
+"name":"syntaxin 4"
+},
+{
+"ID":"cope.look-53c-74d5-4552-4a08-ff399a47fd00",
+"symbol":"STX6",
+"name":"syntaxin 6"
+},
+{
+"ID":"wife.dies-b7f-c794-8852-2ba6-44090e71536d",
+"symbol":"STX7",
+"name":"syntaxin 7"
+},
+{
+"ID":"hens.stem-e41-f9d0-1f12-29e4-42d169386cf1",
+"symbol":"STX8",
+"name":"syntaxin 8"
+},
+{
+"ID":"plea.peer-418-08b2-81f2-ebf9-09ea4873c04d",
+"symbol":"STX10",
+"name":"syntaxin 10"
+},
+{
+"ID":"tent.skin-0db-2580-daa2-7b42-abb62d45de39",
+"symbol":"STX11",
+"name":"syntaxin 11"
+},
+{
+"ID":"peek.asks-e73-5ff4-1932-18bf-4618cecb80ce",
+"symbol":"STX12",
+"name":"syntaxin 12"
+},
+{
+"ID":"tick.sect-f1a-184d-0712-0b88-4a02aca14643",
+"symbol":"STX16",
+"name":"syntaxin 16"
+},
+{
+"ID":"spam.raft-fc0-482e-f0a2-3bf3-0a34e9477284",
+"symbol":"STX18",
+"name":"syntaxin 18"
+},
+{
+"ID":"dorm.deaf-291-3304-1ff2-08aa-132982438b33",
+"symbol":"STX19",
+"name":"syntaxin 19"
+},
+{
+"ID":"peat.cook-992-16c0-0422-38bd-4f513a82965a",
+"symbol":"SEC22B",
+"name":"SEC22 homolog B, vesicle trafficking protein"
+},
+{
+"ID":"fate.give-7d5-36bb-2022-b8b9-9029d84ccd95",
+"symbol":"ATG4A",
+"name":"autophagy related 4A cysteine peptidase"
+},
+{
+"ID":"wink.look-8e4-2fee-3bf2-1af9-2719bcf2ba2d",
+"symbol":"ATG4B",
+"name":"autophagy related 4B cysteine peptidase"
+},
+{
+"ID":"seek.gage-a88-a5b6-1982-1bba-f2fe9958a788",
+"symbol":"ATG4C",
+"name":"autophagy related 4C cysteine peptidase"
+},
+{
+"ID":"dorm.sing-5d9-5d35-a6a2-39ad-dcc44a73b8b7",
+"symbol":"ATG4D",
+"name":"autophagy related 4D cysteine peptidase"
+},
+{
+"ID":"deem.rich-356-c7e3-ba82-fb08-5e622ca74068",
+"symbol":"SNAP23",
+"name":"synaptosome associated protein 23"
+},
+{
+"ID":"cook.bays-b47-a212-fb72-1a88-85c2504f964a",
+"symbol":"SNAP25",
+"name":"synaptosome associated protein 25"}],
+
+"note":[{
+"ID":"bank.dorm-192-d78b-c192-981b-e2627fa73589",
+"targetID":"dare.cats-875-2ebc-02c2-b84e-207b76f3c223",
+"typeID":"snow.gram-8a2-cb70-96e2-daba-61933e196c9b",
+"note":"LC3 is a member of the Atg8 protein family (pmid:30115558)."
+},
+{
+"ID":"grub.cute-1e6-8108-8d32-eb1e-490d7395ca13",
+"targetID":"grow.laws-b5e-0af9-e3d2-ba4c-fb35548d4bd5",
+"typeID":"snow.gram-8a2-cb70-96e2-daba-61933e196c9b",
+"note":"GABARAPL1 is a member of the Atg8 protein family (pmid:30115558)."
+},
+{
+"ID":"hoax.tags-5d6-a1f6-2692-3b57-2cac4355fbeb",
+"targetID":"just.alps-1a1-0a8c-f972-da5c-f1d198c8bb55",
+"typeID":"snow.gram-8a2-cb70-96e2-daba-61933e196c9b",
+"note":"VPS16 (Vacuolar Protein Sorting) is one of the four subunits that are common to the HOPS complex and the CORVET complex (pmid:23645161)."
+},
+{
+"ID":"dull.bill-2bb-165a-9772-e824-a088449e2570",
+"targetID":"coal.move-e2d-acab-7542-5919-8ccebc9e6fd0",
+"typeID":"snow.gram-8a2-cb70-96e2-daba-61933e196c9b",
+"note":"VPS33 (Vacuolar Protein Sorting) is one of the four subunits that are common to the HOPS complex and the CORVET complex (pmid:23645161)."
+},
+{
+"ID":"lean.husk-11e-480f-af62-1830-4bcee9ff6746",
+"targetID":"hoax.tort-2a4-703f-f5e2-092d-dafd841cf37e",
+"typeID":"snow.gram-8a2-cb70-96e2-daba-61933e196c9b",
+"note":"VPS18 (Vacuolar Protein Sorting) is one of the four subunits that are common to the HOPS complex and the CORVET complex (pmid:23645161)."
+},
+{
+"ID":"true.from-612-d36c-62e2-f9b9-8e9b03405adf",
+"targetID":"wolf.knee-dff-930e-06f2-b926-408994e22a32",
+"typeID":"snow.gram-8a2-cb70-96e2-daba-61933e196c9b",
+"note":"VPS11 (Vacuolar Protein Sorting) is one of the four subunits that are common to the HOPS complex and the CORVET complex (pmid:23645161)."
+},
+{
+"ID":"pith.coal-737-1d3f-d142-ebaa-c3b2ade95e36",
+"targetID":"rich.gems-6e3-a46e-ccd2-489e-1b93ff422802",
+"typeID":"snow.gram-8a2-cb70-96e2-daba-61933e196c9b",
+"note":"VPS41 (Vacuolar Protein Sorting) is one of the two subunits that are specific to the HOPS complex (pmid:23645161)."
+},
+{
+"ID":"pain.boss-dbf-2257-4e02-d8e5-4dac2a22899c",
+"targetID":"laud.bows-b4e-62e4-5152-588a-75211946f2cc",
+"typeID":"snow.gram-8a2-cb70-96e2-daba-61933e196c9b",
+"note":"VPS39 (Vacuolar Protein Sorting) is one of the two subunits that are specific to the HOPS complex (pmid:23645161)."}]}

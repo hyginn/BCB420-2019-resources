@@ -20,6 +20,10 @@
 :*'''CCZ1''' [CCZ1] (CCZ1 homolog, vacuolar protein trafficking and biogenesis associated) is a component of the ''Mon1-CCZ1'' system. CCZ1 is one of two proteins in the heterooligomeric Mon1-CCZ1 GEF complex. {{#pmid: 30115558|Corona2018}}
 *'''GABARAPL1''' [GABARAPL1] (GABA type A receptor associated protein like 1) is a component of the ''PHALY'' system. GABARAPL1 is a ubiquitin-like modifier that binds to the Mon1-CCZ1 GEF complex and localizes it to the autophagosome.{{#pmid: 30115558|Corona2018}} As a yeast Atg8 family homologue (like LC3), GABARAPL1 is a downstream effector of the mTOR pathway. Lipidation by phosphatidylethanolamine causes it to be enriched in the autophagosome membrane, where it serves as a scaffold to recruit other proteins to the membrane.  {{#pmid: 30767700 |Birgisdottir2019}}
 *'''EPG5''' [EPG5] (ectopic P-granules autophagy protein 5 homolog) is a component of the ''PHALY''. EPG5 is a RAB7 effector that localizes to both the phagosome and the lysosome by RAB7 binding, and binds to and enhances the SNAP29-STX17 Qabc-SNARE, thus facilitating VAMP8 binding. Binding of EPG5 shifts STX17 affinity from SNAP25 (without EPG5) to SNAP29 (with EPG5). EPG5 mutations cause Vici syndrome. {{#pmid: 30115558|Corona2018}}
+*'''ATG13''' [ATG13] (autophagy related 13) is a component of the ''ULK1 complex''. Mutations in LC3 can destroy ATG13 interactions and reduce autophagosome formation. {{DB|UniProt|Q9H492}}  ATG13 interacts with LC3 via its LIR (LC3-interacting region). {{#pmid: 24290141 |Suzuki2014}} ATG13 is a member of the ULK1 complex which consists of ULK1 (formerly Atg1, unc-51 like autophagy activating kinase 1), ATG13, RB1CC1 (formerly Atg17 / FIP200, RB1 inducible coiled-coil 1), and ATG101. {{#pmid: 24290141 |Suzuki2014}}
+* The '''ULK1 complex''' is a component of the ''autophagosome''. The ULK1 complex consists of ULK1 (formerly Atg1, unc-51 like autophagy activating kinase 1), ATG13, RB1CC1 (formerly Atg17 / FIP200, RB1 inducible coiled-coil 1), and ATG101. {{#pmid: 24290141 |Suzuki2014}}The ULK1 complex integrates a large number of cellular systems: the mTOR pathway, AMPK as an effector of AMP homeostasis, growth factor pathways acting via TIP60, genotoxic stress response via PPM1D, protein biosynthesis, and response attenuation during prolonged starvation via the cullin E3 ligase {{#pmid: 29233870 |Zachari}}. The ULK1 complex is activated under stress conditions  by TORC1 and PKA, it is thus a sensor of nutrient signals that activates autophagy. {{#pmid: 24290141 |Suzuki2014}}
+*'''MAP1LC3B''' [MAP1LC3B] (microtubule associated protein 1 light chain 3 beta) is a component of the ''LC3-II'' system. LC3 beta and gamma are functionally equivalent homologues of MAP1LC3A {{DB|UCSC|uc002xaq.3}}.
+*'''MAP1LC3C''' [MAP1LC3C] (microtubule associated protein 1 light chain 3 gamma) is a component of the ''LC3-II'' system. LC3 beta and gamma are functionally equivalent homologues of MAP1LC3A {{DB|UCSC|uc002xaq.3}}.
 
 {{Vspace}}
 
@@ -115,10 +119,31 @@
 
 ====Not in the system====
 {{Smallvspace}}
-*'''NOT IN PHALY''' are genes that are not in the ''PHALY'' system. "NOT IN PHALY" genes are related to PHALY system components, but are demonstrably not part of PHALY. {{Unpublished}} 
+*'''NOT IN PHALY''' are genes that are not in the ''PHALY'' system. "NOT IN PHALY" genes are related to PHALY system components, but are demonstrably not part of PHALY. {{Unpublished}}
 *'''VTI1B''' [VTI1B] (vesicle transport through interaction with t-SNAREs 1B) is ''NOT IN PHALY''. The t-SNARE VTI1B may work in a pathway that is parallel to STX17, in pathogen containing autophagosomes or recycling endosomes.{{#pmid: 30115558|Corona2018}}
 *'''STX6''' [STX6] (syntaxin 6) is ''NOT IN PHALY''. The t-SNARE STX6 is the interaction partner of VTI1B. {{#pmid: 30115558|Corona2018}}
 *'''VAMP3''' [VAMP3] (vesicle associated membrane protein 3) is ''NOT IN PHALY''. The v-SNARE VAMP3 forms a SNAREpin with the  VTI1B-STX6 complex.{{#pmid: 30115558|Corona2018}}
+*'''SNAP23''' [SNAP23] (synaptosome associated protein 23) is ''NOT IN PHALY''. SNAP23 is a t-SNARE for general membrane fusion.  {{DB|UniProt|O00161}}
+*'''SNAP25''' [SNAP25] (synaptosome associated protein 25) is ''NOT IN PHALY''. SNAP25 is a t-SNARE involved in neurotransmitter release at the synapse.  {{DB|UniProt|P61266}}
+*'''STX1A''' [STX1A] (syntaxin 1A) is ''NOT IN PHALY''. STX1A is involved in hormone and neurotransmitter exocytosis.  {{DB|UniProt|Q16623}}
+*'''STX1B''' [STX1B] (syntaxin 1B) is ''NOT IN PHALY''. STX1B is involved in docking of synaptic vesicles at presynaptic active zones.  {{DB|UniProt|Q16623}}
+*'''STX2''' [STX2] (syntaxin 2) is ''NOT IN PHALY''. STX2 is essential for epithelial morphogenesis.  {{DB|UniProt|P32856}}
+*'''STX3''' [STX3] (syntaxin 3) is ''NOT IN PHALY''. STX3 is involved in docking of synaptic vesicles at presynaptic active zones.  {{DB|UniProt|Q13277}}
+*'''STX4''' [STX4] (syntaxin 4) is ''NOT IN PHALY''. STX3 is a plasma mebrane t-SNARE that is involved in docking of transport vesicles.  {{DB|UniProt|Q12846}}
+*'''STX6''' [STX6] (syntaxin 6) is ''NOT IN PHALY''. STX6 is essential involved in vesicle trafficking.  {{DB|UniProt|O43752}}
+*'''STX7''' [STX7] (syntaxin 7) is ''NOT IN PHALY''. STX7 is involved in homotypic fusion of endocytic organelles.  {{DB|UniProt|O15400}}
+*'''STX8''' [STX8] (syntaxin 8) is ''NOT IN PHALY''. STX8 is involved in early-secretory retrograde transport.  {{DB|UniProt|Q9UNK0}}
+*'''STX10''' [STX10] (syntaxin 10) is ''NOT IN PHALY''. STX10 is  involved in vesicular transport from the late endosomes to the trans-Golgi network.  {{DB|UniProt|O60499}}
+*'''STX11''' [STX11] (syntaxin 11) is ''NOT IN PHALY''. STX11 acts between the late endosome and the trans-Golgi network.  {{DB|UniProt|O75558}}
+*'''STX12''' [STX12] (syntaxin 12) is ''NOT IN PHALY''. STX12 acts between the late endosome and the trans-Golgi network.  {{DB|UniProt|Q86Y82}}
+*'''STX16''' [STX16] (syntaxin 16) is ''NOT IN PHALY''. STX16 is a t-SNARE localized to the trans-Golgi network.  {{DB|UniProt|O14662}}
+*'''STX18''' [STX18] (syntaxin 18) is ''NOT IN PHALY''. STX18 is a SNARE that is involved in Golgi-derived retrograde transport vesicles.  {{DB|UniProt|Q9P2W9}}
+*'''STX19''' [STX19] (syntaxin 19) is ''NOT IN PHALY''. STX19 is involved in in endosomal trafficking of the epidermal growth factor receptor (EGFR).  {{DB|UniProt|Q8N4C7}}
+*'''SEC22B''' [SEC22B] (SEC22 homolog B, vesicle trafficking protein) is ''NOT IN PHALY''. SEC22B is a high-confidence interactor in STRING, but it is a SNARE that is involved in retrograde transport from the Golgi to the ER.  {{DB|UniProt|O75396}}
+*'''ATG4A''' [ATG4A] (autophagy related 4A cysteine peptidase) is a component of ''LC3-II''. ATG4 proteins play a role in Atg8 protein PTM (priming for lipidation) and in delipidation for phagosome disassembly. {{DB|KEGG|hsa04140}}
+*'''ATG4B''' [ATG4B] (autophagy related 4B cysteine peptidase) is a component of ''LC3-II''. ATG4 proteins play a role in Atg8 protein PTM (priming for lipidation) and in delipidation for phagosome disassembly. {{DB|KEGG|hsa04140}}
+*'''ATG4C''' [ATG4C] (autophagy related 4C cysteine peptidase) is a component of ''LC3-II''. ATG4 proteins play a role in Atg8 protein PTM (priming for lipidation) and in delipidation for phagosome disassembly. {{DB|KEGG|hsa04140}}
+*'''ATG4D''' [ATG4D] (autophagy related 4D cysteine peptidase) is a component of ''LC3-II''. ATG4 proteins play a role in Atg8 protein PTM (priming for lipidation) and in delipidation for phagosome disassembly. {{DB|KEGG|hsa04140}}
 
 {{Vspace}}
 
