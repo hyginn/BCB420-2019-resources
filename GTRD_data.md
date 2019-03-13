@@ -495,9 +495,7 @@ Figure: number of transcription factors that have a GTRD annotated ChIP-seq peak
 
 &nbsp;
 
-## 5 Sample annotation
-
-Annotate the example gene set, validate the annotation, and store the data in an edge-list format.
+## 5 Sample gene set annotation
 
 &nbsp;
 
